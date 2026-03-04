@@ -1,0 +1,182 @@
+{
+  "Index": {
+    "title": "Ejecución de Infraestructura Industrial",
+    "description": "Ejecución técnica para proyectos industriales e institucionales."
+  },
+  "Navbar": {
+    "capabilities": "Capacidades",
+    "projects": "Proyectos",
+    "methodology": "Metodología",
+    "model": "Modelo Operativo"
+  },
+  "Footer": {
+    "description": "Empresa de ejecución especializada en la fabricación, instalación y construcción de infraestructura industrial e institucional.",
+    "contact": "Contacto",
+    "quickLinks": "Enlaces Rápidos",
+    "capabilities": "Capacidades Técnicas",
+    "projects": "Experiencia en Proyectos",
+    "methodology": "Metodología"
+  },
+  "Hero": {
+    "headline": "Ejecución de infraestructura industrial e institucional basada en la ingeniería del cliente.",
+    "subheadline": "Ejecutamos proyectos de infraestructura estructural y civil estrictamente de acuerdo con las especificaciones de ingeniería y arquitectura proporcionadas por el cliente.",
+    "cta": "Solicitar Propuesta",
+    "explore": "Explorar Capacidades",
+    "ctaProposal": "Solicitar propuesta técnica",
+    "ctaWhatsapp": "Contactar por WhatsApp",
+    "panelLabel": "Ejecución técnica",
+    "panelTitle": "Operación alineada a especificaciones de ingeniería del cliente",
+    "panelBullet1": "Fabricación e instalación estructural para entorno industrial e institucional",
+    "panelBullet2": "Control de calidad, seguridad y cumplimiento operacional en campo",
+    "panelBullet3": "Integración disciplinada con equipos de ingeniería y supervisión"
+  },
+  "Overview": {
+    "title": "Ejecución basada en ingeniería del cliente",
+    "description1": "Construcción y Mantenimientos FITA es una empresa de ejecución especializada en la fabricación, instalación y construcción de infraestructura industrial e institucional.",
+    "description2": "El diseño de ingeniería y arquitectura es proporcionado por el cliente o su firma de ingeniería. FITA ejecuta los proyectos estrictamente de acuerdo con esas especificaciones.",
+    "stats": {}
+  },
+  "Institutional": {
+    "standardsTitle": "Estándares de Ejecución",
+    "standardsDesc": "La ejecución de infraestructura industrial exige disciplina operativa, control técnico y cumplimiento estricto de especificaciones. FITA ejecuta cada proyecto siguiendo los estándares técnicos definidos por el cliente, asegurando que los procesos de fabricación, instalación y verificación se alineen con los requisitos establecidos en los documentos de ingeniería.",
+    "sectorsTitle": "Sectores de Infraestructura",
+    "sectorsDesc": "FITA ejecuta proyectos en distintos entornos industriales e institucionales, adaptando sus equipos de trabajo y procesos operativos a los estándares técnicos específicos de cada sector.",
+    "collabTitle": "Colaboración con Ingeniería del Cliente",
+    "collabDesc": "En proyectos de infraestructura industrial, la ingeniería es el punto de partida. FITA colabora directamente con los equipos de ingeniería del cliente o con firmas de ingeniería externas, ejecutando la infraestructura conforme a los planos, especificaciones técnicas y estándares operativos definidos en el proyecto."
+  },
+  "Model": {
+    "title": "Modelo de Equipo Operativo",
+    "subtitle": "Cada proyecto requiere diferentes capacidades técnicas.",
+    "description1": "Por esta razón, FITA estructura sus equipos de campo de acuerdo con los requisitos de cada proyecto, integrando personal calificado con experiencia en las disciplinas necesarias para el alcance del trabajo.",
+    "description2": "Este modelo operativo permite flexibilidad de ejecución mientras garantiza que cada proyecto sea ejecutado por especialistas alineados con los estándares técnicos del cliente. Cada proyecto define el equipo que lo ejecuta.",
+    "badge": "Estructura Operativa"
+  },
+  "Capabilities": {
+    "title": "Capacidades Globales de Ejecución",
+    "subtitle": "Entrega técnica para infraestructura industrial, energética e institucional.",
+    "items": [
+      {
+        "title": "Fabricación estructural",
+        "description": "Fabricación de componentes de acero estructural conforme a planos de ingeniería."
+      },
+      {
+        "title": "Instalación estructural",
+        "description": "Montaje e instalación de infraestructura de acero estructural."
+      },
+      {
+        "title": "Preparación de superficies y sistemas de recubrimiento protector",
+        "description": "Preparación de superficies industriales y aplicación de recubrimientos protectores técnicos."
+      },
+      {
+        "title": "Mantenimiento y refuerzo estructural",
+        "description": "Mantenimiento correctivo y refuerzo de infraestructura estructural existente."
+      },
+      {
+        "title": "Instalación de infraestructura eléctrica (fase de construcción)",
+        "description": "Instalación de conduit, canalización eléctrica, tendido de cable, terminación y conexión de cableado durante la construcción. Estos trabajos se realizan antes de que los sistemas sean energizados."
+      },
+      {
+        "title": "Construcción de infraestructura técnica e institucional",
+        "description": "Ejecución de infraestructura civil como aulas, canchas deportivas, estructuras abovedadas, casetas de vigilancia, banquetas y edificios institucionales conforme a planos arquitectónicos proporcionados por el cliente."
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Experiencia en ejecución de infraestructura",
+    "subtitle": "Histórico sustentable de entrega de infraestructura crítica",
+    "items": [
+      {
+        "title": "Reemplazo de pisos estructurales suspendidos",
+        "description": "Reemplazo de pisos estructurales suspendidos en infraestructura costa afuera."
+      },
+      {
+        "title": "Fabricación e instalación de componentes modulares",
+        "description": "Fabricación e instalación de componentes modulares de acero estructural."
+      },
+      {
+        "title": "Preparación de superficies y aplicación de recubrimientos protectores",
+        "description": "Preparación de superficies y aplicación de recubrimientos protectores en infraestructura expuesta."
+      },
+      {
+        "title": "Sistemas de protección estructural",
+        "description": "Sistemas de protección estructural instalados para infraestructura de ductos."
+      },
+      {
+        "title": "Sistemas de recubrimiento técnico",
+        "description": "Sistemas de recubrimiento técnico aplicados a superficies de helipuertos."
+      },
+      {
+        "title": "Construcción de infraestructura institucional",
+        "description": "Construcción de infraestructura institucional incluyendo aulas, canchas deportivas, estructuras abovedadas, casetas de vigilancia y banquetas basadas en planos arquitectónicos del cliente."
+      }
+    ]
+  },
+  "Safety": {
+    "title": "Protocolos de Ejecución",
+    "subtitle": "Cumplimiento metódico con estándares del cliente",
+    "items": [
+      {
+        "title": "Requisitos de Seguridad",
+        "description": "Cumplimiento con los requisitos de seguridad definidos por el cliente."
+      },
+      {
+        "title": "Verificación de Calidad",
+        "description": "Verificación de calidad mediante inspección y control dimensional."
+      },
+      {
+        "title": "Cumplimiento Ambiental",
+        "description": "Procedimientos de cumplimiento ambiental durante la ejecución."
+      }
+    ]
+  },
+  "Methodology": {
+    "title": "Disciplina de Ejecución",
+    "subtitle": "Flujo de trabajo de ejecución sistemático para proyectos críticos",
+    "steps": [
+      {
+        "title": "Evaluación del proyecto",
+        "description": "Evaluación del sitio y de los requisitos de ingeniería del cliente."
+      },
+      {
+        "title": "Planificación técnica",
+        "description": "Definición de cronogramas y recursos."
+      },
+      {
+        "title": "Fabricación y preparación",
+        "description": "Fabricación en patio o taller y preparación inicial."
+      },
+      {
+        "title": "Instalación en sitio",
+        "description": "Montaje estructural y ejecución de obra."
+      },
+      {
+        "title": "Verificación de calidad",
+        "description": "Inspección y controles dimensionales."
+      },
+      {
+        "title": "Finalización y documentación",
+        "description": "Entrega del proyecto y documentación final."
+      }
+    ]
+  },
+  "Procurement": {
+    "title": "Lista para Licitaciones",
+    "description": "FITA S.A. de C.V. mantiene claros estándares financieros y operativos, preparada para integrarse en cadenas de suministro corporativas como empresa de ejecución calificada.",
+    "bullet1": "Cumplimiento normativo y fiscal.",
+    "bullet2": "Procedimientos operativos alineados con estándares industriales.",
+    "bullet3": "Estabilidad financiera y operativa."
+  },
+  "Contact": {
+    "title": "Propuestas de Ejecución",
+    "subtitle": "Contacte a nuestro equipo para evaluaciones y propuestas de ejecución basadas en sus especificaciones de ingeniería.",
+    "directContact": "Contacto directo",
+    "engineerLabel": "Ingeniero",
+    "phoneLabel": "Teléfono / WhatsApp",
+    "emailLabel": "Correo electrónico",
+    "name": "Ing. Gustavo Bierge",
+    "phone": "+52 833 518 1171",
+    "email": "cmfitasadecv@gmail.com",
+    "ctaProposal": "Solicitar propuesta técnica",
+    "ctaWhatsapp": "Contactar por WhatsApp"
+  }
+}

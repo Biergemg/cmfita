@@ -1,0 +1,182 @@
+{
+  "Index": {
+    "title": "Industrial Infrastructure Execution",
+    "description": "Technical execution for industrial and institutional projects."
+  },
+  "Navbar": {
+    "capabilities": "Capabilities",
+    "projects": "Projects",
+    "methodology": "Methodology",
+    "model": "Team Model"
+  },
+  "Footer": {
+    "description": "Execution company specialized in the fabrication, installation, and construction of industrial and institutional infrastructure.",
+    "contact": "Contact",
+    "quickLinks": "Quick Links",
+    "capabilities": "Technical Capabilities",
+    "projects": "Project Experience",
+    "methodology": "Execution Methodology"
+  },
+  "Hero": {
+    "headline": "Execution of industrial and institutional infrastructure based on client engineering.",
+    "subheadline": "We execute high-complexity structural infrastructure and civil projects strictly according to the architecture and engineering specifications provided by the client.",
+    "cta": "Request Execution Proposal",
+    "explore": "Explore Capabilities",
+    "ctaProposal": "Request Technical Proposal",
+    "ctaWhatsapp": "Contact via WhatsApp",
+    "panelLabel": "Technical execution",
+    "panelTitle": "Operations aligned with client engineering specifications",
+    "panelBullet1": "Structural fabrication and installation for industrial and institutional environments",
+    "panelBullet2": "Field quality control, safety compliance, and operational discipline",
+    "panelBullet3": "Coordinated delivery with client engineering and supervision teams"
+  },
+  "Overview": {
+    "title": "Execution based on client engineering",
+    "description1": "Construcción y Mantenimientos FITA is an execution company specialized in the fabrication, installation, and construction of industrial and institutional infrastructure.",
+    "description2": "Engineering and architectural design are provided by the client or their engineering firm. FITA executes projects strictly according to those specifications.",
+    "stats": {}
+  },
+  "Institutional": {
+    "standardsTitle": "Execution Standards",
+    "standardsDesc": "Industrial infrastructure execution demands operational discipline, technical control, and strict compliance with specifications. FITA executes each project following the technical standards defined by the client, ensuring that fabrication, installation, and verification processes align with established engineering documents.",
+    "sectorsTitle": "Infrastructure Sectors",
+    "sectorsDesc": "FITA executes projects across various industrial and institutional environments, adapting our field teams and operational processes to the specific technical standards of each sector.",
+    "collabTitle": "Collaboration with Client Engineering",
+    "collabDesc": "In industrial infrastructure projects, engineering is the starting point. FITA collaborates directly with the client's engineering teams or external engineering firms, executing infrastructure according to the blueprints, technical specifications, and operational standards defined for the project."
+  },
+  "Model": {
+    "title": "Operational Team Model",
+    "subtitle": "Each project requires different technical capabilities.",
+    "description1": "For this reason, FITA structures its field teams based on the specific requirements of each project, integrating qualified personnel experienced in the disciplines required by the scope of work.",
+    "description2": "This operational model allows flexible execution capacity while ensuring that each project is executed by specialists aligned with the client's technical standards. Each project defines the team that executes it.",
+    "badge": "Operational Structure"
+  },
+  "Capabilities": {
+    "title": "Global Execution Capabilities",
+    "subtitle": "Technical delivery for industrial, energy, and institutional infrastructure.",
+    "items": [
+      {
+        "title": "Structural fabrication",
+        "description": "Fabrication of structural steel components according to engineering drawings."
+      },
+      {
+        "title": "Structural installation",
+        "description": "Assembly and installation of structural steel infrastructure."
+      },
+      {
+        "title": "Surface preparation and protective coating systems",
+        "description": "Industrial surface preparation and application of technical protective coatings."
+      },
+      {
+        "title": "Structural maintenance and reinforcement",
+        "description": "Corrective structural maintenance and reinforcement of existing infrastructure."
+      },
+      {
+        "title": "Electrical infrastructure installation (construction phase)",
+        "description": "Installation of conduit, electrical channeling, cable pulling, termination and connection of wiring during construction. These works occur before systems are energized."
+      },
+      {
+        "title": "Technical and institutional infrastructure construction",
+        "description": "Execution of civil infrastructure such as sports courts, domed structures, classrooms, guardhouses, sidewalks and institutional buildings according to architectural plans provided by the client."
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Infrastructure Execution Experience",
+    "subtitle": "A track record of critical infrastructure delivery",
+    "items": [
+      {
+        "title": "Replacement of suspended structural flooring",
+        "description": "Replacement of suspended structural flooring in offshore infrastructure."
+      },
+      {
+        "title": "Fabrication and installation of modular structural steel components",
+        "description": "Fabrication and installation of modular structural steel components."
+      },
+      {
+        "title": "Surface preparation and protective coating systems",
+        "description": "Surface preparation and protective coating systems applied to exposed infrastructure."
+      },
+      {
+        "title": "Structural protection systems",
+        "description": "Structural protection systems installed for pipeline infrastructure."
+      },
+      {
+        "title": "Technical coating systems",
+        "description": "Technical coating systems applied to helipad surfaces."
+      },
+      {
+        "title": "Construction of institutional infrastructure",
+        "description": "Construction of institutional infrastructure including classrooms, sports courts, domed structures, guardhouses and sidewalks based on client architectural plans."
+      }
+    ]
+  },
+  "Safety": {
+    "title": "Execution Protocols",
+    "subtitle": "Methodical compliance with client standards",
+    "items": [
+      {
+        "title": "Safety Requirements",
+        "description": "Compliance with safety requirements defined by the client."
+      },
+      {
+        "title": "Quality Verification",
+        "description": "Quality verification through inspection and dimensional control."
+      },
+      {
+        "title": "Environmental Compliance",
+        "description": "Environmental compliance procedures during execution."
+      }
+    ]
+  },
+  "Methodology": {
+    "title": "Execution Discipline",
+    "subtitle": "Systematic execution workflow for critical projects",
+    "steps": [
+      {
+        "title": "Project evaluation",
+        "description": "Site assessment and evaluation of client engineering requirements."
+      },
+      {
+        "title": "Technical planning",
+        "description": "Definition of schedules and resources."
+      },
+      {
+        "title": "Fabrication and preparation",
+        "description": "Fabrication in yard or workshop and initial preparation."
+      },
+      {
+        "title": "Site installation",
+        "description": "Structural erection and execution of works."
+      },
+      {
+        "title": "Quality verification",
+        "description": "Inspections and dimensional checks."
+      },
+      {
+        "title": "Project completion and documentation",
+        "description": "Final handover and documentation."
+      }
+    ]
+  },
+  "Procurement": {
+    "title": "Procurement Ready",
+    "description": "FITA S.A. de C.V. maintains clear financial and operational standards, prepared to integrate seamlessly into corporate supply chains as a qualified execution company.",
+    "bullet1": "Regulatory and fiscal compliance",
+    "bullet2": "Operational procedures aligned with industrial standards",
+    "bullet3": "Financial and operational stability"
+  },
+  "Contact": {
+    "title": "Execution Proposals",
+    "subtitle": "Contact our team for evaluations and execution proposals based on your engineering docs.",
+    "directContact": "Direct Contact",
+    "engineerLabel": "Engineer",
+    "phoneLabel": "Phone / WhatsApp",
+    "emailLabel": "Email",
+    "name": "Ing. Gustavo Bierge",
+    "phone": "+52 833 518 1171",
+    "email": "cmfitasadecv@gmail.com",
+    "ctaProposal": "Request Technical Proposal",
+    "ctaWhatsapp": "Contact via WhatsApp"
+  }
+}
