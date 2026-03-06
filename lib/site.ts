@@ -1,6 +1,6 @@
 import { routing } from "@/i18n/routing";
 
-export const companyName = "Construccion y Mantenimientos FITA S.A. de C.V.";
+export const companyName = "Construcción y Mantenimientos FITA S.A. de C.V.";
 export const legalIdentifier = "RFC: CMF140509C49";
 export const productionSiteUrl = "https://cmfita.com";
 export const defaultLocale = routing.defaultLocale;

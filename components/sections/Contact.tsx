@@ -4,6 +4,11 @@ import { useTranslations } from "next-intl";
 import { Section } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
 import { MapPin, Building2 } from "lucide-react";
+import {
+  trackEmailClick,
+  trackProposalRequest,
+  trackWhatsappClick,
+} from "@/lib/analytics";
 
 export function Contact() {
     const t = useTranslations("Contact");
@@ -41,7 +46,13 @@ export function Contact() {
                 <p className="text-sm uppercase tracking-widest text-industrial-500">
                   {t("emailLabel")}
                 </p>
-                <p className="text-lg font-medium text-steel-light">{t("email")}</p>
+                <a
+                  href={`mailto:${t("email")}`}
+                  className="text-lg font-medium text-steel-light transition-colors hover:text-steel-metallic"
+                  onClick={() => trackEmailClick()}
+                >
+                  {t("email")}
+                </a>
               </div>
             </div>
           </div>
@@ -70,14 +81,20 @@ export function Contact() {
               <Button
                 variant="metallic"
                 className="group w-full text-lg"
-                onClick={() => window.location.href = `mailto:${t("email")}`}
+                onClick={() => {
+                  trackProposalRequest();
+                  window.location.href = `mailto:${t("email")}`;
+                }}
               >
                 {t("ctaProposal")}
               </Button>
               <Button
                 variant="outline"
                 className="w-full text-lg border-industrial-600 hover:bg-industrial-800"
-                onClick={() => window.open(`https://wa.me/${t("phone").replace(/\D/g, "")}`, "_blank")}
+                onClick={() => {
+                  trackWhatsappClick();
+                  window.open(`https://wa.me/${t("phone").replace(/\D/g, "")}`, "_blank");
+                }}
               >
                 {t("ctaWhatsapp")}
               </Button>

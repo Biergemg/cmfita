@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import gsap from "gsap";
+import { trackProposalRequest, trackWhatsappClick } from "@/lib/analytics";
 
 export function Hero() {
     const t = useTranslations("Hero");
@@ -90,6 +91,7 @@ export function Hero() {
                                 size="lg"
                                 className="group"
                                 onClick={() => {
+                                    trackProposalRequest();
                                     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
                                 }}
                             >
@@ -100,7 +102,10 @@ export function Hero() {
                                 variant="outline"
                                 size="lg"
                                 className="border-industrial-600 hover:bg-industrial-800"
-                                onClick={() => window.open("https://wa.me/528335181171", "_blank")}
+                                onClick={() => {
+                                    trackWhatsappClick();
+                                    window.open("https://wa.me/528335181171", "_blank");
+                                }}
                             >
                                 {t("ctaWhatsapp")}
                             </Button>

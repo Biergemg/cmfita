@@ -5,17 +5,14 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import {
   companyName,
-  contactEmail,
-  contactPhone,
   getLanguageAlternates,
   getLocaleUrl,
   getSiteUrl,
-  legalIdentifier,
-  postalAddress,
-  whatsappPhone,
 } from "@/lib/site";
+import { getIndustrialCompanySchema } from "@/lib/schema";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const teko = Teko({ subsets: ["latin"], variable: "--font-teko", weight: ["300", "400", "500", "600", "700"] });
@@ -64,15 +61,9 @@ export async function generateMetadata(
       description,
       images: [
         {
-          url: "/logo.png",
-          width: 1024,
-          height: 1024,
-          alt: "FITA logo",
-        },
-        {
-          url: "/hero.png",
-          width: 640,
-          height: 640,
+          url: "/og-image.jpg",
+          width: 1200,
+          height: 630,
           alt: title,
         },
       ],
@@ -81,7 +72,7 @@ export async function generateMetadata(
       card: "summary_large_image",
       title,
       description,
-      images: ["/hero.png"],
+      images: ["/og-image.jpg"],
     },
     icons: {
       icon: [
@@ -121,44 +112,7 @@ export default async function RootLayout({
     notFound();
   }
   const messages = await getMessages({ locale });
-  const t = await getTranslations({ locale, namespace: "Index" });
-  const organizationUrl = getLocaleUrl(locale) ?? getSiteUrl() ?? undefined;
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": ["Organization", "LocalBusiness"],
-    name: companyName,
-    legalName: companyName,
-    description: t("description"),
-    email: contactEmail,
-    telephone: contactPhone,
-    url: organizationUrl,
-    logo: organizationUrl ? `${getSiteUrl()}/logo.png` : "/logo.png",
-    image: organizationUrl ? `${getSiteUrl()}/hero.png` : "/hero.png",
-    areaServed: "Mexico",
-    address: {
-      "@type": "PostalAddress",
-      ...postalAddress,
-    },
-    contactPoint: [
-      {
-        "@type": "ContactPoint",
-        contactType: "sales",
-        email: contactEmail,
-        telephone: contactPhone,
-        areaServed: "MX",
-        availableLanguage: ["es", "en"],
-      },
-    ],
-    identifier: legalIdentifier,
-    sameAs: [],
-    knowsAbout: [
-      "Fabricacion estructural",
-      "Instalacion industrial",
-      "Construccion institucional",
-      "Mantenimiento estructural",
-      `WhatsApp: ${whatsappPhone}`,
-    ],
-  };
+  const organizationSchema = getIndustrialCompanySchema();
 
   return (
     <html lang={locale} className={`${inter.variable} ${teko.variable}`}>
@@ -167,6 +121,7 @@ export default async function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
+        <GoogleAnalytics />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
