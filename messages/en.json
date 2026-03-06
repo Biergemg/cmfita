@@ -177,6 +177,37 @@
     "phone": "+52 833 518 1171",
     "email": "cmfitasadecv@gmail.com",
     "ctaProposal": "Request Technical Proposal",
-    "ctaWhatsapp": "Contact via WhatsApp"
+    "ctaWhatsapp": "Contact via WhatsApp",
+    "locationLabel": "Company location",
+    "address": "Paseo de los Mexicas 126-D, 16 de Septiembre district, Ciudad Madero, Tamaulipas, postal code 89512, Mexico.",
+    "coverageLabel": "Operating coverage",
+    "coverage": "We operate from Ciudad Madero, Tamaulipas, serving industrial and institutional projects in Mexico according to each project's technical scope."
+  },
+  "Faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Clear answers for Google and for your clients",
+    "subtitle": "This block is designed for conversational queries such as the ones users ask Google or voice assistants on mobile devices.",
+    "items": [
+      {
+        "title": "What does Construccion y Mantenimientos FITA do?",
+        "description": "FITA executes fabrication, installation, structural maintenance, and industrial or institutional construction projects according to the engineering and technical specifications provided by the client."
+      },
+      {
+        "title": "Where is FITA located?",
+        "description": "Construccion y Mantenimientos FITA S.A. de C.V. is located in Ciudad Madero, Tamaulipas, Mexico, at Paseo de los Mexicas 126-D, Colonia 16 de Septiembre, postal code 89512."
+      },
+      {
+        "title": "How can I contact FITA?",
+        "description": "You can contact FITA by phone or WhatsApp at +52 833 518 1171, or by email at cmfitasadecv@gmail.com to request a technical proposal."
+      },
+      {
+        "title": "Does FITA design project engineering?",
+        "description": "No. FITA specializes in technical execution. Engineering and architectural design are provided by the client or by the client's engineering firm, and FITA executes according to those documents."
+      },
+      {
+        "title": "What types of projects does FITA execute?",
+        "description": "FITA executes structural fabrication, structural installation, protective coating systems, structural maintenance and reinforcement, electrical infrastructure work during construction, and institutional civil works."
+      }
+    ]
   }
 }

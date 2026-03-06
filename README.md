@@ -20,6 +20,16 @@ npm run build
 npm run start
 ```
 
+## Variables de entorno
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://cmfita.com
+GOOGLE_SITE_VERIFICATION=
+```
+
+`NEXT_PUBLIC_SITE_URL` permite generar canonicos, sitemap, robots y metadata absoluta.
+`GOOGLE_SITE_VERIFICATION` habilita la etiqueta de verificacion para Google Search Console.
+
 ## Estructura principal
 
 - `app/[locale]`: layout y pagina principal internacionalizada.
