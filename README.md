@@ -42,8 +42,7 @@ GOOGLE_SITE_VERIFICATION=
 ## Flujo de actualizacion de textos
 
 1. Editar `messages/en.json` y `messages/es.json`.
-2. Si se requiere regenerar mensajes base, usar `node scripts/update-i18n.js`.
-3. Ejecutar `npm run lint` y `npm run build` antes de subir cambios.
+2. Ejecutar `npm run lint` y `npm run build` antes de subir cambios.
 
 ## Calidad antes de despliegue
 
