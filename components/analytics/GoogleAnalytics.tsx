@@ -1,27 +1,40 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Script from "next/script";
 import { usePathname, useSearchParams } from "next/navigation";
 
+import { ANALYTICS_CONSENT_KEY } from "@/components/analytics/CookieConsent";
 import { GA_ID, pageview } from "@/lib/analytics";
 
 export function GoogleAnalytics() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [enabled, setEnabled] = useState(false);
 
   useEffect(() => {
-    if (!GA_ID || !pathname) {
-      return;
-    }
+    const syncConsent = () => {
+      const value = window.localStorage.getItem(ANALYTICS_CONSENT_KEY);
+      setEnabled(value === "granted");
+    };
 
+    syncConsent();
+    window.addEventListener("analytics-consent-change", syncConsent);
+    return () => window.removeEventListener("analytics-consent-change", syncConsent);
+  }, []);
+
+  const url = useMemo(() => {
+    if (!pathname) return null;
     const query = searchParams.toString();
-    const url = query ? `${pathname}?${query}` : pathname;
-
-    pageview(url);
+    return query ? `${pathname}?${query}` : pathname;
   }, [pathname, searchParams]);
 
-  if (!GA_ID) {
+  useEffect(() => {
+    if (!enabled || !GA_ID || !url) return;
+    pageview(url);
+  }, [enabled, url]);
+
+  if (!GA_ID || !enabled) {
     return null;
   }
 

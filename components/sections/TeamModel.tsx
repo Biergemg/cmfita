@@ -1,73 +1,61 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Section } from "@/components/ui/section";
 import { Users } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import { Section } from "@/components/ui/section";
+
 export function TeamModel() {
-    const t = useTranslations("Model");
-    const sectionRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("Model");
+  const sectionRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        ".model-card",
+        { y: 30, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.15,
+          ease: "power2.out",
+          scrollTrigger: { trigger: sectionRef.current, start: "top 75%" },
+        },
+      );
+    }, sectionRef);
 
-        const ctx = gsap.context(() => {
-            gsap.fromTo(".model-card",
-                { y: 30, opacity: 0 },
-                {
-                    y: 0,
-                    opacity: 1,
-                    duration: 0.8,
-                    stagger: 0.15,
-                    ease: "power2.out",
-                    scrollTrigger: {
-                        trigger: sectionRef.current,
-                        start: "top 75%",
-                    }
-                }
-            );
-        }, sectionRef);
+    return () => ctx.revert();
+  }, []);
 
-        return () => ctx.revert();
-    }, []);
+  return (
+    <Section ref={sectionRef} className="relative border-b border-t border-industrial-800 bg-industrial-900">
+      <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+        <div>
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-industrial-400 bg-industrial-800 px-3 py-1">
+            <Users className="h-4 w-4 text-steel-metallic" />
+            <span className="text-xs font-semibold uppercase tracking-widest text-steel-light">{t("badge")}</span>
+          </div>
 
-    return (
-        <Section ref={sectionRef} className="bg-industrial-900 border-t border-b border-industrial-800 relative">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 border border-industrial-400 bg-industrial-800 rounded-full">
-                        <Users className="w-4 h-4 text-steel-metallic" />
-                        <span className="text-xs font-semibold tracking-widest uppercase text-steel-light">
-                            {t("badge")}
-                        </span>
-                    </div>
+          <h2 className="mb-4 text-4xl text-steel-light md:text-5xl">{t("title")}</h2>
+          <h3 className="mb-8 text-xl tracking-wide text-steel-metallic md:text-2xl">{t("subtitle")}</h3>
 
-                    <h2 className="text-4xl md:text-5xl font-teko text-steel-light mb-4 tracking-wide uppercase">
-                        {t("title")}
-                    </h2>
-                    <h3 className="text-xl md:text-2xl font-teko text-steel-metallic mb-8 tracking-wide">
-                        {t("subtitle")}
-                    </h3>
+          <div className="space-y-6 text-lg leading-relaxed text-industrial-400">
+            <p>{t("description1")}</p>
+            <p>{t("description2")}</p>
+          </div>
+        </div>
 
-                    <div className="space-y-6 text-lg text-industrial-400 leading-relaxed">
-                        <p>{t("description1")}</p>
-                        <p>{t("description2")}</p>
-                    </div>
-                </div>
-
-                <div className="relative h-[400px] lg:h-[500px] rounded-sm overflow-hidden border border-industrial-800 shadow-2xl">
-                    <div className="absolute inset-0 bg-gradient-to-t from-industrial-950/80 via-transparent to-transparent z-10" />
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                        src="/team.png"
-                        alt="Massive structural execution and industrial fabrication"
-                        className="model-card w-full h-full object-cover"
-                    />
-                </div>
-            </div>
-        </Section>
-    );
+        <div className="relative h-[400px] overflow-hidden rounded-sm border border-industrial-800 shadow-2xl lg:h-[500px]">
+          <div className="absolute inset-0 z-10 bg-gradient-to-t from-industrial-950/80 via-transparent to-transparent" />
+          <Image src="/team.png" alt="Massive structural execution and industrial fabrication" fill className="model-card object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+        </div>
+      </div>
+    </Section>
+  );
 }

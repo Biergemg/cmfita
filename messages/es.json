@@ -34,7 +34,20 @@
     "title": "Ejecución basada en ingeniería del cliente",
     "description1": "Construcción y Mantenimientos FITA es una empresa de ejecución especializada en la fabricación, instalación y construcción de infraestructura industrial e institucional.",
     "description2": "El diseño de ingeniería y arquitectura es proporcionado por el cliente o su firma de ingeniería. FITA ejecuta los proyectos estrictamente de acuerdo con esas especificaciones.",
-    "stats": {}
+    "stats": {
+      "years": {
+        "value": "10+",
+        "label": "años de experiencia acumulada"
+      },
+      "projects": {
+        "value": "50+",
+        "label": "frentes y proyectos atendidos"
+      },
+      "sectors": {
+        "value": "6",
+        "label": "disciplinas y capacidades activas"
+      }
+    }
   },
   "Institutional": {
     "standardsTitle": "Estándares de Ejecución",
@@ -178,35 +191,35 @@
     "email": "cmfitasadecv@gmail.com",
     "ctaProposal": "Solicitar propuesta técnica",
     "ctaWhatsapp": "Contactar por WhatsApp",
-    "locationLabel": "Ubicacion de la empresa",
-    "address": "Paseo de los Mexicas 126-D, Col. 16 de Septiembre, Ciudad Madero, Tamaulipas, C.P. 89512, Mexico.",
+    "locationLabel": "Ubicación de la empresa",
+    "address": "Paseo de los Mexicas 126-D, Col. 16 de Septiembre, Ciudad Madero, Tamaulipas, C.P. 89512, México.",
     "coverageLabel": "Cobertura operativa",
-    "coverage": "Atendemos proyectos industriales e institucionales desde Ciudad Madero, Tamaulipas, con capacidad de coordinacion para obras en Mexico segun alcance tecnico."
+    "coverage": "Atendemos proyectos industriales e institucionales desde Ciudad Madero, Tamaulipas, con capacidad de coordinación para obras en México según alcance técnico."
   },
   "Faq": {
     "eyebrow": "Preguntas frecuentes",
     "title": "Respuestas claras para Google y para tus clientes",
-    "subtitle": "Este bloque esta orientado a consultas conversacionales como las que se hacen en Google o por voz desde el celular.",
+    "subtitle": "Este bloque está orientado a consultas conversacionales como las que se hacen en Google o por voz desde el celular.",
     "items": [
       {
-        "title": "Que hace Construccion y Mantenimientos FITA?",
-        "description": "FITA ejecuta proyectos de fabricacion, instalacion, mantenimiento estructural y construccion de infraestructura industrial e institucional de acuerdo con la ingenieria y especificaciones tecnicas proporcionadas por el cliente."
+        "title": "¿Qué hace Construcción y Mantenimientos FITA?",
+        "description": "FITA ejecuta proyectos de fabricación, instalación, mantenimiento estructural y construcción de infraestructura industrial e institucional de acuerdo con la ingeniería y especificaciones técnicas proporcionadas por el cliente."
       },
       {
-        "title": "Donde esta ubicada FITA?",
-        "description": "Construccion y Mantenimientos FITA S.A. de C.V. se encuentra en Ciudad Madero, Tamaulipas, Mexico, en Paseo de los Mexicas 126-D, Colonia 16 de Septiembre, C.P. 89512."
+        "title": "¿Dónde está ubicada FITA?",
+        "description": "Construcción y Mantenimientos FITA S.A. de C.V. se encuentra en Ciudad Madero, Tamaulipas, México, en Paseo de los Mexicas 126-D, Colonia 16 de Septiembre, C.P. 89512."
       },
       {
-        "title": "Como puedo contactar a FITA?",
-        "description": "Puedes contactar a FITA por telefono o WhatsApp al +52 833 518 1171, o por correo electronico a cmfitasadecv@gmail.com para solicitar una propuesta tecnica."
+        "title": "¿Cómo puedo contactar a FITA?",
+        "description": "Puedes contactar a FITA por teléfono o WhatsApp al +52 833 518 1171, o por correo electrónico a cmfitasadecv@gmail.com para solicitar una propuesta técnica."
       },
       {
-        "title": "FITA diseña la ingenieria de los proyectos?",
-        "description": "No. FITA se especializa en la ejecucion tecnica. La ingenieria y arquitectura son proporcionadas por el cliente o por su firma de ingenieria, y FITA ejecuta conforme a esos documentos."
+        "title": "¿FITA diseña la ingeniería de los proyectos?",
+        "description": "No. FITA se especializa en la ejecución técnica. La ingeniería y arquitectura son proporcionadas por el cliente o por su firma de ingeniería, y FITA ejecuta conforme a esos documentos."
       },
       {
-        "title": "Que tipo de proyectos ejecuta FITA?",
-        "description": "FITA ejecuta fabricacion estructural, instalacion estructural, recubrimientos protectores, mantenimiento y refuerzo estructural, instalaciones electricas en fase constructiva y obra civil institucional."
+        "title": "¿Qué tipo de proyectos ejecuta FITA?",
+        "description": "FITA ejecuta fabricación estructural, instalación estructural, recubrimientos protectores, mantenimiento y refuerzo estructural, instalaciones eléctricas en fase constructiva y obra civil institucional."
       }
     ]
   }

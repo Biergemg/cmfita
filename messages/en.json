@@ -34,7 +34,20 @@
     "title": "Execution based on client engineering",
     "description1": "Construcción y Mantenimientos FITA is an execution company specialized in the fabrication, installation, and construction of industrial and institutional infrastructure.",
     "description2": "Engineering and architectural design are provided by the client or their engineering firm. FITA executes projects strictly according to those specifications.",
-    "stats": {}
+    "stats": {
+      "years": {
+        "value": "10+",
+        "label": "years of combined experience"
+      },
+      "projects": {
+        "value": "50+",
+        "label": "projects and work fronts served"
+      },
+      "sectors": {
+        "value": "6",
+        "label": "active disciplines and capabilities"
+      }
+    }
   },
   "Institutional": {
     "standardsTitle": "Execution Standards",

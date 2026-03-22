@@ -1,68 +1,72 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Section } from "@/components/ui/section";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import { Section } from "@/components/ui/section";
+
 export function Overview() {
-    const t = useTranslations("Overview");
-    const sectionRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("Overview");
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const rawStats = t.raw("stats") as Record<string, { value: string; label: string }>;
+  const stats = Object.values(rawStats ?? {});
 
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        ".overview-elem",
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.8,
+          stagger: 0.15,
+          ease: "power3.out",
+          scrollTrigger: { trigger: sectionRef.current, start: "top 80%" },
+        },
+      );
+    }, sectionRef);
+    return () => ctx.revert();
+  }, []);
 
-        const ctx = gsap.context(() => {
-            gsap.fromTo(".overview-elem",
-                { y: 50, opacity: 0 },
-                {
-                    y: 0,
-                    opacity: 1,
-                    duration: 0.8,
-                    stagger: 0.15,
-                    ease: "power3.out",
-                    scrollTrigger: {
-                        trigger: sectionRef.current,
-                        start: "top 80%",
-                    }
-                }
-            );
-        }, sectionRef);
+  return (
+    <Section ref={sectionRef} className="bg-industrial-900 border-t border-industrial-800">
+      <div className="mx-auto flex max-w-5xl flex-col items-center gap-12 px-6 text-center">
+        <div className="w-full">
+          <h2 className="overview-elem mb-6 text-4xl text-steel-light md:text-6xl">{t("title")}</h2>
+          <div className="overview-elem mx-auto mb-10 h-1.5 w-32 bg-industrial-400" />
+          <p className="overview-elem mx-auto mb-8 max-w-3xl text-xl leading-relaxed text-industrial-400">{t("description1")}</p>
+          <p className="overview-elem mx-auto max-w-3xl text-xl leading-relaxed text-industrial-400">{t("description2")}</p>
+        </div>
 
-        return () => ctx.revert();
-    }, []);
+        {stats.length > 0 && (
+          <div className="grid w-full gap-4 md:grid-cols-3">
+            {stats.map((stat) => (
+              <div key={stat.label} className="overview-elem border border-industrial-800 bg-industrial-950/60 p-6 text-left">
+                <p className="text-3xl text-steel-light">{stat.value}</p>
+                <p className="mt-2 text-sm uppercase tracking-[0.18em] text-industrial-400">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        )}
 
-    return (
-        <Section ref={sectionRef} className="bg-industrial-900 border-t border-industrial-800">
-            <div className="max-w-4xl mx-auto px-6">
-                <div className="flex flex-col gap-12 text-center items-center">
-                    <div className="w-full">
-                        <h2 className="overview-elem text-4xl md:text-6xl font-teko text-steel-light mb-6 tracking-wide uppercase">
-                            {t("title")}
-                        </h2>
-                        <div className="overview-elem w-32 h-1.5 bg-industrial-400 mb-10 mx-auto" />
-                        <p className="overview-elem text-xl text-industrial-400 mb-8 leading-relaxed max-w-3xl mx-auto">
-                            {t("description1")}
-                        </p>
-                        <p className="overview-elem text-xl text-industrial-400 leading-relaxed max-w-3xl mx-auto">
-                            {t("description2")}
-                        </p>
-                    </div>
-
-                    <div className="w-full mt-8">
-                        <div className="relative h-[400px] md:h-[600px] rounded-sm overflow-hidden border border-industrial-800 shadow-2xl">
-                            <div className="absolute inset-0 bg-gradient-to-t from-industrial-950/80 via-transparent to-transparent z-10" />
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                                src="/crane.png"
-                                alt="Structural crane installation and construction site"
-                                className="overview-elem w-full h-full object-cover"
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </Section>
-    );
+        <div className="w-full mt-4">
+          <div className="relative h-[400px] overflow-hidden rounded-sm border border-industrial-800 shadow-2xl md:h-[600px]">
+            <div className="absolute inset-0 z-10 bg-gradient-to-t from-industrial-950/80 via-transparent to-transparent" />
+            <Image
+              src="/crane.png"
+              alt="Structural crane installation and construction site"
+              fill
+              className="overview-elem object-cover"
+              sizes="(max-width: 768px) 100vw, 1200px"
+            />
+          </div>
+        </div>
+      </div>
+    </Section>
+  );
 }

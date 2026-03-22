@@ -8,8 +8,7 @@ export const supportedLocales = routing.locales;
 export const contactEmail = "cmfitasadecv@gmail.com";
 export const contactPhone = "+52 833 518 1171";
 export const whatsappPhone = "+528335181171";
-export const siteTagline =
-  "Empresa especializada en fabricacion, instalacion y construccion de infraestructura industrial e institucional.";
+export const siteTagline = "Empresa especializada en fabricación, instalación y construcción de infraestructura industrial e institucional.";
 
 export const postalAddress = {
   streetAddress: "Paseo de los Mexicas 126-D Col. 16 de Septiembre",
@@ -34,18 +33,16 @@ export function getLocalePath(locale: string): string {
   return `/${locale}`;
 }
 
-export function getLocaleUrl(locale: string): string | null {
-  const siteUrl = getSiteUrl();
-
-  if (!siteUrl) {
-    return null;
-  }
-
-  return `${siteUrl}${getLocalePath(locale)}`;
+export function getLocalizedRoute(locale: string, route: string): string {
+  return `${getLocalePath(locale)}${route}`;
 }
 
-export function getLanguageAlternates(): Record<string, string> {
-  return Object.fromEntries(
-    supportedLocales.map((locale) => [locale, getLocalePath(locale)]),
-  );
+export function getLocaleUrl(locale: string, route = ""): string | null {
+  const siteUrl = getSiteUrl();
+  if (!siteUrl) return null;
+  return `${siteUrl}${getLocalePath(locale)}${route}`;
+}
+
+export function getLanguageAlternates(route = ""): Record<string, string> {
+  return Object.fromEntries(supportedLocales.map((locale) => [locale, `${getLocalePath(locale)}${route}`]));
 }
