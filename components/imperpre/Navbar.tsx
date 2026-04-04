@@ -2,10 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { MessageCircle } from "lucide-react";
 import gsap from "gsap";
 
 import { Button } from "@/components/ui/button";
+import { WhatsappIcon } from "@/components/ui/WhatsappIcon";
 import { getWhatsappUrl } from "@/lib/site";
 import { trackWhatsappClick } from "@/lib/analytics";
 
@@ -39,7 +39,7 @@ export function ImperpreNavbar() {
           className="gap-2"
           onClick={openWhatsapp}
         >
-          <MessageCircle className="h-4 w-4" />
+          <WhatsappIcon className="h-4 w-4" />
           Agendar visita gratuita
         </Button>
       </div>

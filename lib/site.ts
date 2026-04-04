@@ -10,7 +10,7 @@ export const contactEmail = "cmfitasadecv@gmail.com";
 export const contactPhone = "+52 833 518 1171";
 export const whatsappPhone = "+528335181171";
 export const whatsappPrefillMessage =
-  "Hola, quiero revisar una losa de concreto. Te comparto fotos, ubicación y una breve descripción del problema.";
+  "Hola, estoy interesado en una visita técnica gratuita para mi plantel.";
 export const siteTagline = "Empresa especializada en fabricación, instalación y construcción de infraestructura industrial e institucional.";
 export const imperpreTagline =
   "Revisión y definición de solución para losas de concreto con filtraciones, desgaste o deterioro por humedad y exposición climática.";
