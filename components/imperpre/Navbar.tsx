@@ -35,7 +35,7 @@ export function ImperpreNavbar() {
         {/* Single CTA — the only action */}
         <button
           onClick={openWhatsapp}
-          className="flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-semibold tracking-wide text-white shadow-[0_0_16px_rgba(37,211,102,0.4)] transition-all hover:bg-[#20BD5A] hover:shadow-[0_0_24px_rgba(37,211,102,0.6)] active:scale-95"
+          className="flex items-center gap-2 rounded-sm border border-industrial-600 bg-industrial-800 px-4 py-2 text-sm font-semibold tracking-wide text-steel-light transition-all hover:bg-industrial-700 hover:border-industrial-500 active:scale-95"
         >
           <WhatsappIcon className="h-4 w-4 shrink-0" />
           <span>Agendar visita gratuita</span>

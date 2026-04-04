@@ -90,7 +90,7 @@ export function ImperpreProjectExperience() {
       <div className="mt-10 text-center">
         <button
           onClick={() => { trackWhatsappClick("offer-section"); window.open(getWhatsappUrl(), "_blank", "noopener,noreferrer"); }}
-          className="inline-flex items-center gap-2.5 rounded-full bg-[#25D366] px-6 py-3.5 text-base font-semibold tracking-wide text-white shadow-[0_0_24px_rgba(37,211,102,0.5)] transition-all hover:bg-[#20BD5A] hover:shadow-[0_0_36px_rgba(37,211,102,0.7)] active:scale-95"
+          className="inline-flex items-center gap-2.5 rounded-sm border border-industrial-600 bg-industrial-800 px-6 py-3.5 text-base font-semibold tracking-wide text-steel-light transition-all hover:bg-industrial-700 active:scale-95"
         >
           <WhatsappIcon className="h-5 w-5 shrink-0" />
           {t("cta")}

@@ -89,7 +89,7 @@ export function ImperpreOverview() {
               </p>
             </div>
             <button
-              className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold tracking-wide text-white shadow-[0_0_20px_rgba(37,211,102,0.45)] transition-all hover:bg-[#20BD5A] hover:shadow-[0_0_32px_rgba(37,211,102,0.65)] active:scale-95 shrink-0"
+              className="inline-flex items-center gap-2 rounded-sm border border-industrial-600 bg-industrial-800 px-5 py-2.5 text-sm font-semibold tracking-wide text-steel-light transition-all hover:bg-industrial-700 active:scale-95 shrink-0"
               onClick={() => { trackWhatsappClick("problem-section"); window.open(getWhatsappUrl(), "_blank", "noopener,noreferrer"); }}
             >
               <WhatsappIcon className="h-4 w-4 shrink-0" />
