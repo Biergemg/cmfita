@@ -38,11 +38,11 @@ export function Hero() {
       <div className="absolute inset-0 z-[2] bg-gradient-to-t from-industrial-950 via-industrial-950/60 to-transparent pointer-events-none" />
       <div className="absolute inset-0 z-[2] bg-gradient-to-r from-industrial-950 via-transparent to-transparent pointer-events-none" />
 
-      <div className="container relative z-10 mx-auto max-w-7xl px-6">
+      <div className="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
           <div className="max-w-5xl lg:col-span-7">
             <div className="section-kicker">FITA</div>
-            <h1 ref={headlineRef} className="text-shadow-display mb-6 max-w-5xl text-5xl font-bold leading-[0.9] tracking-[0.005em] text-steel-light text-balance md:text-6xl lg:text-[5.5rem]">
+            <h1 ref={headlineRef} className="text-shadow-display mb-6 max-w-5xl text-4xl font-bold leading-[0.92] tracking-[0.005em] text-steel-light text-balance sm:text-5xl md:text-6xl lg:text-[5.5rem]">
               {t("headline")}
             </h1>
             <p ref={subheadlineRef} className="reading-measure mb-10 max-w-[40rem] text-pretty text-[1.05rem] leading-[1.72] text-industrial-300 md:text-[1.125rem]">
@@ -52,7 +52,7 @@ export function Hero() {
               <Button
                 variant="metallic"
                 size="lg"
-                className="group"
+                className="group w-full sm:w-auto"
                 onClick={() => {
                   trackProposalRequest("hero");
                   trackEmailClick("hero");
@@ -66,7 +66,7 @@ export function Hero() {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-industrial-600 hover:bg-industrial-800"
+                className="w-full border-industrial-600 hover:bg-industrial-800 sm:w-auto"
                 onClick={() => {
                   trackWhatsappClick("hero");
                   window.open("https://wa.me/528335181171", "_blank", "noopener,noreferrer");

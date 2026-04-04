@@ -38,8 +38,8 @@ export function Navbar() {
   ];
 
   return (
-    <header className="fixed top-0 z-50 w-full px-4 pt-4 md:px-6">
-      <div className={`nav-shell mx-auto flex max-w-7xl items-center justify-between rounded-sm border px-4 py-3 transition-all duration-300 md:px-6 ${scrolled ? "glass-panel border-industrial-700/80 bg-industrial-950/78 shadow-[0_24px_60px_rgba(2,6,23,0.45)]" : "border-white/8 bg-industrial-950/48 backdrop-blur-sm"}`}>
+    <header className="fixed top-0 z-50 w-full px-3 pt-3 sm:px-4 sm:pt-4 md:px-6">
+      <div className={`nav-shell mx-auto flex max-w-7xl items-center justify-between rounded-sm border px-3 py-3 transition-all duration-300 sm:px-4 md:px-6 ${scrolled ? "glass-panel border-industrial-700/80 bg-industrial-950/78 shadow-[0_24px_60px_rgba(2,6,23,0.45)]" : "border-white/8 bg-industrial-950/48 backdrop-blur-sm"}`}>
         <Link href="/" className="group flex items-center gap-3" aria-label="FITA home">
           <div className="relative h-16 w-16 flex-shrink-0 transition-transform group-hover:scale-105 md:h-20 md:w-20">
             <Image src="/logo.png" alt="FITA Logo" fill priority className="object-contain drop-shadow-md" sizes="112px" />
@@ -92,7 +92,7 @@ export function Navbar() {
       </div>
 
       {mobileMenuOpen && (
-        <div id="mobile-navigation" className="mx-auto mt-2 flex max-w-7xl flex-col gap-4 rounded-sm border border-industrial-800 bg-industrial-950/96 p-6 shadow-2xl backdrop-blur-md md:hidden">
+        <div id="mobile-navigation" className="mx-auto mt-2 flex max-w-7xl flex-col gap-4 rounded-sm border border-industrial-800 bg-industrial-950/96 p-4 shadow-2xl backdrop-blur-md sm:p-6 md:hidden">
           {navLinks.map((link) => (
             <Link
               key={link.href}

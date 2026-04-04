@@ -35,8 +35,8 @@ export function Overview() {
   }, []);
 
   return (
-    <Section ref={sectionRef} className="bg-industrial-900 border-t border-industrial-800">
-      <div className="mx-auto flex max-w-5xl flex-col items-center gap-12 px-6 text-center">
+    <Section ref={sectionRef} className="bg-industrial-900 border-t border-industrial-800" containerClassName="max-w-5xl">
+      <div className="mx-auto flex max-w-5xl flex-col items-center gap-12 text-center">
         <div className="w-full">
           <div className="section-kicker justify-center">{locale === "es" ? "Por qué FITA" : "Why FITA"}</div>
           <h2 className="overview-elem section-title mb-6 md:text-6xl">{t("title")}</h2>

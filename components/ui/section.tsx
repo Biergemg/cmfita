@@ -10,7 +10,7 @@ export const Section = React.forwardRef<HTMLElement, SectionProps>(
     ({ className, containerClassName, children, ...props }, ref) => {
         return (
             <section ref={ref} className={cn("industrial-divider relative py-20 md:py-28", className)} {...props}>
-                <div className={cn("container mx-auto px-6 max-w-7xl relative z-10", containerClassName)}>
+                <div className={cn("container relative z-10 mx-auto max-w-7xl px-4 sm:px-6", containerClassName)}>
                     {children}
                 </div>
             </section>

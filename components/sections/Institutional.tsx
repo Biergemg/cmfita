@@ -36,8 +36,8 @@ export function Institutional() {
     }, []);
 
     return (
-        <Section ref={sectionRef} className="bg-industrial-950 border-t border-industrial-800 py-16 md:py-24">
-            <div className="max-w-6xl mx-auto px-6">
+        <Section ref={sectionRef} className="bg-industrial-950 border-t border-industrial-800 py-16 md:py-24" containerClassName="max-w-6xl">
+            <div className="mx-auto max-w-6xl">
                 <div className="section-kicker">{locale === "es" ? "Por qué FITA es diferente" : "Why FITA is different"}</div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
                     {/* Block 1: Execution Standards */}

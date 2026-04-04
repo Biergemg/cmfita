@@ -13,8 +13,8 @@ export function Footer() {
 
   return (
     <footer className="border-t border-industrial-800 bg-industrial-950 pb-10 pt-24">
-      <div className="container mx-auto max-w-7xl px-6">
-        <div className="premium-card mb-14 grid grid-cols-1 gap-10 p-8 md:grid-cols-[1.25fr_0.8fr] md:p-10">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="premium-card mb-14 grid grid-cols-1 gap-10 p-6 sm:p-8 md:grid-cols-[1.25fr_0.8fr] md:p-10">
           <div>
             <p className="mb-3 text-xs uppercase tracking-[0.18em] text-industrial-500">
               {locale === "es" ? "Empresa de ejecución multidisciplina" : "Multidisciplinary execution company"}
