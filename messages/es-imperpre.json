@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "Imperpre | Tu azotea deja de filtrar — o regresamos sin costo",
-    "description": "Impermeabilización para escuelas privadas en Tampico, Madero y Altamira. Visita técnica gratuita. Si la zona intervenida vuelve a filtrar, regresamos."
+    "title": "Imperpre | Diagnóstico y solución para azoteas de concreto — Tampico, Madero y Altamira",
+    "description": "Impermeabilización para escuelas privadas en Tampico, Madero y Altamira. Visita técnica gratuita. Diagnóstico real en sitio. Revisión correctiva sin costo si se presenta filtración en la zona intervenida."
   },
   "Navbar": {
     "problem": "El problema",
@@ -22,16 +22,16 @@
 
   "Hero": {
     "eyebrow": "Escuelas privadas · Tampico · Madero · Altamira",
-    "headline": "Nunca más un salón fuera de operación por filtraciones.",
+    "headline": "Evita que las filtraciones sigan afectando salones y operación escolar.",
     "subheadline": "Visita técnica gratuita. Diagnóstico real en sitio. Y si la zona que intervenimos vuelve a filtrar en la siguiente temporada, regresamos sin costo.",
     "ctaProposal": "Agendar visita técnica gratuita",
     "ctaWhatsapp": "Hablar por WhatsApp",
     "microcopy": "Sin costo. Sin compromiso. Solo dinos dónde estás y qué está pasando.",
     "panelLabel": "La diferencia",
-    "panelTitle": "No vendemos producto por m². Resolvemos el problema de tu azotea.",
+    "panelTitle": "Cada azotea se revisa en sitio para definir una solución según su condición real.",
     "panelBullet1": "Diagnóstico real en sitio — no estimados de escritorio",
     "panelBullet2": "Resolvemos de fondo — no tapamos el síntoma",
-    "panelBullet3": "Si vuelve a filtrar la zona intervenida, regresamos sin costo",
+    "panelBullet3": "Si durante la siguiente temporada de lluvias se presenta una filtración en la zona intervenida, realizamos una revisión correctiva sin costo",
     "formalLabel": "Para quién es",
     "formalValue": "Escuelas privadas con azotea de concreto y filtraciones activas o recurrentes en zona costera",
     "quickLabel": "Para empezar",
@@ -41,7 +41,7 @@
   "Overview": {
     "eyebrow": "Filtraciones en zona costera",
     "title": "No es la gotera. Es lo que la gotera le está costando a tu escuela.",
-    "description1": "Un salón con humedad, olor a moho o plafón dañado no es solo un problema de mantenimiento. Es el argumento que los padres usan para cambiar a sus hijos de escuela. En zona costera — donde el salitre y la humedad aceleran el deterioro — el problema no espera al siguiente ciclo escolar.",
+    "description1": "Un salón con humedad, olor a moho o plafón dañado no es solo un problema de mantenimiento. También deteriora la percepción de cuidado, orden y confianza que recibe cada familia. En zona costera — donde el salitre y la humedad aceleran el deterioro — el problema no espera al siguiente ciclo escolar.",
     "description2": "La mayoría de las escuelas atienden el síntoma: tapan la gotera, pintan el plafón, esperan. El problema regresa en la siguiente lluvia y cada vez llega más adentro: equipos dañados, mobiliario arruinado, clases interrumpidas — y los padres que lo notan no avisan antes de irse.",
     "stats": {
       "symptom1": {
@@ -74,7 +74,7 @@
 
   "Projects": {
     "eyebrow": "Visita técnica gratuita",
-    "title": "Visita técnica gratuita + azotea que deja de filtrar.",
+    "title": "Visita técnica gratuita + diagnóstico real en sitio.",
     "subtitle": "Todo lo que incluye antes de que pagues un peso.",
     "items": [
       {
@@ -91,7 +91,7 @@
       },
       {
         "title": "Compromiso de continuidad",
-        "description": "Si en la siguiente temporada de lluvias hay filtración en la zona que intervenimos, regresamos a revisarla sin costo."
+        "description": "Si durante la siguiente temporada de lluvias se presenta una filtración en la zona intervenida, realizamos una revisión correctiva sin costo."
       }
     ],
     "cta": "Agendar visita técnica gratuita"

@@ -61,7 +61,7 @@ export function ImperpreProjectExperience() {
           <div className="relative text-center">
             <p className="mb-2 text-xs uppercase tracking-[0.22em] text-industrial-500">El resultado</p>
             <p className="text-2xl font-bold leading-snug text-steel-light md:text-3xl">
-              Tu azotea deja de filtrar.
+              Tu azotea se interviene con base en lo que realmente necesita.
             </p>
             <p className="mt-3 text-sm text-industrial-400">
               Visita técnica gratuita · Sin compromiso · Si vuelve a filtrar, regresamos
