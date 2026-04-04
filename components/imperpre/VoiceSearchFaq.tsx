@@ -31,9 +31,9 @@ export function ImperpreVoiceSearchFaq() {
         {items.map((item, i) => (
           <article key={i} className="rounded-sm border border-industrial-800 bg-industrial-900">
             {/* Question */}
-            <div className="flex items-start gap-4 px-6 py-5">
+            <div className="px-6 py-5">
               {item.tag && (
-                <span className="mt-0.5 shrink-0 rounded-sm border border-industrial-700 px-2 py-0.5 text-[10px] uppercase tracking-[0.15em] text-industrial-500">
+                <span className="mb-2 inline-block rounded-sm border border-industrial-700 px-2 py-0.5 text-[10px] uppercase tracking-[0.15em] text-industrial-500">
                   {item.tag}
                 </span>
               )}

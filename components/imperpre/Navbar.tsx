@@ -38,7 +38,8 @@ export function ImperpreNavbar() {
           className="flex items-center gap-2 rounded-sm border border-industrial-600 bg-industrial-800 px-4 py-2 text-sm font-semibold tracking-wide text-steel-light transition-all hover:bg-industrial-700 hover:border-industrial-500 active:scale-95"
         >
           <WhatsappIcon className="h-4 w-4 shrink-0" />
-          <span>Agendar visita gratuita</span>
+          <span className="hidden sm:inline">Agendar visita gratuita</span>
+          <span className="sm:hidden">Agendar visita</span>
         </button>
       </div>
     </header>
