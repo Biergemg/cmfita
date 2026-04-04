@@ -41,6 +41,17 @@ export function Contact({ locale }: { locale: Locale }) {
               </div>
             </div>
 
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="glass-panel rounded-sm border border-industrial-800 bg-industrial-950 p-6">
+                <p className="mb-2 text-xs uppercase tracking-[0.18em] text-industrial-500">{t("formalLabel")}</p>
+                <p className="text-base leading-relaxed text-steel-light">{t("formalValue")}</p>
+              </div>
+              <div className="glass-panel rounded-sm border border-industrial-800 bg-industrial-950 p-6">
+                <p className="mb-2 text-xs uppercase tracking-[0.18em] text-industrial-500">{t("quickLabel")}</p>
+                <p className="text-base leading-relaxed text-steel-light">{t("quickValue")}</p>
+              </div>
+            </div>
+
             <div className="glass-panel rounded-sm bg-industrial-950 p-8">
               <div className="mb-6 flex items-start gap-3">
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-steel-metallic" />
@@ -62,7 +73,8 @@ export function Contact({ locale }: { locale: Locale }) {
                   className="w-full"
                   onClick={() => {
                     trackProposalRequest("contact-card");
-                    window.location.href = `mailto:${t("email")}`;
+                    trackEmailClick("contact-card");
+                    window.location.href = `mailto:${t("email")}?subject=Invitación%20a%20participar%20-%20FITA`;
                   }}
                 >
                   {t("ctaProposal")}

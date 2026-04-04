@@ -42,6 +42,7 @@ export function Capabilities() {
   return (
     <Section ref={sectionRef} id="capabilities" className="bg-industrial-950">
       <div className="mb-16 text-center">
+        <div className="section-kicker justify-center">Capacidades base</div>
         <h2 className="mb-4 text-4xl text-steel-light md:text-5xl">{t("title")}</h2>
         <p className="mx-auto max-w-2xl text-lg text-industrial-400">{t("subtitle")}</p>
       </div>
@@ -51,22 +52,25 @@ export function Capabilities() {
         <Image src="/capabilities.png" alt="Fabrication structural steel welding environment" fill className="object-cover" sizes="(max-width: 768px) 100vw, 1200px" />
       </div>
 
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         {items.map((item, i) => {
           const IconComponent = icons[i % icons.length];
           return (
-            <div key={toStableKey(item.title, i)} className="capability-card group relative rounded-sm border border-industrial-800 bg-industrial-900/30 p-8 transition-colors hover:bg-industrial-800/50">
+            <div key={toStableKey(item.title, i)} className="capability-card premium-card group p-8 transition-colors hover:bg-industrial-800/40">
               <div className="absolute left-0 top-0 h-2 w-2 border-l border-t border-industrial-400 opacity-50" />
               <div className="absolute right-0 top-0 h-2 w-2 border-r border-t border-industrial-400 opacity-50" />
               <div className="absolute bottom-0 left-0 h-2 w-2 border-b border-l border-industrial-400 opacity-50" />
               <div className="absolute bottom-0 right-0 h-2 w-2 border-b border-r border-industrial-400 opacity-50" />
 
-              <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-sm bg-industrial-800/80 transition-colors duration-500 group-hover:bg-steel-light">
-                <IconComponent className="h-7 w-7 text-steel-metallic transition-colors duration-500 group-hover:text-industrial-950" />
+              <div className="mb-6 flex items-start justify-between gap-4">
+                <div className="flex h-14 w-14 items-center justify-center rounded-sm bg-industrial-800/80 transition-colors duration-500 group-hover:bg-steel-light">
+                  <IconComponent className="h-7 w-7 text-steel-metallic transition-colors duration-500 group-hover:text-industrial-950" />
+                </div>
+                <span className="text-xs uppercase tracking-[0.24em] text-industrial-500">0{i + 1}</span>
               </div>
 
               <h3 className="mb-3 text-2xl text-steel-light">{item.title}</h3>
-              <p className="text-sm leading-relaxed text-industrial-400">{item.description}</p>
+              <p className="max-w-[40ch] text-sm leading-relaxed text-industrial-400">{item.description}</p>
             </div>
           );
         })}

@@ -9,7 +9,7 @@ export interface SectionProps extends React.HTMLAttributes<HTMLElement> {
 export const Section = React.forwardRef<HTMLElement, SectionProps>(
     ({ className, containerClassName, children, ...props }, ref) => {
         return (
-            <section ref={ref} className={cn("py-20 md:py-32 relative", className)} {...props}>
+            <section ref={ref} className={cn("industrial-divider relative py-20 md:py-28", className)} {...props}>
                 <div className={cn("container mx-auto px-6 max-w-7xl relative z-10", containerClassName)}>
                     {children}
                 </div>

@@ -92,7 +92,7 @@ export function ContactForm({ locale }: { locale: Locale }) {
   }
 
   return (
-    <div className="glass-panel rounded-sm border border-industrial-800 p-8">
+    <div className="premium-card rounded-sm p-8">
       <div className="mb-6">
         <h3 className="text-2xl text-steel-light">{copy.formTitle}</h3>
         <p className="mt-2 text-industrial-400">{copy.formSubtitle}</p>
@@ -103,21 +103,21 @@ export function ContactForm({ locale }: { locale: Locale }) {
           <Field label={labels.name} error={form.formState.errors.name?.message}>
             <input
               {...form.register("name")}
-              className="w-full border border-industrial-700 bg-industrial-950 px-4 py-3 text-steel-light outline-none focus:border-industrial-400"
+              className="w-full border border-industrial-700 bg-industrial-950/80 px-4 py-3 text-steel-light outline-none transition-colors focus:border-signal-copper/60"
               onFocus={() => trackContactFormStarted()}
             />
           </Field>
           <Field label={labels.company} error={form.formState.errors.company?.message}>
-            <input {...form.register("company")} className="w-full border border-industrial-700 bg-industrial-950 px-4 py-3 text-steel-light outline-none focus:border-industrial-400" />
+            <input {...form.register("company")} className="w-full border border-industrial-700 bg-industrial-950/80 px-4 py-3 text-steel-light outline-none transition-colors focus:border-signal-copper/60" />
           </Field>
           <Field label={labels.email} error={form.formState.errors.email?.message}>
-            <input type="email" {...form.register("email")} className="w-full border border-industrial-700 bg-industrial-950 px-4 py-3 text-steel-light outline-none focus:border-industrial-400" />
+            <input type="email" {...form.register("email")} className="w-full border border-industrial-700 bg-industrial-950/80 px-4 py-3 text-steel-light outline-none transition-colors focus:border-signal-copper/60" />
           </Field>
           <Field label={labels.phone} error={form.formState.errors.phone?.message}>
-            <input {...form.register("phone")} className="w-full border border-industrial-700 bg-industrial-950 px-4 py-3 text-steel-light outline-none focus:border-industrial-400" />
+            <input {...form.register("phone")} className="w-full border border-industrial-700 bg-industrial-950/80 px-4 py-3 text-steel-light outline-none transition-colors focus:border-signal-copper/60" />
           </Field>
           <Field label={labels.projectType} error={form.formState.errors.projectType?.message}>
-            <select {...form.register("projectType")} className="w-full border border-industrial-700 bg-industrial-950 px-4 py-3 text-steel-light outline-none focus:border-industrial-400">
+            <select {...form.register("projectType")} className="w-full border border-industrial-700 bg-industrial-950/80 px-4 py-3 text-steel-light outline-none transition-colors focus:border-signal-copper/60">
               <option value="">{copy.started}</option>
               {projectTypes.map((type) => (
                 <option key={type} value={type}>{type}</option>
@@ -125,17 +125,17 @@ export function ContactForm({ locale }: { locale: Locale }) {
             </select>
           </Field>
           <Field label={labels.budget} error={form.formState.errors.budget?.message}>
-            <input {...form.register("budget")} className="w-full border border-industrial-700 bg-industrial-950 px-4 py-3 text-steel-light outline-none focus:border-industrial-400" />
+            <input {...form.register("budget")} className="w-full border border-industrial-700 bg-industrial-950/80 px-4 py-3 text-steel-light outline-none transition-colors focus:border-signal-copper/60" />
           </Field>
           <Field label={labels.timeline} error={form.formState.errors.timeline?.message}>
-            <input {...form.register("timeline")} className="w-full border border-industrial-700 bg-industrial-950 px-4 py-3 text-steel-light outline-none focus:border-industrial-400" />
+            <input {...form.register("timeline")} className="w-full border border-industrial-700 bg-industrial-950/80 px-4 py-3 text-steel-light outline-none transition-colors focus:border-signal-copper/60" />
           </Field>
           <Field label={labels.location} error={form.formState.errors.location?.message}>
-            <input {...form.register("location")} className="w-full border border-industrial-700 bg-industrial-950 px-4 py-3 text-steel-light outline-none focus:border-industrial-400" />
+            <input {...form.register("location")} className="w-full border border-industrial-700 bg-industrial-950/80 px-4 py-3 text-steel-light outline-none transition-colors focus:border-signal-copper/60" />
           </Field>
         </div>
         <Field label={labels.message} error={form.formState.errors.message?.message}>
-          <textarea {...form.register("message")} rows={6} className="w-full border border-industrial-700 bg-industrial-950 px-4 py-3 text-steel-light outline-none focus:border-industrial-400" />
+          <textarea {...form.register("message")} rows={6} className="w-full border border-industrial-700 bg-industrial-950/80 px-4 py-3 text-steel-light outline-none transition-colors focus:border-signal-copper/60" />
         </Field>
 
         {serverState && (

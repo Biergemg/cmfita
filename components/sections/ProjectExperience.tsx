@@ -38,6 +38,7 @@ export function ProjectExperience() {
     <Section ref={sectionRef} id="projects" className="bg-industrial-900 border-t border-industrial-800">
       <div className="mb-16 flex flex-col items-end gap-12 md:flex-row">
         <div className="md:w-1/2">
+          <div className="section-kicker">Experiencia documentada</div>
           <h2 className="mb-4 text-4xl text-steel-light md:text-5xl">{t("title")}</h2>
           <div className="h-1 w-20 bg-industrial-400" />
         </div>
@@ -59,7 +60,7 @@ export function ProjectExperience() {
               <h3 className="text-2xl tracking-wide text-steel-light transition-colors group-hover:text-steel-metallic">{project.title}</h3>
             </div>
             <div className="flex items-center md:w-2/3 md:border-l md:border-industrial-800 md:pl-8">
-              <p className="leading-relaxed text-industrial-400 transition-colors duration-500 group-hover:text-steel-light">{project.description}</p>
+              <p className="max-w-[56ch] leading-relaxed text-industrial-400 transition-colors duration-500 group-hover:text-steel-light">{project.description}</p>
             </div>
           </div>
         ))}

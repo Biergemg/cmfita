@@ -10,6 +10,7 @@ export function Certifications({ locale }: { locale: Locale }) {
   return (
     <Section className="bg-industrial-950 border-t border-industrial-800">
       <div className="mb-12 text-center">
+        <div className="section-kicker justify-center">Validación y contacto</div>
         <h2 className="mb-4 text-4xl text-steel-light md:text-5xl">{copy.title}</h2>
         <p className="mx-auto max-w-3xl text-lg text-industrial-400">{copy.subtitle}</p>
       </div>
@@ -18,7 +19,7 @@ export function Certifications({ locale }: { locale: Locale }) {
           <a
             key={item.name}
             href={item.referenceUrl}
-            className="glass-panel rounded-sm border border-industrial-800 p-8 transition-colors hover:border-industrial-400"
+            className="premium-card rounded-sm p-8 transition-colors hover:border-signal-copper/50"
           >
             <p className="mb-3 text-xs uppercase tracking-[0.2em] text-industrial-400">{item.badgeLabel}</p>
             <h3 className="text-2xl text-steel-light">{item.name}</h3>

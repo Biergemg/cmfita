@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 import gsap from "gsap";
 
 import { Button } from "@/components/ui/button";
-import { trackProposalRequest, trackWhatsappClick } from "@/lib/analytics";
+import { trackEmailClick, trackProposalRequest, trackWhatsappClick } from "@/lib/analytics";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -41,10 +41,11 @@ export function Hero() {
       <div className="container relative z-10 mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 items-end gap-10 lg:grid-cols-12">
           <div className="max-w-5xl lg:col-span-7">
-            <h1 ref={headlineRef} className="mb-6 text-5xl font-bold leading-[0.96] tracking-normal text-steel-light text-balance md:text-6xl lg:text-7xl">
+            <div className="section-kicker">FITA</div>
+            <h1 ref={headlineRef} className="text-shadow-display mb-6 max-w-5xl text-5xl font-bold leading-[0.9] tracking-[0.01em] text-steel-light text-balance md:text-6xl lg:text-[5.5rem]">
               {t("headline")}
             </h1>
-            <p ref={subheadlineRef} className="mb-10 max-w-3xl text-balance text-lg leading-relaxed text-industrial-300 md:text-xl">
+            <p ref={subheadlineRef} className="mb-10 max-w-3xl text-balance text-lg leading-relaxed text-industrial-300 md:text-[1.15rem]">
               {t("subheadline")}
             </p>
             <div ref={ctaRef} className="flex flex-col gap-4 sm:flex-row">
@@ -54,7 +55,9 @@ export function Hero() {
                 className="group"
                 onClick={() => {
                   trackProposalRequest("hero");
-                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                  trackEmailClick("hero");
+                  window.location.href =
+                    "mailto:cmfitasadecv@gmail.com?subject=Invitaci%C3%B3n%20a%20participar%20-%20FITA";
                 }}
               >
                 {t("ctaProposal")}
@@ -75,7 +78,7 @@ export function Hero() {
           </div>
 
           <div className="hidden lg:col-span-5 lg:block">
-            <div className="glass-panel rounded-sm border border-industrial-700/70 p-8">
+            <div className="glass-panel premium-card rounded-sm p-8">
               <p className="mb-3 text-xs uppercase tracking-[0.2em] text-industrial-400">{t("panelLabel")}</p>
               <h2 className="mb-5 text-3xl leading-tight text-steel-light">{t("panelTitle")}</h2>
               <ul className="space-y-3 text-sm text-industrial-300">
@@ -83,6 +86,16 @@ export function Hero() {
                 <li className="border-l-2 border-industrial-400 pl-3">{t("panelBullet2")}</li>
                 <li className="border-l-2 border-industrial-400 pl-3">{t("panelBullet3")}</li>
               </ul>
+              <div className="mt-6 grid gap-3 border-t border-industrial-800 pt-5 text-sm md:grid-cols-2">
+                <div className="rounded-sm border border-industrial-800 bg-industrial-950/60 p-4">
+                  <p className="mb-1 text-xs uppercase tracking-[0.18em] text-industrial-500">Contacto formal</p>
+                  <p className="text-steel-light">Correo para invitaciones y alcances</p>
+                </div>
+                <div className="rounded-sm border border-industrial-800 bg-industrial-950/60 p-4">
+                  <p className="mb-1 text-xs uppercase tracking-[0.18em] text-industrial-500">Contacto rápido</p>
+                  <p className="text-steel-light">WhatsApp para dudas iniciales</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

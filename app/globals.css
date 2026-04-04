@@ -15,6 +15,8 @@
   --color-steel-light: #f8fafc;
   --color-steel-metallic: #d1d1d1;
   --color-steel-dark: #334155;
+  --color-signal-amber: #f59e0b;
+  --color-signal-copper: #f97316;
 
   --radius-industrial: 0.125rem;
 }
@@ -25,11 +27,20 @@
   }
 
   body {
-    @apply bg-industrial-950 text-steel-light font-inter;
+    @apply bg-industrial-950 text-steel-light font-inter antialiased;
+    background-image:
+      radial-gradient(circle at top left, rgba(249, 115, 22, 0.08), transparent 28%),
+      radial-gradient(circle at top right, rgba(148, 163, 184, 0.08), transparent 24%),
+      linear-gradient(180deg, #020617 0%, #08101e 45%, #020617 100%);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-teko uppercase tracking-wide;
+    @apply font-teko uppercase tracking-[0.02em];
+  }
+
+  ::selection {
+    background: rgba(249, 115, 22, 0.22);
+    color: #f8fafc;
   }
 
   a, button, input, select, textarea {
@@ -45,11 +56,55 @@
   }
 
   .glass-panel {
-    @apply bg-industrial-900/80 backdrop-blur-md border border-industrial-800/50 shadow-2xl;
+    @apply border border-industrial-700/50 bg-industrial-900/70 shadow-[0_20px_60px_rgba(2,6,23,0.45)] backdrop-blur-md;
+    box-shadow:
+      inset 0 1px 0 rgba(248, 250, 252, 0.06),
+      0 24px 80px rgba(2, 6, 23, 0.45);
   }
 
   .bg-grid {
     background-size: 40px 40px;
     background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+  }
+
+  .industrial-divider {
+    position: relative;
+  }
+
+  .industrial-divider::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.25), transparent);
+  }
+
+  .section-kicker {
+    @apply mb-4 inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.28em] text-industrial-400;
+  }
+
+  .section-kicker::before {
+    content: "";
+    @apply h-px w-10 bg-gradient-to-r from-transparent to-signal-copper;
+  }
+
+  .premium-card {
+    @apply relative overflow-hidden rounded-sm border border-industrial-700/60 bg-industrial-900/55;
+    box-shadow:
+      inset 0 1px 0 rgba(248, 250, 252, 0.05),
+      0 14px 34px rgba(2, 6, 23, 0.35);
+  }
+
+  .premium-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(248, 250, 252, 0.03), transparent 22%, transparent 78%, rgba(249, 115, 22, 0.04));
+  }
+
+  .text-shadow-display {
+    text-shadow: 0 10px 40px rgba(2, 6, 23, 0.35);
   }
 }

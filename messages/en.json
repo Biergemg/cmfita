@@ -1,225 +1,221 @@
 {
   "Index": {
-    "title": "Industrial Infrastructure Execution",
-    "description": "Technical execution for industrial and institutional projects."
+    "title": "FITA | Multidisciplinary execution for projects and works",
+    "description": "Execution company able to participate in multidisciplinary works and projects according to scope, stage, and technical requirements."
   },
   "Navbar": {
     "capabilities": "Capabilities",
-    "projects": "Projects",
-    "methodology": "Methodology",
-    "model": "Team Model"
+    "projects": "Experience",
+    "methodology": "How we work",
+    "model": "Operating model"
   },
   "Footer": {
-    "description": "Execution company specialized in the fabrication, installation, and construction of industrial and institutional infrastructure.",
+    "description": "Multidisciplinary execution company for civil works, metal-mechanical work, installation and erection, and anticorrosive coatings, with capacity for partial or integral scopes.",
     "contact": "Contact",
-    "quickLinks": "Quick Links",
-    "capabilities": "Technical Capabilities",
-    "projects": "Project Experience",
-    "methodology": "Execution Methodology"
+    "quickLinks": "Quick links",
+    "capabilities": "Capabilities",
+    "projects": "Experience",
+    "methodology": "How we work"
   },
   "Hero": {
-    "headline": "Execution of industrial and institutional infrastructure based on client engineering.",
-    "subheadline": "We execute high-complexity structural infrastructure and civil projects strictly according to the architecture and engineering specifications provided by the client.",
-    "cta": "Request Execution Proposal",
-    "explore": "Explore Capabilities",
-    "ctaProposal": "Request Technical Proposal",
-    "ctaWhatsapp": "Contact via WhatsApp",
-    "panelLabel": "Technical execution",
-    "panelTitle": "Operations aligned with client engineering specifications",
-    "panelBullet1": "Structural fabrication and installation for industrial and institutional environments",
-    "panelBullet2": "Field quality control, safety compliance, and operational discipline",
-    "panelBullet3": "Coordinated delivery with client engineering and supervision teams"
+    "headline": "FITA executes multidisciplinary projects according to the real scope of each job.",
+    "subheadline": "We participate in new construction, maintenance, expansion, or rehabilitation, taking integral projects or specific work packages in civil works, metal-mechanical work, installation and erection, and anticorrosive coatings for public and private clients.",
+    "cta": "Send invitation by email",
+    "explore": "Explore capabilities",
+    "ctaProposal": "Send invitation by email",
+    "ctaWhatsapp": "Ask quick questions on WhatsApp",
+    "panelLabel": "Execution capacity",
+    "panelTitle": "We adapt to the scope, budget, and stage of each project",
+    "panelBullet1": "We can participate in a specific package or in a broader execution scope",
+    "panelBullet2": "We integrate civil, metal-mechanical, installation, and coating capabilities as needed",
+    "panelBullet3": "When required, we add specialist support without overstating the scope we directly control"
   },
   "Overview": {
-    "title": "Execution based on client engineering",
-    "description1": "Construcción y Mantenimientos FITA is an execution company specialized in the fabrication, installation, and construction of industrial and institutional infrastructure.",
-    "description2": "Engineering and architectural design are provided by the client or their engineering firm. FITA executes projects strictly according to those specifications.",
+    "title": "One company for different execution fronts",
+    "description1": "Construcción y Mantenimientos FITA S.A. de C.V. is an execution company with documented experience in industrial, metal-mechanical, and civil projects. We are not positioned as a single-trade contractor, but as a company that enters with the right scope for each job.",
+    "description2": "We work from bids, invitations, direct awards, and client requirements. If the project needs a broader front, we structure it. If it only needs a defined package, we participate with clear scope and responsibility.",
     "stats": {
-      "years": {
-        "value": "10+",
-        "label": "years of combined experience"
+      "scope": {
+        "value": "Partial or integral",
+        "label": "participation model"
       },
-      "projects": {
-        "value": "50+",
-        "label": "projects and work fronts served"
+      "markets": {
+        "value": "Public and private",
+        "label": "markets served"
       },
-      "sectors": {
-        "value": "6",
-        "label": "active disciplines and capabilities"
+      "lines": {
+        "value": "4 core lines",
+        "label": "civil, metal-mechanical, installation, coatings"
       }
     }
   },
   "Institutional": {
-    "standardsTitle": "Execution Standards",
-    "standardsDesc": "Industrial infrastructure execution demands operational discipline, technical control, and strict compliance with specifications. FITA executes each project following the technical standards defined by the client, ensuring that fabrication, installation, and verification processes align with established engineering documents.",
-    "sectorsTitle": "Infrastructure Sectors",
-    "sectorsDesc": "FITA executes projects across various industrial and institutional environments, adapting our field teams and operational processes to the specific technical standards of each sector.",
-    "collabTitle": "Collaboration with Client Engineering",
-    "collabDesc": "In industrial infrastructure projects, engineering is the starting point. FITA collaborates directly with the client's engineering teams or external engineering firms, executing infrastructure according to the blueprints, technical specifications, and operational standards defined for the project."
+    "standardsTitle": "Scope before rhetoric",
+    "standardsDesc": "FITA’s priority is to understand exactly which part of the project must be executed and under what responsibility. That clarity allows us to participate without overpromising or losing operational control.",
+    "sectorsTitle": "Hybrid capability",
+    "sectorsDesc": "Our track record combines industrial, metal-mechanical, and civil work. That is why the main site presents a global company profile rather than a single-specialty contractor.",
+    "collabTitle": "Engineering, scope, and bidding",
+    "collabDesc": "FITA can execute against client engineering when it exists, but also according to the bid scope, project budget, stage, and technical requirements that define each opportunity."
   },
   "Model": {
-    "title": "Operational Team Model",
-    "subtitle": "Each project requires different technical capabilities.",
-    "description1": "For this reason, FITA structures its field teams based on the specific requirements of each project, integrating qualified personnel experienced in the disciplines required by the scope of work.",
-    "description2": "This operational model allows flexible execution capacity while ensuring that each project is executed by specialists aligned with the client's technical standards. Each project defines the team that executes it.",
-    "badge": "Operational Structure"
+    "title": "Adaptive operating model",
+    "subtitle": "Each project defines the team and the depth of scope.",
+    "description1": "FITA is not presented as a rigid structure. We build execution capacity according to the type of work, the size of the front, the dominant discipline, and the real contracting conditions.",
+    "description2": "That allows us to participate from a single package to a broader execution scope. And when a highly specific specialty is needed—such as radiography, penetrant testing, soil mechanics, or topography—we integrate external specialists without losing overall coordination.",
+    "badge": "Operating model"
   },
   "Capabilities": {
-    "title": "Global Execution Capabilities",
-    "subtitle": "Technical delivery for industrial, energy, and institutional infrastructure.",
+    "title": "Core capabilities",
+    "subtitle": "Four base lines for the global site, while specific products and services can live in dedicated subdomains.",
     "items": [
       {
-        "title": "Structural fabrication",
-        "description": "Fabrication of structural steel components according to engineering drawings."
+        "title": "Civil works",
+        "description": "Participation in new construction, maintenance, expansion, or rehabilitation for fronts such as schools, classrooms, sports courts, guardhouses, foundations, finishes, waterproofing, and other civil work according to scope."
       },
       {
-        "title": "Structural installation",
-        "description": "Assembly and installation of structural steel infrastructure."
+        "title": "Metal-mechanical and structural work",
+        "description": "Fabrication, preparation, erection, welding, plate work, piping, and related work for metallic and industrial infrastructure according to project requirements."
       },
       {
-        "title": "Surface preparation and protective coating systems",
-        "description": "Industrial surface preparation and application of technical protective coatings."
+        "title": "Installation and erection",
+        "description": "Integration and installation of components, equipment, or execution packages, including electromechanical or electrical fronts when they are part of the contracted scope."
       },
       {
-        "title": "Structural maintenance and reinforcement",
-        "description": "Corrective structural maintenance and reinforcement of existing infrastructure."
-      },
-      {
-        "title": "Electrical infrastructure installation (construction phase)",
-        "description": "Installation of conduit, electrical channeling, cable pulling, termination and connection of wiring during construction. These works occur before systems are energized."
-      },
-      {
-        "title": "Technical and institutional infrastructure construction",
-        "description": "Execution of civil infrastructure such as sports courts, domed structures, classrooms, guardhouses, sidewalks and institutional buildings according to architectural plans provided by the client."
+        "title": "Anticorrosive coatings",
+        "description": "Surface preparation and application of anticorrosive and protective systems for exposed or industrial infrastructure."
       }
     ]
   },
   "Projects": {
-    "title": "Infrastructure Execution Experience",
-    "subtitle": "A track record of critical infrastructure delivery",
+    "title": "Experience that can support a real conversation",
+    "subtitle": "Documented work types and references to help clients understand where FITA fits.",
     "items": [
       {
-        "title": "Replacement of suspended structural flooring",
-        "description": "Replacement of suspended structural flooring in offshore infrastructure."
+        "title": "Offshore platforms and marine fronts",
+        "description": "The legacy CV documents participation on Arenque platforms with structural panels, risers, pipe defenses, dismantling, process lines, handrails, and grating work."
       },
       {
-        "title": "Fabrication and installation of modular structural steel components",
-        "description": "Fabrication and installation of modular structural steel components."
+        "title": "Metal-mechanical fabrication and erection",
+        "description": "Experience in structural fabrication, piping assemblies, process valves, qualified welding, and erection of structural and operational elements."
       },
       {
-        "title": "Surface preparation and protective coating systems",
-        "description": "Surface preparation and protective coating systems applied to exposed infrastructure."
+        "title": "Surface protection and coating systems",
+        "description": "Background in sandblasting, anticorrosive systems, and protective work for industrial infrastructure and helipad surfaces."
       },
       {
-        "title": "Structural protection systems",
-        "description": "Structural protection systems installed for pipeline infrastructure."
+        "title": "Maintenance and modifications",
+        "description": "Participation in corrective maintenance, reinforcements, dismantling, grating modifications, lifting maneuvers, and conditioning work for operation or intervention."
       },
       {
-        "title": "Technical coating systems",
-        "description": "Technical coating systems applied to helipad surfaces."
+        "title": "Institutional civil work",
+        "description": "The documented history also includes domes, restroom rehabilitation, laboratories, guardhouses, and sports courts, which supports the civil line of the global site."
       },
       {
-        "title": "Construction of institutional infrastructure",
-        "description": "Construction of institutional infrastructure including classrooms, sports courts, domed structures, guardhouses and sidewalks based on client architectural plans."
+        "title": "Partial or broader scopes",
+        "description": "FITA can integrate into a specific package or take on a broader execution front depending on budget, bid structure, stage, and client responsibility requirements."
       }
     ]
   },
   "Safety": {
-    "title": "Execution Protocols",
-    "subtitle": "Methodical compliance with client standards",
+    "title": "Field execution criteria",
+    "subtitle": "The promise is not to sound big. The promise is to execute with order, safety, and clear scope responsibility.",
     "items": [
       {
-        "title": "Safety Requirements",
-        "description": "Compliance with safety requirements defined by the client."
+        "title": "Safety and operational control",
+        "description": "Safety is part of how each work front is organized and executed."
       },
       {
-        "title": "Quality Verification",
-        "description": "Quality verification through inspection and dimensional control."
+        "title": "Quality and scope compliance",
+        "description": "Each package must match what is truly contracted, executed, and deliverable, avoiding gaps between sales language and field operations."
       },
       {
-        "title": "Environmental Compliance",
-        "description": "Environmental compliance procedures during execution."
+        "title": "Environmental responsibility and jobsite order",
+        "description": "Execution is approached with attention to order, cleanliness, responsible work practices, and applicable project requirements."
       }
     ]
   },
   "Methodology": {
-    "title": "Execution Discipline",
-    "subtitle": "Systematic execution workflow for critical projects",
+    "title": "How FITA enters a project",
+    "subtitle": "A clear path to participate without confusion about scope from day one.",
     "steps": [
       {
-        "title": "Project evaluation",
-        "description": "Site assessment and evaluation of client engineering requirements."
+        "title": "Opportunity review",
+        "description": "We analyze the bid, invitation, requirements, or need to determine whether FITA should participate in the full project or only in a defined package."
       },
       {
-        "title": "Technical planning",
-        "description": "Definition of schedules and resources."
+        "title": "Real scope definition",
+        "description": "We define what FITA will execute, what resources the front requires, and which external specialties may be needed if the project demands them."
       },
       {
-        "title": "Fabrication and preparation",
-        "description": "Fabrication in yard or workshop and initial preparation."
+        "title": "Operational planning",
+        "description": "We organize work front, personnel, sequence, supplies, timing, and responsibilities according to the stage and complexity of the job."
       },
       {
-        "title": "Site installation",
-        "description": "Structural erection and execution of works."
+        "title": "Field or workshop execution",
+        "description": "We execute the contracted package or project in civil works, metal-mechanical work, installation and erection, or coatings according to the defined front."
       },
       {
-        "title": "Quality verification",
-        "description": "Inspections and dimensional checks."
+        "title": "Control and coordination",
+        "description": "We monitor scope compliance, discipline coordination, and critical points related to safety, quality, and progress."
       },
       {
-        "title": "Project completion and documentation",
-        "description": "Final handover and documentation."
+        "title": "Delivery and continuity",
+        "description": "We close the executed front and leave room for future stages, expansions, maintenance, or additional packages."
       }
     ]
   },
   "Procurement": {
-    "title": "Procurement Ready",
-    "description": "FITA S.A. de C.V. maintains clear financial and operational standards, prepared to integrate seamlessly into corporate supply chains as a qualified execution company.",
-    "bullet1": "Regulatory and fiscal compliance",
-    "bullet2": "Operational procedures aligned with industrial standards",
-    "bullet3": "Financial and operational stability"
+    "title": "Formal participation in projects",
+    "description": "FITA can join projects by bid, invitation, or direct award while keeping a clear conversation about scope, participation conditions, and the right contact channel for each case.",
+    "bullet1": "Email for invitations and formal contact",
+    "bullet2": "WhatsApp for quick questions or first contact",
+    "bullet3": "Flexibility for partial or broader proposals"
   },
   "Contact": {
-    "title": "Execution Proposals",
-    "subtitle": "Contact our team for evaluations and execution proposals based on your engineering docs.",
-    "directContact": "Direct Contact",
-    "engineerLabel": "Engineer",
-    "phoneLabel": "Phone / WhatsApp",
-    "emailLabel": "Email",
+    "title": "Let’s talk about your project scope",
+    "subtitle": "If you want to invite FITA to participate in a project, use email for formal contact. If you first need to solve a quick question, you can also reach us on WhatsApp.",
+    "directContact": "Direct contact",
+    "engineerLabel": "Contact lead",
+    "phoneLabel": "WhatsApp",
+    "emailLabel": "Formal email",
     "name": "Ing. Gustavo Bierge",
     "phone": "+52 833 518 1171",
     "email": "cmfitasadecv@gmail.com",
-    "ctaProposal": "Request Technical Proposal",
-    "ctaWhatsapp": "Contact via WhatsApp",
-    "locationLabel": "Company location",
-    "address": "Paseo de los Mexicas 126-D, 16 de Septiembre district, Ciudad Madero, Tamaulipas, postal code 89512, Mexico.",
-    "coverageLabel": "Operating coverage",
-    "coverage": "We operate from Ciudad Madero, Tamaulipas, serving industrial and institutional projects in Mexico according to each project's technical scope."
+    "ctaProposal": "Send invitation by email",
+    "ctaWhatsapp": "Message on WhatsApp",
+    "locationLabel": "Location",
+    "address": "Paseo de los Mexicas 126-D, 16 de Septiembre, Ciudad Madero, Tamaulipas, postal code 89512, Mexico.",
+    "coverageLabel": "Participation model",
+    "coverage": "FITA can participate in public or private projects, in partial or broader scopes, from Ciudad Madero toward different work fronts according to the project.",
+    "formalLabel": "For formal contact",
+    "formalValue": "Invitations, proposal requests, bid documents, or scope packages",
+    "quickLabel": "For quick contact",
+    "quickValue": "Initial questions, interest validation, or first contact through WhatsApp"
   },
   "Faq": {
     "eyebrow": "Frequently asked questions",
-    "title": "Clear answers for Google and for your clients",
-    "subtitle": "This block is designed for conversational queries such as the ones users ask Google or voice assistants on mobile devices.",
+    "title": "The essentials to understand how FITA participates",
+    "subtitle": "These answers are written for clients who need to know quickly whether FITA is a fit for their project.",
     "items": [
       {
-        "title": "What does Construccion y Mantenimientos FITA do?",
-        "description": "FITA executes fabrication, installation, structural maintenance, and industrial or institutional construction projects according to the engineering and technical specifications provided by the client."
+        "title": "What does FITA do?",
+        "description": "FITA is a multidisciplinary execution company that can participate in civil works, metal-mechanical work, installation and erection, and anticorrosive coatings, either in a partial scope or in a broader project front."
       },
       {
-        "title": "Where is FITA located?",
-        "description": "Construccion y Mantenimientos FITA S.A. de C.V. is located in Ciudad Madero, Tamaulipas, Mexico, at Paseo de los Mexicas 126-D, Colonia 16 de Septiembre, postal code 89512."
+        "title": "Does FITA only work from client engineering?",
+        "description": "Not necessarily. FITA can execute against client engineering when it exists, but also according to the bid scope, project stage, budget, and technical requirements of the contract."
       },
       {
-        "title": "How can I contact FITA?",
-        "description": "You can contact FITA by phone or WhatsApp at +52 833 518 1171, or by email at cmfitasadecv@gmail.com to request a technical proposal."
+        "title": "Does FITA take full projects or only packages?",
+        "description": "Both are possible. FITA can integrate into a specific package or a broader execution scope depending on the required responsibility and contracting format."
       },
       {
-        "title": "Does FITA design project engineering?",
-        "description": "No. FITA specializes in technical execution. Engineering and architectural design are provided by the client or by the client's engineering firm, and FITA executes according to those documents."
+        "title": "What types of work support FITA’s experience?",
+        "description": "The documented history includes industrial and offshore work, metal-mechanical fabrication and erection, anticorrosive coatings, and institutional civil work such as domes, laboratories, guardhouses, and sports courts."
       },
       {
-        "title": "What types of projects does FITA execute?",
-        "description": "FITA executes structural fabrication, structural installation, protective coating systems, structural maintenance and reinforcement, electrical infrastructure work during construction, and institutional civil works."
+        "title": "What is the best way to contact FITA?",
+        "description": "For invitations, scope packages, or formal project contact, email cmfitasadecv@gmail.com. For quick questions or first contact, use WhatsApp at +52 833 518 1171."
       }
     ]
   }

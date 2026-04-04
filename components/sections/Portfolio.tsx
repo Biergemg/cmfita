@@ -22,13 +22,14 @@ export function Portfolio({ locale }: { locale: Locale }) {
   return (
     <Section className="bg-industrial-950 border-t border-industrial-800">
       <div className="mb-12 text-center">
+        <div className="section-kicker justify-center">Casos de referencia</div>
         <h2 className="mb-4 text-4xl text-steel-light md:text-5xl">{copy.title}</h2>
         <p className="mx-auto max-w-3xl text-lg text-industrial-400">{copy.subtitle}</p>
       </div>
 
       <div className="grid gap-8 lg:grid-cols-2">
         {items.map((item) => (
-          <article key={item.slug} className="glass-panel overflow-hidden rounded-sm border border-industrial-800">
+          <article key={item.slug} className="premium-card overflow-hidden rounded-sm">
             <div className="relative h-72">
               <Image src={item.gallery[0]!.src} alt={item.gallery[0]!.alt} fill className="object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
             </div>
@@ -57,6 +58,7 @@ export function Portfolio({ locale }: { locale: Locale }) {
               </ul>
               <Button
                 variant="outline"
+                className="mt-2"
                 onClick={() => {
                   trackProposalRequest("portfolio");
                   document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });

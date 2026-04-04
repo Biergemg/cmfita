@@ -14,12 +14,13 @@ export function Testimonials({ locale }: { locale: Locale }) {
   return (
     <Section className="bg-industrial-900 border-t border-industrial-800">
       <div className="mb-12 text-center">
+        <div className="section-kicker justify-center">Prueba comercial</div>
         <h2 className="mb-4 text-4xl text-steel-light md:text-5xl">{copy.title}</h2>
         <p className="mx-auto max-w-3xl text-lg text-industrial-400">{copy.subtitle}</p>
       </div>
       <div className="grid gap-8 lg:grid-cols-2">
         {items.map((item) => (
-          <article key={`${item.name}-${item.company}`} className="glass-panel rounded-sm border border-industrial-800 p-8">
+          <article key={`${item.name}-${item.company}`} className="premium-card rounded-sm p-8">
             <p className="mb-6 text-lg leading-relaxed text-industrial-200">“{item.quote}”</p>
             <div className="border-t border-industrial-800 pt-4">
               <h3 className="text-2xl text-steel-light">{item.name}</h3>

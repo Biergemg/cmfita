@@ -37,6 +37,7 @@ export function Overview() {
     <Section ref={sectionRef} className="bg-industrial-900 border-t border-industrial-800">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-12 px-6 text-center">
         <div className="w-full">
+          <div className="section-kicker justify-center">Posicionamiento global</div>
           <h2 className="overview-elem mb-6 text-4xl text-steel-light md:text-6xl">{t("title")}</h2>
           <div className="overview-elem mx-auto mb-10 h-1.5 w-32 bg-industrial-400" />
           <p className="overview-elem mx-auto mb-8 max-w-3xl text-xl leading-relaxed text-industrial-400">{t("description1")}</p>
@@ -46,7 +47,7 @@ export function Overview() {
         {stats.length > 0 && (
           <div className="grid w-full gap-4 md:grid-cols-3">
             {stats.map((stat) => (
-              <div key={stat.label} className="overview-elem border border-industrial-800 bg-industrial-950/60 p-6 text-left">
+              <div key={stat.label} className="overview-elem premium-card p-6 text-left">
                 <p className="text-3xl text-steel-light">{stat.value}</p>
                 <p className="mt-2 text-sm uppercase tracking-[0.18em] text-industrial-400">{stat.label}</p>
               </div>
