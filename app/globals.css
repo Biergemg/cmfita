@@ -24,6 +24,9 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
   }
 
   body {
@@ -31,10 +34,22 @@
     text-rendering: optimizeLegibility;
     font-kerning: normal;
     font-optical-sizing: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
     background-image:
       radial-gradient(circle at top left, rgba(249, 115, 22, 0.08), transparent 28%),
       radial-gradient(circle at top right, rgba(148, 163, 184, 0.08), transparent 24%),
       linear-gradient(180deg, #020617 0%, #08101e 45%, #020617 100%);
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  main, section, header, footer {
+    width: 100%;
+    max-width: 100%;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -85,7 +100,7 @@
   }
 
   .section-kicker {
-    @apply mb-4 inline-flex items-center gap-3 text-xs font-medium uppercase tracking-[0.28em] text-industrial-400;
+    @apply mb-4 inline-flex max-w-full flex-wrap items-center gap-3 text-xs font-medium uppercase tracking-[0.28em] text-industrial-400;
   }
 
   .section-kicker::before {

@@ -8,7 +8,7 @@ export interface ButtonProps
 }
 
 const buttonVariants = {
-    base: "inline-flex items-center justify-center whitespace-nowrap rounded-industrial border font-teko uppercase tracking-[0.1em] transition-all duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-industrial-400 disabled:pointer-events-none disabled:opacity-50",
+    base: "inline-flex max-w-full items-center justify-center rounded-industrial border text-center font-teko uppercase tracking-[0.1em] transition-all duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-industrial-400 disabled:pointer-events-none disabled:opacity-50 whitespace-normal break-words",
     variants: {
         variant: {
             default: "border-industrial-700 bg-industrial-800/90 text-steel-light hover:-translate-y-0.5 hover:bg-industrial-700 shadow-md",
