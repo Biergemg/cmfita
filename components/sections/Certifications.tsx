@@ -10,7 +10,7 @@ export function Certifications({ locale }: { locale: Locale }) {
   return (
     <Section className="bg-industrial-950 border-t border-industrial-800">
       <div className="mb-12 text-center">
-        <div className="section-kicker justify-center">Validación y contacto</div>
+        <div className="section-kicker justify-center">{locale === "es" ? "Datos oficiales" : "Official data"}</div>
         <h2 className="mb-4 text-4xl text-steel-light md:text-5xl">{copy.title}</h2>
         <p className="mx-auto max-w-3xl text-lg text-industrial-400">{copy.subtitle}</p>
       </div>

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -10,6 +10,7 @@ import { Section } from "@/components/ui/section";
 
 export function Overview() {
   const t = useTranslations("Overview");
+  const locale = useLocale();
   const sectionRef = useRef<HTMLDivElement>(null);
   const rawStats = t.raw("stats") as Record<string, { value: string; label: string }>;
   const stats = Object.values(rawStats ?? {});
@@ -37,7 +38,7 @@ export function Overview() {
     <Section ref={sectionRef} className="bg-industrial-900 border-t border-industrial-800">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-12 px-6 text-center">
         <div className="w-full">
-          <div className="section-kicker justify-center">Posicionamiento global</div>
+          <div className="section-kicker justify-center">{locale === "es" ? "Por qué FITA" : "Why FITA"}</div>
           <h2 className="overview-elem mb-6 text-4xl text-steel-light md:text-6xl">{t("title")}</h2>
           <div className="overview-elem mx-auto mb-10 h-1.5 w-32 bg-industrial-400" />
           <p className="overview-elem mx-auto mb-8 max-w-3xl text-xl leading-relaxed text-industrial-400">{t("description1")}</p>

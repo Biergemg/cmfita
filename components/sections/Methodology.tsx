@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Section } from "@/components/ui/section";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,6 +9,7 @@ import { asTitledDescriptionList, toStableKey } from "@/lib/i18n";
 
 export function Methodology() {
     const t = useTranslations("Methodology");
+    const locale = useLocale();
     const sectionRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -56,7 +57,7 @@ export function Methodology() {
     return (
         <Section ref={sectionRef} id="methodology" className="bg-industrial-900 border-t border-industrial-800">
             <div className="text-center mb-20">
-                <div className="section-kicker justify-center">Forma de trabajo</div>
+                <div className="section-kicker justify-center">{locale === "es" ? "Cómo trabajamos" : "How we work"}</div>
                 <h2 className="text-4xl md:text-5xl font-teko text-steel-light mb-4 tracking-wide uppercase">
                     {t("title")}
                 </h2>

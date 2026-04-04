@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Section } from "@/components/ui/section";
 import { ShieldCheck, Crosshair, Leaf } from "lucide-react";
 import gsap from "gsap";
@@ -12,6 +12,7 @@ const icons = [ShieldCheck, Crosshair, Leaf];
 
 export function SafetyCompliance() {
     const t = useTranslations("Safety");
+    const locale = useLocale();
     const sectionRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -46,7 +47,7 @@ export function SafetyCompliance() {
             <div className="absolute top-0 right-0 w-[400px] h-[400px] border border-industrial-800 rounded-full opacity-20 -translate-y-1/2 translate-x-1/4 pointer-events-none" />
 
             <div className="text-center mb-16 relative z-10">
-                <div className="section-kicker justify-center">Ejecución en campo</div>
+                <div className="section-kicker justify-center">{locale === "es" ? "En campo" : "In the field"}</div>
                 <h2 className="text-4xl md:text-5xl font-teko text-steel-light mb-4 tracking-wide uppercase">
                     {t("title")}
                 </h2>
