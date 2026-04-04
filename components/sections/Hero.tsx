@@ -57,7 +57,7 @@ export function Hero() {
                   trackProposalRequest("hero");
                   trackEmailClick("hero");
                   window.location.href =
-                    "mailto:cmfitasadecv@gmail.com?subject=Invitaci%C3%B3n%20a%20participar%20-%20FITA";
+                    "mailto:cmfitasadecv@gmail.com?subject=Env%C3%ADo%20de%20bases%20o%20invitaci%C3%B3n%20-%20FITA";
                 }}
               >
                 {t("ctaProposal")}
@@ -88,12 +88,12 @@ export function Hero() {
               </ul>
               <div className="mt-6 grid gap-3 border-t border-industrial-800 pt-5 text-sm md:grid-cols-2">
                 <div className="rounded-sm border border-industrial-800 bg-industrial-950/60 p-4">
-                  <p className="mb-1 text-xs uppercase tracking-[0.18em] text-industrial-500">Contacto formal</p>
-                  <p className="text-steel-light">Correo para invitaciones y alcances</p>
+                  <p className="mb-1 text-xs uppercase tracking-[0.18em] text-industrial-500">{t("formalLabel")}</p>
+                  <p className="text-steel-light">{t("formalValue")}</p>
                 </div>
                 <div className="rounded-sm border border-industrial-800 bg-industrial-950/60 p-4">
-                  <p className="mb-1 text-xs uppercase tracking-[0.18em] text-industrial-500">Contacto rápido</p>
-                  <p className="text-steel-light">WhatsApp para dudas iniciales</p>
+                  <p className="mb-1 text-xs uppercase tracking-[0.18em] text-industrial-500">{t("quickLabel")}</p>
+                  <p className="text-steel-light">{t("quickValue")}</p>
                 </div>
               </div>
             </div>

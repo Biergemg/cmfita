@@ -74,7 +74,7 @@ export function Contact({ locale }: { locale: Locale }) {
                   onClick={() => {
                     trackProposalRequest("contact-card");
                     trackEmailClick("contact-card");
-                    window.location.href = `mailto:${t("email")}?subject=Invitación%20a%20participar%20-%20FITA`;
+                    window.location.href = `mailto:${t("email")}?subject=Env%C3%ADo%20de%20bases%20o%20invitaci%C3%B3n%20-%20FITA`;
                   }}
                 >
                   {t("ctaProposal")}

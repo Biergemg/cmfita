@@ -14,7 +14,7 @@ export function Testimonials({ locale }: { locale: Locale }) {
   return (
     <Section className="bg-industrial-900 border-t border-industrial-800">
       <div className="mb-12 text-center">
-        <div className="section-kicker justify-center">Prueba comercial</div>
+        <div className="section-kicker justify-center">{locale === "es" ? "Verificable, no inventado" : "Verifiable, not invented"}</div>
         <h2 className="mb-4 text-4xl text-steel-light md:text-5xl">{copy.title}</h2>
         <p className="mx-auto max-w-3xl text-lg text-industrial-400">{copy.subtitle}</p>
       </div>
@@ -38,7 +38,7 @@ export function Testimonials({ locale }: { locale: Locale }) {
             document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          {locale === "es" ? "Solicitar referencias" : "Request references"}
+          {locale === "es" ? "¿Quieres más detalle técnico de algún frente? Escríbenos" : "Need more technical detail on a work front? Write to us"}
         </Button>
       </div>
     </Section>

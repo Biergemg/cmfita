@@ -68,10 +68,10 @@ export function Navbar() {
             size="sm"
             className="ml-2"
             onClick={() => {
-              window.location.href = "mailto:cmfitasadecv@gmail.com?subject=Invitación%20a%20participar%20-%20FITA";
+              window.location.href = "mailto:cmfitasadecv@gmail.com?subject=Invitaci%C3%B3n%20a%20cotizar%20-%20FITA";
             }}
           >
-            {locale === "es" ? "Invitar a participar" : "Invite to bid"}
+            {locale === "es" ? "Invitar a cotizar" : "Invite to bid"}
             <ArrowUpRight className="ml-2 h-4 w-4" />
           </Button>
         </nav>
@@ -108,10 +108,10 @@ export function Navbar() {
             className="mt-2 w-full"
             onClick={() => {
               setMobileMenuOpen(false);
-              window.location.href = "mailto:cmfitasadecv@gmail.com?subject=Invitación%20a%20participar%20-%20FITA";
+              window.location.href = "mailto:cmfitasadecv@gmail.com?subject=Invitaci%C3%B3n%20a%20cotizar%20-%20FITA";
             }}
           >
-            {locale === "es" ? "Invitar a participar" : "Invite to bid"}
+            {locale === "es" ? "Invitar a cotizar" : "Invite to bid"}
           </Button>
         </div>
       )}

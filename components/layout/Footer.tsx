@@ -20,7 +20,7 @@ export function Footer() {
               {locale === "es" ? "Empresa de ejecución multidisciplina" : "Multidisciplinary execution company"}
             </p>
             <h2 className="max-w-3xl text-4xl leading-[0.92] text-steel-light md:text-6xl">
-              {locale === "es" ? "FITA entra al proyecto con el alcance correcto." : "FITA enters the project with the right scope."}
+              {locale === "es" ? "Ejecución sin sorpresas de alcance." : "Execution without scope surprises."}
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-industrial-300 md:text-lg">{t("description")}</p>
           </div>
@@ -39,10 +39,10 @@ export function Footer() {
               <Button
                 variant="metallic"
                 onClick={() => {
-                  window.location.href = "mailto:cmfitasadecv@gmail.com?subject=Invitación%20a%20participar%20-%20FITA";
+                  window.location.href = "mailto:cmfitasadecv@gmail.com?subject=Env%C3%ADo%20de%20bases%20o%20invitaci%C3%B3n%20-%20FITA";
                 }}
               >
-                {locale === "es" ? "Enviar invitación" : "Send invitation"}
+                {locale === "es" ? "Enviar bases o invitación" : "Send bid package or invitation"}
                 <ArrowUpRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
@@ -51,7 +51,7 @@ export function Footer() {
                   window.open("https://wa.me/528335181171", "_blank", "noopener,noreferrer");
                 }}
               >
-                {locale === "es" ? "Escribir por WhatsApp" : "Message on WhatsApp"}
+                {locale === "es" ? "Preguntar por WhatsApp" : "Ask on WhatsApp"}
               </Button>
             </div>
           </div>

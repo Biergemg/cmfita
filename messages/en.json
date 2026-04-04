@@ -1,7 +1,7 @@
 {
   "Index": {
-    "title": "FITA | Multidisciplinary execution for projects and works",
-    "description": "Execution company able to participate in multidisciplinary works and projects according to scope, stage, and technical requirements."
+    "title": "FITA | Execution without scope surprises",
+    "description": "Execution contractor for civil work, metal-mechanical work, installation, and coatings. FITA enters according to project scope and, when applicable, according to the client’s engineering and technical requirements."
   },
   "Navbar": {
     "capabilities": "Capabilities",
@@ -10,7 +10,7 @@
     "model": "Operating model"
   },
   "Footer": {
-    "description": "Multidisciplinary execution company for civil works, metal-mechanical work, installation and erection, and anticorrosive coatings, with capacity for partial or integral scopes.",
+    "description": "Civil work, metal-mechanical work, installation and erection, and coatings. Partial or integral. Through bid, invitation, or direct award, according to project scope and, when applicable, according to client engineering.",
     "contact": "Contact",
     "quickLinks": "Quick links",
     "capabilities": "Capabilities",
@@ -18,162 +18,166 @@
     "methodology": "How we work"
   },
   "Hero": {
-    "headline": "FITA executes multidisciplinary projects according to the real scope of each job.",
-    "subheadline": "We participate in new construction, maintenance, expansion, or rehabilitation, taking integral projects or specific work packages in civil works, metal-mechanical work, installation and erection, and anticorrosive coatings for public and private clients.",
-    "cta": "Send invitation by email",
+    "headline": "When scope is clear, projects close well.",
+    "subheadline": "FITA enters with what it can actually execute: no inflated promises and no blurred scope. Civil work, metal-mechanical work, installation, and coatings for public and private projects, in partial or broader scopes and, when applicable, according to the client’s engineering and technical requirements.",
+    "cta": "Send bid package or invitation",
     "explore": "Explore capabilities",
-    "ctaProposal": "Send invitation by email",
-    "ctaWhatsapp": "Ask quick questions on WhatsApp",
-    "panelLabel": "Execution capacity",
-    "panelTitle": "We adapt to the scope, budget, and stage of each project",
-    "panelBullet1": "We can participate in a specific package or in a broader execution scope",
-    "panelBullet2": "We integrate civil, metal-mechanical, installation, and coating capabilities as needed",
-    "panelBullet3": "When required, we add specialist support without overstating the scope we directly control"
+    "ctaProposal": "Send bid package or invitation",
+    "ctaWhatsapp": "Ask on WhatsApp",
+    "panelLabel": "Why FITA?",
+    "panelTitle": "Fewer promises. More verifiable execution.",
+    "panelBullet1": "We enter the package that belongs to us, not the one that sounds better",
+    "panelBullet2": "Civil, metal-mechanical work, installation, and coatings under one point of contact",
+    "panelBullet3": "External specialists when the project requires them, without losing control of the work front",
+    "formalLabel": "Formal contact",
+    "formalValue": "Email for bid packages, invitations, and technical scope",
+    "quickLabel": "Quick contact",
+    "quickValue": "WhatsApp for initial questions"
   },
   "Overview": {
-    "title": "One company for different execution fronts",
-    "description1": "Construcción y Mantenimientos FITA S.A. de C.V. is an execution company with documented experience in industrial, metal-mechanical, and civil projects. We are not positioned as a single-trade contractor, but as a company that enters with the right scope for each job.",
-    "description2": "We work from bids, invitations, direct awards, and client requirements. If the project needs a broader front, we structure it. If it only needs a defined package, we participate with clear scope and responsibility.",
+    "title": "The contractor that does not overstate its scope.",
+    "description1": "Many companies enter a bid with a profile larger than what they can sustain in the field. FITA does the opposite: it first defines what it can execute, under what responsibility, and under which project conditions. That reduces surprises on site.",
+    "description2": "We work in new construction, maintenance, expansion, and rehabilitation — across civil, metal-mechanical, installation, and coating fronts. We can take a single package or a broader execution scope, according to the real project scope and, when applicable, according to the client’s engineering and technical requirements.",
     "stats": {
       "scope": {
-        "value": "Partial or integral",
-        "label": "participation model"
+        "value": "Real scope",
+        "label": "what we can execute, not what sounds better"
       },
       "markets": {
         "value": "Public and private",
-        "label": "markets served"
+        "label": "experience in both sectors"
       },
       "lines": {
-        "value": "4 core lines",
-        "label": "civil, metal-mechanical, installation, coatings"
+        "value": "4 capabilities",
+        "label": "one point of contact for civil, steel, installation, and coatings"
       }
     }
   },
   "Institutional": {
-    "standardsTitle": "Scope before rhetoric",
-    "standardsDesc": "FITA’s priority is to understand exactly which part of the project must be executed and under what responsibility. That clarity allows us to participate without overpromising or losing operational control.",
-    "sectorsTitle": "Hybrid capability",
-    "sectorsDesc": "Our track record combines industrial, metal-mechanical, and civil work. That is why the main site presents a global company profile rather than a single-specialty contractor.",
-    "collabTitle": "Engineering, scope, and bidding",
-    "collabDesc": "FITA can execute against client engineering when it exists, but also according to the bid scope, project budget, stage, and technical requirements that define each opportunity."
+    "standardsTitle": "We do not promise what we cannot deliver",
+    "standardsDesc": "We first define which part of the project belongs to FITA and under what responsibility. That prevents scope from growing on paper and shrinking in the field.",
+    "sectorsTitle": "One company for four fronts",
+    "sectorsDesc": "Civil work, metal-mechanical work, installation, and coatings under a single contract. You do not need to coordinate several subcontractors for what FITA can handle directly.",
+    "collabTitle": "We enter the way the project requires",
+    "collabDesc": "Through bid, invitation, direct award, or technical proposal. With client engineering when it exists, or according to bid scope and technical requirements when that is the governing format."
   },
   "Model": {
-    "title": "Adaptive operating model",
-    "subtitle": "Each project defines the team and the depth of scope.",
-    "description1": "FITA is not presented as a rigid structure. We build execution capacity according to the type of work, the size of the front, the dominant discipline, and the real contracting conditions.",
-    "description2": "That allows us to participate from a single package to a broader execution scope. And when a highly specific specialty is needed—such as radiography, penetrant testing, soil mechanics, or topography—we integrate external specialists without losing overall coordination.",
-    "badge": "Operating model"
+    "title": "The team the project needs. No more, no less.",
+    "subtitle": "We build capacity according to the work front, the dominant discipline, and the real contract conditions.",
+    "description1": "We do not force a fixed structure into every project. The team is built according to the type of work, the size of the front, and what the contract actually requires. That keeps us agile without losing technical control.",
+    "description2": "When the project requires highly specific specialties — radiography, penetrant testing, soil mechanics, topography — we add the specialist without making the client lose its main point of contact.",
+    "badge": "How we assemble"
   },
   "Capabilities": {
-    "title": "Core capabilities",
-    "subtitle": "Four base lines for the global site, while specific products and services can live in dedicated subdomains.",
+    "title": "Four fronts. One accountable contractor.",
+    "subtitle": "Civil work, metal-mechanical work, installation and erection, and coatings, all under FITA’s direct coordination.",
     "items": [
       {
-        "title": "Civil works",
-        "description": "Participation in new construction, maintenance, expansion, or rehabilitation for fronts such as schools, classrooms, sports courts, guardhouses, foundations, finishes, waterproofing, and other civil work according to scope."
+        "title": "Civil work",
+        "description": "Foundations, finishes, waterproofing, guardhouses, sports courts, and institutional rehabilitation. We can participate from opening through front delivery."
       },
       {
         "title": "Metal-mechanical and structural work",
-        "description": "Fabrication, preparation, erection, welding, plate work, piping, and related work for metallic and industrial infrastructure according to project requirements."
+        "description": "Fabrication, preparation, erection, qualified welding, piping, and plate work for industrial infrastructure. Supported by documented offshore execution history."
       },
       {
         "title": "Installation and erection",
-        "description": "Integration and installation of components, equipment, or execution packages, including electromechanical or electrical fronts when they are part of the contracted scope."
+        "description": "Integration of components and equipment in the field, including electromechanical fronts when they are part of the contracted scope. We coordinate without losing control of the front."
       },
       {
         "title": "Anticorrosive coatings",
-        "description": "Surface preparation and application of anticorrosive and protective systems for exposed or industrial infrastructure."
+        "description": "Sandblasting, surface preparation, and application of protection systems for exposed or industrial infrastructure. Documented experience on offshore platforms."
       }
     ]
   },
   "Projects": {
-    "title": "Experience that can support a real conversation",
-    "subtitle": "Documented work types and references to help clients understand where FITA fits.",
+    "title": "We have already been in projects like yours.",
+    "subtitle": "Offshore with Petrofac, metal-mechanical structures, industrial coatings, and institutional civil work. Fronts already executed and documented.",
     "items": [
       {
-        "title": "Offshore platforms and marine fronts",
-        "description": "The legacy CV documents participation on Arenque platforms with structural panels, risers, pipe defenses, dismantling, process lines, handrails, and grating work."
+        "title": "Offshore platforms",
+        "description": "Structural panels, pipe defenses, risers, process lines, handrails, and dismantling on Arenque platforms with Petrofac México. Demanding environment, documented scope."
       },
       {
         "title": "Metal-mechanical fabrication and erection",
-        "description": "Experience in structural fabrication, piping assemblies, process valves, qualified welding, and erection of structural and operational elements."
+        "description": "Steel structures, piping assemblies, valves, qualified welding, and structural erection. The kind of work many companies contract badly and end up correcting in the field."
       },
       {
-        "title": "Surface protection and coating systems",
-        "description": "Background in sandblasting, anticorrosive systems, and protective work for industrial infrastructure and helipad surfaces."
+        "title": "Coatings and protection",
+        "description": "Sandblasting and anticorrosive systems for platforms, helipads, and industrial infrastructure. Proper surface preparation from the start."
       },
       {
         "title": "Maintenance and modifications",
-        "description": "Participation in corrective maintenance, reinforcements, dismantling, grating modifications, lifting maneuvers, and conditioning work for operation or intervention."
+        "description": "Corrective maintenance, reinforcements, dismantling, lifting, and front conditioning. We enter when the work has already started and the front needs order."
       },
       {
         "title": "Institutional civil work",
-        "description": "The documented history also includes domes, restroom rehabilitation, laboratories, guardhouses, and sports courts, which supports the civil line of the global site."
+        "description": "Domes, laboratories, guardhouses, sports courts, and facility rehabilitation. Projects that were completed and can be verified."
       },
       {
-        "title": "Partial or broader scopes",
-        "description": "FITA can integrate into a specific package or take on a broader execution front depending on budget, bid structure, stage, and client responsibility requirements."
+        "title": "Adaptable scope",
+        "description": "We do not arrive with only one format. If the project needs a package, we quote the package. If it needs an integral front, we structure it. The client defines the format."
       }
     ]
   },
   "Safety": {
-    "title": "Field execution criteria",
-    "subtitle": "The promise is not to sound big. The promise is to execute with order, safety, and clear scope responsibility.",
+    "title": "No scope surprises. No avoidable accidents. No half-finished deliveries.",
+    "subtitle": "Clients that hire FITA should not have to supervise what is being promised in the field versus what the contract actually says.",
     "items": [
       {
-        "title": "Safety and operational control",
-        "description": "Safety is part of how each work front is organized and executed."
+        "title": "Safety as an entry condition",
+        "description": "Not as a presentation checklist. Safety is built into how the front is organized from day one — access, PPE, lifting procedures, and work risk management."
       },
       {
-        "title": "Quality and scope compliance",
-        "description": "Each package must match what is truly contracted, executed, and deliverable, avoiding gaps between sales language and field operations."
+        "title": "What the contract says is what gets delivered",
+        "description": "Each package matches what is contracted, executed, and deliverable. If there is a deviation, it is recorded and resolved — not hidden until final closeout."
       },
       {
-        "title": "Environmental responsibility and jobsite order",
-        "description": "Execution is approached with attention to order, cleanliness, responsible work practices, and applicable project requirements."
+        "title": "Order on site, always",
+        "description": "Cleanliness, waste segregation, and compliance with project and client requirements. You should not have to chase us to keep the work front presentable."
       }
     ]
   },
   "Methodology": {
-    "title": "How FITA enters a project",
-    "subtitle": "A clear path to participate without confusion about scope from day one.",
+    "title": "Six steps so scope is never a surprise.",
+    "subtitle": "Before starting, the client already knows what FITA will execute, with which resources, and under what responsibility.",
     "steps": [
       {
         "title": "Opportunity review",
-        "description": "We analyze the bid, invitation, requirements, or need to determine whether FITA should participate in the full project or only in a defined package."
+        "description": "We analyze the bid, invitation, or requirement to define whether FITA should enter the full project or only part of it. We do not quote what we cannot sustain."
       },
       {
         "title": "Real scope definition",
-        "description": "We define what FITA will execute, what resources the front requires, and which external specialties may be needed if the project demands them."
+        "description": "We define exactly what FITA executes and what it does not. This is also where we determine whether we work from bid scope, client engineering, or both."
       },
       {
         "title": "Operational planning",
-        "description": "We organize work front, personnel, sequence, supplies, timing, and responsibilities according to the stage and complexity of the job."
+        "description": "We organize personnel, sequencing, supplies, and timing according to the real job. The work plan is not a presentation document — it is the guide for the front."
       },
       {
         "title": "Field or workshop execution",
-        "description": "We execute the contracted package or project in civil works, metal-mechanical work, installation and erection, or coatings according to the defined front."
+        "description": "We execute the contracted scope with the discipline the project requires: civil work, metal-mechanical work, installation, or coatings. The client has one direct point of contact throughout."
       },
       {
         "title": "Control and coordination",
-        "description": "We monitor scope compliance, discipline coordination, and critical points related to safety, quality, and progress."
+        "description": "We monitor scope compliance, safety, quality, and progress. If there is a deviation, the client knows before it becomes a problem."
       },
       {
         "title": "Delivery and continuity",
-        "description": "We close the executed front and leave room for future stages, expansions, maintenance, or additional packages."
+        "description": "We close the executed front with the documentation the client needs. And if there are next phases, FITA already knows the project — there is no learning curve reset."
       }
     ]
   },
   "Procurement": {
-    "title": "Formal participation in projects",
-    "description": "FITA can join projects by bid, invitation, or direct award while keeping a clear conversation about scope, participation conditions, and the right contact channel for each case.",
-    "bullet1": "Email for invitations and formal contact",
-    "bullet2": "WhatsApp for quick questions or first contact",
-    "bullet3": "Flexibility for partial or broader proposals"
+    "title": "Do you have a project that needs a contractor? FITA enters through the channel you use.",
+    "description": "Through public bid, restricted invitation, or direct award. We send technical proposals, quote specific packages, or structure a broader front — according to project scope and, when applicable, according to the client’s bid documents, technical requirements, and engineering.",
+    "bullet1": "Email for formal invitations, bid packages, and technical proposals",
+    "bullet2": "WhatsApp for first contact, interest validation, or scope questions",
+    "bullet3": "Partial or broader pricing according to what the bid defines"
   },
   "Contact": {
-    "title": "Let’s talk about your project scope",
-    "subtitle": "If you want to invite FITA to participate in a project, use email for formal contact. If you first need to solve a quick question, you can also reach us on WhatsApp.",
+    "title": "Do you have a work front that needs a contractor? Start with the scope.",
+    "subtitle": "Tell us what type of project it is, what stage it is in, and what the project needs. We will reply through the same channel you used to contact us.",
     "directContact": "Direct contact",
     "engineerLabel": "Contact lead",
     "phoneLabel": "WhatsApp",
@@ -181,41 +185,41 @@
     "name": "Ing. Gustavo Bierge",
     "phone": "+52 833 518 1171",
     "email": "cmfitasadecv@gmail.com",
-    "ctaProposal": "Send invitation by email",
-    "ctaWhatsapp": "Message on WhatsApp",
+    "ctaProposal": "Send bid package or invitation",
+    "ctaWhatsapp": "Ask on WhatsApp",
     "locationLabel": "Location",
     "address": "Paseo de los Mexicas 126-D, 16 de Septiembre, Ciudad Madero, Tamaulipas, postal code 89512, Mexico.",
     "coverageLabel": "Participation model",
-    "coverage": "FITA can participate in public or private projects, in partial or broader scopes, from Ciudad Madero toward different work fronts according to the project.",
+    "coverage": "FITA can participate in public or private projects, in partial or broader scopes, according to project scope and, when applicable, according to the client’s engineering and technical requirements.",
     "formalLabel": "For formal contact",
-    "formalValue": "Invitations, proposal requests, bid documents, or scope packages",
+    "formalValue": "Bid invitations, proposal requests, scope package review, and technical submissions",
     "quickLabel": "For quick contact",
-    "quickValue": "Initial questions, interest validation, or first contact through WhatsApp"
+    "quickValue": "Interest validation, initial questions, or first contact through WhatsApp"
   },
   "Faq": {
     "eyebrow": "Frequently asked questions",
-    "title": "The essentials to understand how FITA participates",
-    "subtitle": "These answers are written for clients who need to know quickly whether FITA is a fit for their project.",
+    "title": "The questions clients ask before inviting us.",
+    "subtitle": "Direct answers to the objections that usually come up before trusting a work front to a contractor.",
     "items": [
       {
-        "title": "What does FITA do?",
-        "description": "FITA is a multidisciplinary execution company that can participate in civil works, metal-mechanical work, installation and erection, and anticorrosive coatings, either in a partial scope or in a broader project front."
+        "title": "Can FITA handle simultaneous fronts or does it only work on one project at a time?",
+        "description": "It depends on the size of the front. FITA structures its capacity according to the job — if the project allows it, we can keep several fronts active. We define that in the initial scope review so we do not commit beyond what we can sustain."
       },
       {
-        "title": "Does FITA only work from client engineering?",
-        "description": "Not necessarily. FITA can execute against client engineering when it exists, but also according to the bid scope, project stage, budget, and technical requirements of the contract."
+        "title": "Can I invite FITA only for a specific package or do I need to give it the whole project?",
+        "description": "We can enter a single package. You do not need to give us the whole project for us to participate. Civil work, metal-mechanical work, installation, or coatings — we quote the front you need."
       },
       {
-        "title": "Does FITA take full projects or only packages?",
-        "description": "Both are possible. FITA can integrate into a specific package or a broader execution scope depending on the required responsibility and contracting format."
+        "title": "How verifiable is FITA’s experience? Are these only site claims?",
+        "description": "The track record is documented in the company CV with participation records in Petrofac México (Arenque platforms), metal-mechanical fabrication work, and institutional civil work. That file can be shared during supplier review."
       },
       {
-        "title": "What types of work support FITA’s experience?",
-        "description": "The documented history includes industrial and offshore work, metal-mechanical fabrication and erection, anticorrosive coatings, and institutional civil work such as domes, laboratories, guardhouses, and sports courts."
+        "title": "Does FITA work from client engineering or can it work from technical scope defined by the process?",
+        "description": "Both. When the client has defined engineering, we execute according to it. When the scope comes from a bid or technical requirement, we work with what the process defines. We enter according to project scope and, when applicable, according to the client’s engineering and technical requirements."
       },
       {
-        "title": "What is the best way to contact FITA?",
-        "description": "For invitations, scope packages, or formal project contact, email cmfitasadecv@gmail.com. For quick questions or first contact, use WhatsApp at +52 833 518 1171."
+        "title": "How do I start contact if I want to invite FITA to participate in a project?",
+        "description": "For formal invitations, bid packages, or technical proposals, write to cmfitasadecv@gmail.com. To validate interest or ask questions first, use WhatsApp at +52 833 518 1171 with Ing. Gustavo Bierge."
       }
     ]
   }
