@@ -30,7 +30,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative flex min-h-[95vh] items-center overflow-hidden bg-industrial-950 pt-24">
+    <section ref={containerRef} className="relative flex min-h-[88vh] items-center overflow-hidden bg-industrial-950 pt-20">
       <div ref={bgRef} className="absolute inset-0 z-0 select-none opacity-40">
         <Image src="/hero.png" alt="Industrial execution hero" fill priority className="object-cover" sizes="100vw" />
       </div>
@@ -39,13 +39,13 @@ export function Hero() {
       <div className="absolute inset-0 z-[2] bg-gradient-to-r from-industrial-950 via-transparent to-transparent pointer-events-none" />
 
       <div className="container relative z-10 mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-1 items-end gap-10 lg:grid-cols-12">
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
           <div className="max-w-5xl lg:col-span-7">
             <div className="section-kicker">FITA</div>
             <h1 ref={headlineRef} className="text-shadow-display mb-6 max-w-5xl text-5xl font-bold leading-[0.9] tracking-[0.01em] text-steel-light text-balance md:text-6xl lg:text-[5.5rem]">
               {t("headline")}
             </h1>
-            <p ref={subheadlineRef} className="mb-10 max-w-3xl text-balance text-lg leading-relaxed text-industrial-300 md:text-[1.15rem]">
+            <p ref={subheadlineRef} className="mb-10 max-w-[42rem] text-balance text-lg leading-relaxed text-industrial-300 md:text-[1.15rem]">
               {t("subheadline")}
             </p>
             <div ref={ctaRef} className="flex flex-col gap-4 sm:flex-row">

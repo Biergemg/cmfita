@@ -16,7 +16,7 @@ export function VoiceSearchFaq() {
       containerClassName="max-w-5xl"
     >
       <div className="mb-14 text-center">
-        <p className="mb-3 text-xs uppercase tracking-[0.24em] text-industrial-400">
+        <p className="section-kicker justify-center">
           {t("eyebrow")}
         </p>
         <h2 className="mb-4 text-4xl uppercase tracking-wide text-steel-light md:text-5xl">
@@ -29,7 +29,7 @@ export function VoiceSearchFaq() {
         {items.map((item, index) => (
           <article
             key={toStableKey(item.title, index)}
-            className="glass-panel rounded-sm border border-industrial-800 p-6 md:p-8"
+            className="premium-card rounded-sm p-6 md:p-8"
           >
             <h3 className="mb-3 text-2xl uppercase tracking-wide text-steel-light">
               {item.title}

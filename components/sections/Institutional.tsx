@@ -37,9 +37,10 @@ export function Institutional() {
     return (
         <Section ref={sectionRef} className="bg-industrial-950 border-t border-industrial-800 py-16 md:py-24">
             <div className="max-w-6xl mx-auto px-6">
+                <div className="section-kicker">Criterio de participación</div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
                     {/* Block 1: Execution Standards */}
-                    <div className="micro-block flex flex-col items-start">
+                    <div className="micro-block premium-card flex flex-col items-start p-8">
                         <Ruler className="w-8 h-8 text-steel-metallic mb-6" />
                         <h3 className="font-teko text-2xl text-steel-light mb-4 tracking-wide uppercase">
                             {t("standardsTitle")}
@@ -50,7 +51,7 @@ export function Institutional() {
                     </div>
 
                     {/* Block 2: Sectors */}
-                    <div className="micro-block flex flex-col items-start">
+                    <div className="micro-block premium-card flex flex-col items-start p-8">
                         <Factory className="w-8 h-8 text-steel-metallic mb-6" />
                         <h3 className="font-teko text-2xl text-steel-light mb-4 tracking-wide uppercase">
                             {t("sectorsTitle")}
@@ -61,7 +62,7 @@ export function Institutional() {
                     </div>
 
                     {/* Block 3: Engineering Collaboration */}
-                    <div className="micro-block flex flex-col items-start">
+                    <div className="micro-block premium-card flex flex-col items-start p-8">
                         <Handshake className="w-8 h-8 text-steel-metallic mb-6" />
                         <h3 className="font-teko text-2xl text-steel-light mb-4 tracking-wide uppercase">
                             {t("collabTitle")}

@@ -42,16 +42,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <Hero />
         <Overview />
-        <TeamModel />
-        <Institutional />
         <Capabilities />
         <ProjectExperience />
+        <TeamModel />
+        <Institutional />
         <Portfolio locale={locale} />
-        <Testimonials locale={locale} />
-        <Certifications locale={locale} />
         <Methodology />
         <SafetyCompliance />
         <ProcurementReady />
+        <Testimonials locale={locale} />
+        <Certifications locale={locale} />
         <VoiceSearchFaq />
         <Contact locale={locale} />
       </main>

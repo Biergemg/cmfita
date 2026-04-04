@@ -56,6 +56,7 @@ export function Methodology() {
     return (
         <Section ref={sectionRef} id="methodology" className="bg-industrial-900 border-t border-industrial-800">
             <div className="text-center mb-20">
+                <div className="section-kicker justify-center">Forma de trabajo</div>
                 <h2 className="text-4xl md:text-5xl font-teko text-steel-light mb-4 tracking-wide uppercase">
                     {t("title")}
                 </h2>
@@ -81,7 +82,7 @@ export function Methodology() {
                             <div className="hidden md:block w-5/12" />
 
                             <div className="w-full pl-8 md:pl-0 md:w-5/12 group">
-                                <div className={`glass-panel p-6 border-l-2 border-l-industrial-400 hover:border-l-steel-light transition-colors ${isEven ? "md:border-l-0 md:border-r-2 md:border-r-industrial-400 md:hover:border-r-steel-light md:text-right" : ""}`}>
+                                <div className={`premium-card p-6 border-l-2 border-l-industrial-400 hover:border-l-steel-light transition-colors ${isEven ? "md:border-l-0 md:border-r-2 md:border-r-industrial-400 md:hover:border-r-steel-light md:text-right" : ""}`}>
                                     <span className="font-teko text-industrial-500 text-xl opacity-80 block mb-1">STEP {String(i + 1).padStart(2, "0")}</span>
                                     <h3 className="font-teko text-2xl text-steel-light mb-2 tracking-wide uppercase">{step.title}</h3>
                                     <p className="text-industrial-400 text-sm">

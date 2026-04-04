@@ -46,6 +46,7 @@ export function SafetyCompliance() {
             <div className="absolute top-0 right-0 w-[400px] h-[400px] border border-industrial-800 rounded-full opacity-20 -translate-y-1/2 translate-x-1/4 pointer-events-none" />
 
             <div className="text-center mb-16 relative z-10">
+                <div className="section-kicker justify-center">Ejecución en campo</div>
                 <h2 className="text-4xl md:text-5xl font-teko text-steel-light mb-4 tracking-wide uppercase">
                     {t("title")}
                 </h2>
@@ -58,7 +59,7 @@ export function SafetyCompliance() {
                 {items.map((item, i) => {
                     const Icon = icons[i % icons.length];
                     return (
-                        <div key={toStableKey(item.title, i)} className="safety-item glass-panel p-8 text-center flex flex-col items-center border-t-4 border-t-industrial-400 hover:border-t-steel-light transition-colors duration-500 rounded-sm">
+                        <div key={toStableKey(item.title, i)} className="safety-item premium-card p-8 text-center flex flex-col items-center border-t-4 border-t-industrial-400 hover:border-t-steel-light transition-colors duration-500 rounded-sm">
                             <div className="w-16 h-16 bg-industrial-950 border border-industrial-800 rounded-full flex items-center justify-center mb-6 shadow-highlight">
                                 <Icon className="w-8 h-8 text-steel-metallic" />
                             </div>
