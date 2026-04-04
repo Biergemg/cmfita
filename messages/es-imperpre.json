@@ -1,12 +1,12 @@
 {
   "Index": {
     "title": "Imperpre | Tu azotea deja de filtrar — o regresamos sin costo",
-    "description": "Impermeabilización profesional para escuelas privadas en Tampico, Madero y Altamira. Diagnóstico en sitio, sin costo. Si la zona intervenida vuelve a filtrar, regresamos."
+    "description": "Impermeabilización para escuelas privadas en Tampico, Madero y Altamira. Visita técnica gratuita. Si la zona intervenida vuelve a filtrar, regresamos."
   },
   "Navbar": {
     "problem": "El problema",
-    "idealFor": "¿Para quién?",
-    "offer": "Cómo lo resolvemos",
+    "idealFor": "La oferta",
+    "offer": "Cómo funciona",
     "faq": "Preguntas",
     "whatsapp": "Agendar visita"
   },
@@ -15,32 +15,34 @@
     "contact": "Contacto",
     "quickLinks": "Secciones",
     "problem": "El problema",
-    "offer": "Cómo lo resolvemos",
+    "offer": "La oferta",
     "faq": "Preguntas",
-    "whatsapp": "Agendar visita gratis"
+    "whatsapp": "Agendar visita gratuita"
   },
+
   "Hero": {
     "eyebrow": "Escuelas privadas · Tampico · Madero · Altamira",
     "headline": "Nunca más un salón fuera de operación por filtraciones.",
-    "subheadline": "Cada temporada de lluvias con el mismo techo sin resolver es matrículas en riesgo. Imperpre diagnostica tu azotea, resuelve el problema de fondo — y si la zona intervenida vuelve a filtrar, regresamos sin costo.",
+    "subheadline": "Visita técnica gratuita. Diagnóstico real en sitio. Y si la zona que intervenimos vuelve a filtrar en la siguiente temporada, regresamos sin costo.",
     "ctaProposal": "Agendar visita técnica gratuita",
     "ctaWhatsapp": "Hablar por WhatsApp",
     "microcopy": "Sin costo. Sin compromiso. Solo dinos dónde estás y qué está pasando.",
-    "panelLabel": "Por qué Imperpre",
-    "panelTitle": "La diferencia entre tapar y resolver.",
+    "panelLabel": "La diferencia",
+    "panelTitle": "No vendemos producto por m². Resolvemos el problema de tu azotea.",
     "panelBullet1": "Diagnóstico real en sitio — no estimados de escritorio",
-    "panelBullet2": "Resolvemos el problema de fondo, no el síntoma visible",
-    "panelBullet3": "Si la zona intervenida vuelve a filtrar, regresamos sin costo",
+    "panelBullet2": "Resolvemos de fondo — no tapamos el síntoma",
+    "panelBullet3": "Si vuelve a filtrar la zona intervenida, regresamos sin costo",
     "formalLabel": "Para quién es",
-    "formalValue": "Escuelas privadas con azotea de concreto y filtraciones activas o recurrentes",
-    "quickLabel": "Cómo empezar",
+    "formalValue": "Escuelas privadas con azotea de concreto y filtraciones activas o recurrentes en zona costera",
+    "quickLabel": "Para empezar",
     "quickValue": "Escríbenos por WhatsApp con tu ubicación y el problema. Agendamos la visita."
   },
+
   "Overview": {
     "eyebrow": "El problema real",
     "title": "No es la gotera. Es lo que la gotera le está costando a tu escuela.",
-    "description1": "Un salón con humedad, olor a moho o plafón dañado no es solo un problema de mantenimiento. Es un argumento que los padres usan para cambiar a sus hijos de escuela. En zona costera — donde el salitre y la humedad aceleran el deterioro — el problema no espera al siguiente ciclo escolar.",
-    "description2": "La mayoría de las escuelas atienden el síntoma: tapan la gotera, pintan el plafón, esperan. El problema regresa en la siguiente lluvia y cada vez el daño llega más adentro. Equipos dañados, mobiliario arruinado, clases interrumpidas — y los padres que lo notan no avisan antes de irse.",
+    "description1": "Un salón con humedad, olor a moho o plafón dañado no es solo un problema de mantenimiento. Es el argumento que los padres usan para cambiar a sus hijos de escuela. En zona costera — donde el salitre y la humedad aceleran el deterioro — el problema no espera al siguiente ciclo escolar.",
+    "description2": "La mayoría de las escuelas atienden el síntoma: tapan la gotera, pintan el plafón, esperan. El problema regresa en la siguiente lluvia y cada vez llega más adentro: equipos dañados, mobiliario arruinado, clases interrumpidas — y los padres que lo notan no avisan antes de irse.",
     "stats": {
       "symptom1": {
         "value": "Clases interrumpidas",
@@ -52,143 +54,49 @@
       },
       "symptom3": {
         "value": "Equipos dañados",
-        "label": "proyectores, cómputo, laboratorio expuestos a humedad"
+        "label": "proyectores, cómputo y laboratorio expuestos a humedad"
       },
       "symptom4": {
         "value": "Mobiliario arruinado",
-        "label": "sillas, escritorios, material didáctico deteriorado"
+        "label": "sillas, escritorios y material didáctico deteriorado"
       },
       "symptom5": {
         "value": "Plafones y pintura",
-        "label": "daño visible que comunica abandono a cada padre que entra"
+        "label": "daño visible que comunica descuido a cada padre que entra"
       },
       "symptom6": {
         "value": "Matrículas en riesgo",
         "label": "un plantel deteriorado es el primer argumento para cambiar de escuela"
       }
     },
-    "cta": "Quiero resolver esto — agendar visita"
+    "cta": "Quiero resolver esto — agendar visita gratuita"
   },
-  "Capabilities": {
-    "eyebrow": "¿Esto es para tu plantel?",
-    "title": "Para escuelas que ya no pueden permitirse otro ciclo con el mismo problema.",
-    "subtitle": "Si tu plantel tiene azotea de concreto y ya hay filtraciones activas, humedad recurrente o daño visible en interiores — esta visita es para ti.",
-    "items": [
-      {
-        "title": "Filtraciones que regresan cada temporada",
-        "description": "Ya tapaste el problema una o más veces y en cada lluvia regresa. Eso no es mala suerte — es que nunca se resolvió de fondo."
-      },
-      {
-        "title": "Salones con humedad, moho o olor activo",
-        "description": "Cuando el daño ya llegó adentro: manchas en plafones, paredes con humedad, olor que los alumnos y padres perciben al entrar."
-      },
-      {
-        "title": "Equipos o mobiliario que ya sufrieron daño",
-        "description": "Proyectores, computadoras, laboratorio o mobiliario afectado por humedad recurrente. El costo del equipo dañado supera por mucho el costo de resolver el techo."
-      },
-      {
-        "title": "Azoteas castigadas por el clima costero",
-        "description": "En Tampico, Madero y Altamira el salitre penetra el concreto y corroe el acero desde adentro. Lo que parece deterioro superficial puede ser daño estructural progresivo."
-      },
-      {
-        "title": "Sistemas anteriores que ya fallaron",
-        "description": "Cuando ya hubo intentos de impermeabilización y el problema regresó. Repetir el mismo procedimiento no es la solución."
-      }
-    ],
-    "filterNote": "Exclusivo para azoteas de concreto. Tampico, Madero y Altamira."
-  },
+
   "Projects": {
-    "eyebrow": "Cómo lo resolvemos",
-    "title": "No vendemos producto por metro cuadrado. Resolvemos el problema de tu azotea.",
-    "subtitle": "La diferencia entre una impermeabilización que dura y una que falla en la siguiente lluvia está en lo que ocurre antes de aplicar cualquier material.",
+    "eyebrow": "La oferta",
+    "title": "Visita técnica gratuita + azotea que deja de filtrar.",
+    "subtitle": "Todo lo que incluye antes de que pagues un peso.",
     "items": [
       {
         "title": "Diagnóstico real en sitio — sin costo",
-        "description": "Vamos a tu plantel, revisamos la azotea de fondo: condición de la losa, puntos de filtración, pendientes, zonas críticas. Sin estimados de escritorio, sin adivinar."
+        "description": "Vamos a tu plantel y revisamos la azotea de fondo. Condición de la losa, puntos de filtración, pendientes, zonas críticas. Sin adivinar, sin estimados de escritorio."
       },
       {
-        "title": "Retiro completo del material existente",
-        "description": "Lo que está encima del problema hay que quitarlo. No aplicamos sobre capas vencidas — retiramos todo lo que impide resolver el problema de raíz."
+        "title": "Propuesta concreta sobre lo que encontramos",
+        "description": "Alcance completo, proceso y precio final. Sin letra chica. Si algo cambia el alcance, te avisamos antes de empezar — no a la mitad de la obra."
       },
       {
-        "title": "Preparación y nivelación de la superficie",
-        "description": "Entortados para nivelar la losa, pendientes hacia las bajantes, chaflanes donde se necesitan. La azotea tiene que drenar bien — si no, cualquier sistema falla."
-      },
-      {
-        "title": "Aplicación del sistema de protección",
-        "description": "Membrana prefabricada instalada bajo procedimientos constructivos definidos. No improvisamos en obra — cada paso tiene un proceso."
+        "title": "Ejecución bajo procedimientos constructivos",
+        "description": "Retiro del material existente, preparación de superficie, nivelación y membrana instalada paso a paso. No improvisamos en obra."
       },
       {
         "title": "Compromiso de continuidad",
-        "description": "Si en la siguiente temporada de lluvias hay filtración en la zona que intervenimos, regresamos a revisarla sin costo. Trabajamos así porque confiamos en cómo trabajamos."
+        "description": "Si en la siguiente temporada de lluvias hay filtración en la zona que intervenimos, regresamos a revisarla sin costo. Así trabajamos porque confiamos en cómo trabajamos."
       }
     ],
     "cta": "Agendar visita técnica gratuita"
   },
-  "Safety": {
-    "eyebrow": "Nuestra diferencia",
-    "title": "Te decimos qué tiene tu azotea antes de cobrarte un peso.",
-    "subtitle": "La mayoría llega con precio listo antes de ver el techo. Nosotros llegamos a entender el problema primero.",
-    "guarantee": "Si la zona intervenida vuelve a filtrar en la siguiente temporada de lluvias, regresamos a revisarla sin costo. Trabajamos así porque confiamos en nuestro proceso.",
-    "items": [
-      {
-        "title": "Primero el diagnóstico, luego el precio",
-        "description": "No hay número antes de ver la azotea. El precio sale de lo que encontramos en sitio: condición real de la losa, metros, puntos críticos. Sin sorpresas después."
-      },
-      {
-        "title": "El precio que acordamos es el precio final",
-        "description": "Alcance, proceso y costo quedan definidos antes de empezar. Si la revisión revela algo que cambia el trabajo, te avisamos antes — no a la mitad de la obra."
-      },
-      {
-        "title": "Trabajamos bajo procedimientos constructivos",
-        "description": "No improvisamos. Cada etapa — retiro, preparación, nivelación, aplicación — tiene un proceso definido. Así garantizamos que el resultado sea el mismo en cada proyecto."
-      },
-      {
-        "title": "Si no podemos resolverlo, te lo decimos",
-        "description": "Hay casos donde el daño requiere intervención estructural antes de impermeabilizar. Si ese es tu caso, te lo comunicamos en la visita — no después de cobrarte."
-      }
-    ]
-  },
-  "Methodology": {
-    "title": "De filtración activa a azotea resuelta: tú solo haces el primer paso.",
-    "subtitle": "Cuatro pasos. El único que te pedimos a ti es el primero.",
-    "steps": [
-      {
-        "title": "Tú nos escribes por WhatsApp",
-        "description": "Dinos dónde está tu plantel y qué está pasando con el techo. No necesitas fotos, no necesitas saber qué tiene la azotea. Solo eso."
-      },
-      {
-        "title": "Nosotros agendamos la visita técnica",
-        "description": "Sin formularios, sin esperas largas. Coordinamos la visita según la urgencia de tu caso — si hay temporada de lluvias encima, lo priorizamos."
-      },
-      {
-        "title": "Nosotros hacemos el diagnóstico completo",
-        "description": "Revisamos la azotea de fondo: losa, pendientes, puntos críticos, zonas de filtración. Tú no tienes que saber qué buscar — ese es nuestro trabajo."
-      },
-      {
-        "title": "Tú decides. Nosotros ejecutamos.",
-        "description": "Te presentamos qué tiene la azotea, cómo lo resolvemos y cuánto cuesta. Sin letra chica. Si apruebas, ejecutamos. Si tienes preguntas, las resolvemos antes de empezar."
-      }
-    ]
-  },
-  "Procurement": {
-    "eyebrow": "Todo esto sin costo inicial",
-    "title": "Antes de que pagues un peso, ya sabes exactamente qué tiene tu azotea.",
-    "description": "La visita técnica no tiene costo. El diagnóstico no tiene costo. La propuesta no tiene costo. Si después de la visita decides no continuar, quedas libre — sin presión, sin compromiso.",
-    "stackTitle": "Lo que incluye la visita técnica gratuita",
-    "stack1title": "Diagnóstico real de tu azotea",
-    "stack1desc": "Revisión completa en sitio: condición de la losa, puntos de filtración, pendientes, zonas críticas y nivel de deterioro.",
-    "stack2title": "Identificación de daño interior",
-    "stack2desc": "Mapeamos qué está causando el techo adentro: humedad en muros, daño en plafones, zonas con moho o equipos en riesgo.",
-    "stack3title": "Propuesta técnica y económica concreta",
-    "stack3desc": "Alcance completo, proceso paso a paso y precio final sobre lo que encontramos. Sin estimados genéricos.",
-    "stack4title": "Respuesta directa el mismo día",
-    "stack4desc": "Agendamos por WhatsApp directo. Sin formularios, sin fila de espera, sin vendedor en medio.",
-    "reversal": "Si la zona intervenida vuelve a filtrar en la siguiente temporada de lluvias, regresamos a revisarla sin costo.",
-    "bullet1": "Azoteas de concreto · Tampico, Madero y Altamira",
-    "bullet2": "Diagnóstico en sitio antes de cualquier cobro",
-    "bullet3": "Precio final sobre condición real"
-  },
+
   "Faq": {
     "eyebrow": "Lo que preguntan antes de agendar",
     "title": "Tres preguntas. Respuestas directas.",
@@ -196,28 +104,29 @@
     "items": [
       {
         "title": "¿La visita técnica tiene algún costo?",
-        "description": "No. El diagnóstico, la revisión en sitio y la propuesta son sin costo. Si después de la visita decides no continuar, no hay ningún cargo ni compromiso. Lo hacemos así porque un diagnóstico honesto es la única forma de darte un precio real.",
-        "tag": "Sobre el costo"
+        "description": "No. La visita, el diagnóstico y la propuesta son sin costo y sin compromiso. Si después de la visita decides no continuar, no hay ningún cargo. Lo hacemos así porque un diagnóstico honesto es la única forma de darte un precio real.",
+        "tag": "Costo"
       },
       {
-        "title": "¿Qué pasa si ya tuve impermeabilización antes y el problema regresó?",
-        "description": "Es el caso más común que atendemos. Cuando una impermeabilización falla, generalmente es porque no se preparó bien la superficie o se aplicó sobre un problema que no se resolvió de fondo. Revisamos la azotea desde cero para entender qué falló y cuál es la ruta correcta ahora.",
+        "title": "¿Ya tuve impermeabilización antes y el problema regresó — pueden ayudarme?",
+        "description": "Es el caso más común que atendemos. Cuando una impermeabilización falla es porque no se preparó bien la superficie o se aplicó sobre un problema sin resolver. Revisamos desde cero para entender qué falló y definir la ruta correcta.",
         "tag": "Trabajos previos"
       },
       {
         "title": "¿Cuánto tiempo tarda en resolverse?",
-        "description": "Depende de la superficie y el estado de la azotea — eso lo definimos en la visita técnica. Lo que sí podemos decirte: si hay temporada de lluvias cerca o filtración activa, lo tratamos como urgente desde el primer contacto.",
+        "description": "Depende de la superficie y el estado de la azotea — eso lo definimos en la visita. Lo que sí podemos decirte: si hay temporada de lluvias cerca o filtración activa, lo tratamos como urgente desde el primer contacto.",
         "tag": "Tiempos"
       }
     ],
     "cta": "Agendar visita técnica gratuita"
   },
+
   "Contact": {
-    "title": "¿Tu plantel tiene filtraciones activas o un techo que no has podido resolver?",
-    "subtitle": "Escríbenos por WhatsApp. Dinos dónde está tu plantel y qué está pasando. Agendamos la visita técnica gratuita y te decimos exactamente qué tiene tu azotea.",
-    "emotionalTitle": "Cada temporada de lluvias que pasa sin resolver es una que el problema llegó más adentro.",
-    "emotionalBody": "El moho que hoy es un olor va a ser mañana una mancha en el plafón que los padres ven al entrar. El daño que hoy es invisible en la losa va a ser el equipo de cómputo que se arruina en la siguiente lluvia. Una visita técnica gratuita hoy puede evitar un problema mucho más caro después.",
-    "directContact": "Lo que necesitamos saber",
+    "title": "¿Tu plantel tiene filtraciones que no has podido resolver?",
+    "subtitle": "Escríbenos por WhatsApp con tu ubicación y lo que está pasando. Agendamos la visita técnica gratuita y te decimos exactamente qué tiene tu azotea.",
+    "emotionalTitle": "Cada temporada que pasa sin resolver es una que el daño llegó más adentro.",
+    "emotionalBody": "El moho que hoy es un olor va a ser mañana el plafón dañado que los padres ven al entrar. La gotera de hoy es el equipo de cómputo arruinado en la siguiente lluvia. Una visita gratuita hoy puede evitar un problema mucho más caro después.",
+    "directContact": "Para agendar la visita",
     "engineerLabel": "Canal directo",
     "phoneLabel": "WhatsApp",
     "emailLabel": "Correo",
@@ -226,16 +135,17 @@
     "email": "cmfitasadecv@gmail.com",
     "ctaProposal": "Agendar visita técnica gratuita",
     "ctaWhatsapp": "Escribir por WhatsApp ahora",
-    "locationLabel": "Para agendar la visita",
-    "address": "Dinos dónde está tu plantel y qué está pasando con el techo. Con eso es suficiente para empezar.",
+    "locationLabel": "Lo que necesitamos",
+    "address": "Dónde está tu plantel y qué está pasando con el techo. Con eso es suficiente para empezar.",
     "coverageLabel": "Zona de atención",
     "coverage": "Tampico, Ciudad Madero y Altamira. Azoteas de concreto con filtraciones, humedad o deterioro.",
-    "formalLabel": "Primer paso",
-    "formalValue": "Escríbenos por WhatsApp con tu ubicación y el problema visible.",
-    "quickLabel": "Lo que recibes",
-    "quickValue": "Visita técnica gratuita, diagnóstico completo y propuesta sin compromiso.",
+    "formalLabel": "Qué recibes",
+    "formalValue": "Visita técnica gratuita, diagnóstico completo y propuesta sin compromiso.",
+    "quickLabel": "Compromiso",
+    "quickValue": "Si la zona intervenida vuelve a filtrar en la siguiente temporada, regresamos sin costo.",
     "microcopy": "Sin costo. Sin compromiso. Si después de la visita decides no continuar, no hay ningún cargo."
   },
+
   "notFoundTitle": "No encontramos esa página",
   "notFoundBody": "La ruta solicitada no existe o cambió de ubicación.",
   "errorTitle": "Ocurrió un error inesperado",
