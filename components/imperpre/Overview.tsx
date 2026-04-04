@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { Section } from "@/components/ui/section";
-import { Button } from "@/components/ui/button";
+import { WhatsappIcon } from "@/components/ui/WhatsappIcon";
 import { getWhatsappUrl } from "@/lib/site";
 import { trackWhatsappClick } from "@/lib/analytics";
 
@@ -88,13 +88,13 @@ export function ImperpreOverview() {
                 Antes de gastar en reparaciones que no van a durar, revisa la condición real de tu losa.
               </p>
             </div>
-            <Button
-              variant="outline"
-              className="shrink-0 border-amber-500/40 text-amber-400 hover:bg-amber-500/10 hover:border-amber-500/60"
+            <button
+              className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-2.5 text-sm font-semibold tracking-wide text-white shadow-[0_0_20px_rgba(37,211,102,0.45)] transition-all hover:bg-[#20BD5A] hover:shadow-[0_0_32px_rgba(37,211,102,0.65)] active:scale-95 shrink-0"
               onClick={() => { trackWhatsappClick("problem-section"); window.open(getWhatsappUrl(), "_blank", "noopener,noreferrer"); }}
             >
+              <WhatsappIcon className="h-4 w-4 shrink-0" />
               {t("cta")}
-            </Button>
+            </button>
           </div>
         </div>
 

@@ -1,14 +1,15 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { CheckCircle2, ArrowRight } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { asTitledDescriptionList, toStableKey } from "@/lib/i18n";
 import { Section } from "@/components/ui/section";
 import { Button } from "@/components/ui/button";
+import { WhatsappIcon } from "@/components/ui/WhatsappIcon";
 import { getWhatsappUrl } from "@/lib/site";
 import { trackWhatsappClick } from "@/lib/analytics";
 
@@ -21,13 +22,9 @@ export function ImperpreProjectExperience() {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         ".project-row",
-        { x: -50, opacity: 0 },
+        { y: 30, opacity: 0 },
         {
-          x: 0,
-          opacity: 1,
-          duration: 0.8,
-          stagger: 0.2,
-          ease: "power3.out",
+          y: 0, opacity: 1, duration: 0.6, stagger: 0.12, ease: "power2.out",
           scrollTrigger: { trigger: sectionRef.current, start: "top 70%" },
         },
       );
@@ -39,41 +36,68 @@ export function ImperpreProjectExperience() {
 
   return (
     <Section ref={sectionRef} id="oferta" className="bg-industrial-900 border-t border-industrial-800">
-      <div className="mb-16 flex flex-col items-end gap-12 md:flex-row">
-        <div className="md:w-1/2">
-          <div className="section-kicker">{t("eyebrow")}</div>
-          <h2 className="section-title mb-4">{t("title")}</h2>
-          <div className="h-1 w-20 bg-industrial-400" />
-        </div>
-        <div className="md:w-1/2">
-          <p className="reading-measure border-l-2 border-industrial-800 py-2 pl-6 text-[1.05rem] leading-[1.72] text-industrial-400">{t("subtitle")}</p>
+
+      {/* Header */}
+      <div className="mb-12 text-center">
+        <div className="section-kicker justify-center">{t("eyebrow")}</div>
+        <h2 className="mb-4 text-3xl font-bold text-steel-light text-balance md:text-5xl">{t("title")}</h2>
+        <p className="mx-auto max-w-2xl text-lg leading-relaxed text-industrial-400">{t("subtitle")}</p>
+      </div>
+
+      {/* Visual — abstract water/protection concept, no photos */}
+      <div className="mx-auto mb-12 max-w-2xl">
+        <div className="relative overflow-hidden rounded-sm border border-industrial-800 bg-industrial-950 p-8">
+          {/* Animated water-like gradient lines */}
+          <div className="pointer-events-none absolute inset-0 opacity-20">
+            {[...Array(6)].map((_, i) => (
+              <div
+                key={i}
+                className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#25D366]/60 to-transparent"
+                style={{ top: `${15 + i * 14}%`, opacity: 1 - i * 0.12 }}
+              />
+            ))}
+          </div>
+          {/* Central message */}
+          <div className="relative text-center">
+            <p className="mb-2 text-xs uppercase tracking-[0.22em] text-industrial-500">El resultado</p>
+            <p className="text-2xl font-bold leading-snug text-steel-light md:text-3xl">
+              Tu azotea deja de filtrar.
+            </p>
+            <p className="mt-3 text-sm text-industrial-400">
+              Visita técnica gratuita · Sin compromiso · Si vuelve a filtrar, regresamos
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="relative mb-16 h-[400px] overflow-hidden rounded-sm border border-industrial-800 shadow-2xl lg:h-[500px]">
-        <div className="absolute inset-0 z-10 bg-gradient-to-t from-industrial-950/60 via-transparent to-transparent" />
-        <Image src="/infrastructure.png" alt="Revisión técnica de cubierta" fill className="object-cover" sizes="(max-width: 768px) 100vw, 1200px" />
-      </div>
-
-      <div className="flex flex-col border-t border-industrial-800">
+      {/* Offer items */}
+      <div className="mx-auto max-w-3xl space-y-3">
         {projects.map((project, i) => (
-          <div key={toStableKey(project.title, i)} className="project-row group flex flex-col border-b border-industrial-800 py-8 transition-colors hover:bg-industrial-800/20 md:flex-row">
-            <div className="mb-4 pr-8 md:mb-0 md:w-1/3">
-              <span className="mb-2 block text-3xl text-industrial-500 opacity-50">0{i + 1}</span>
-              <h3 className="text-2xl tracking-[0.02em] text-steel-light transition-colors group-hover:text-steel-metallic">{project.title}</h3>
-            </div>
-            <div className="flex items-center md:w-2/3 md:border-l md:border-industrial-800 md:pl-8">
-              <p className="reading-measure max-w-[56ch] leading-[1.72] text-industrial-400 transition-colors duration-500 group-hover:text-steel-light">{project.description}</p>
+          <div
+            key={toStableKey(project.title, i)}
+            className="project-row flex items-start gap-4 rounded-sm border border-industrial-800 bg-industrial-950 p-6 transition-colors hover:border-industrial-700"
+          >
+            <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-[#25D366]" />
+            <div>
+              <h3 className="mb-1.5 font-semibold text-steel-light">{project.title}</h3>
+              <p className="text-sm leading-relaxed text-industrial-400">{project.description}</p>
             </div>
           </div>
         ))}
       </div>
 
+      {/* CTA */}
       <div className="mt-10 text-center">
-        <Button variant="metallic" onClick={() => { trackWhatsappClick("offer-section"); window.open(getWhatsappUrl(), "_blank", "noopener,noreferrer"); }}>
+        <button
+          onClick={() => { trackWhatsappClick("offer-section"); window.open(getWhatsappUrl(), "_blank", "noopener,noreferrer"); }}
+          className="inline-flex items-center gap-2.5 rounded-full bg-[#25D366] px-6 py-3.5 text-base font-semibold tracking-wide text-white shadow-[0_0_24px_rgba(37,211,102,0.5)] transition-all hover:bg-[#20BD5A] hover:shadow-[0_0_36px_rgba(37,211,102,0.7)] active:scale-95"
+        >
+          <WhatsappIcon className="h-5 w-5 shrink-0" />
           {t("cta")}
-        </Button>
+          <ArrowRight className="h-4 w-4" />
+        </button>
       </div>
+
     </Section>
   );
 }
