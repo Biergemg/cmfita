@@ -1,5 +1,7 @@
-import { getTranslations } from "next-intl/server";
+import { headers } from "next/headers";
 
+import corporateMessages from "@/messages/es.json";
+import imperpreMessages from "@/messages/es-imperpre.json";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
@@ -16,15 +18,12 @@ import { SafetyCompliance } from "@/components/sections/SafetyCompliance";
 import { ProcurementReady } from "@/components/sections/ProcurementReady";
 import { VoiceSearchFaq } from "@/components/sections/VoiceSearchFaq";
 import { Contact } from "@/components/sections/Contact";
-import { getLocaleUrl } from "@/lib/site";
+import { ImperpreHome } from "@/components/imperpre/ImperpreHome";
+import { getRuntimeSiteUrl, isImperpreHost } from "@/lib/site";
 import type { Locale } from "@/types/content";
 
-export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale: localeParam } = await params;
-  const locale = localeParam as Locale;
-  const t = await getTranslations({ locale, namespace: "Faq" });
-  const items = t.raw("items") as Array<{ title: string; description: string }>;
-  const faqSchema = {
+function buildFaqSchema(items: Array<{ title: string; description: string }>, url: string) {
+  return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: items.map((item) => ({
@@ -32,8 +31,24 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       name: item.title,
       acceptedAnswer: { "@type": "Answer", text: item.description },
     })),
-    url: getLocaleUrl(locale) ?? `/${locale}`,
+    url,
   };
+}
+
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale: localeParam } = await params;
+  const locale = localeParam as Locale;
+  const host = (await headers()).get("host");
+  const imperpre = isImperpreHost(host);
+  const siteUrl = getRuntimeSiteUrl(host);
+
+  if (imperpre) {
+    const faqItems = (imperpreMessages.Faq.items ?? []) as Array<{ title: string; description: string }>;
+    return <ImperpreHome faqSchema={buildFaqSchema(faqItems, `${siteUrl}/${locale}`)} />;
+  }
+
+  const faqItems = (corporateMessages.Faq.items ?? []) as Array<{ title: string; description: string }>;
+  const faqSchema = buildFaqSchema(faqItems, `${siteUrl}/${locale}`);
 
   return (
     <>

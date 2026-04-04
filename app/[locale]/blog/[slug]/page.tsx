@@ -13,7 +13,7 @@ import { Link } from "@/i18n/routing";
 import type { Locale } from "@/types/content";
 
 export async function generateStaticParams() {
-  const locales: Locale[] = ["en", "es"];
+  const locales: Locale[] = ["es"];
   const params = await Promise.all(locales.map(async (locale) => (await getBlogPosts(locale)).map((post) => ({ locale, slug: post.slug }))));
   return params.flat();
 }

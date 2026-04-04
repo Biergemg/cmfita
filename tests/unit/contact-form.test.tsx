@@ -20,7 +20,7 @@ describe('ContactForm', () => {
     const user = userEvent.setup();
     render(<ContactForm locale="en" />);
 
-    await user.click(screen.getByRole('button', { name: /send request/i }));
+    await user.click(screen.getByRole('button', { name: /send project scope/i }));
     expect((await screen.findAllByText(/Too small: expected string to have >=2 characters/i)).length).toBeGreaterThan(0);
 
     await user.type(screen.getByLabelText(/name/i), 'Jane Doe');
@@ -32,8 +32,8 @@ describe('ContactForm', () => {
     await user.type(screen.getByLabelText(/target timeline/i), '30 days');
     await user.type(screen.getByLabelText(/project location/i), 'Ciudad Madero');
     await user.type(screen.getByLabelText(/message/i), 'Need a technical proposal for structural work in Tamaulipas.');
-    await user.click(screen.getByRole('button', { name: /send request/i }));
+    await user.click(screen.getByRole('button', { name: /send project scope/i }));
 
-    expect(await screen.findByText(/received your request/i)).toBeInTheDocument();
+    expect(await screen.findByText(/received your information/i)).toBeInTheDocument();
   });
 });

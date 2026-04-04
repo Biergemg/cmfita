@@ -5,7 +5,6 @@ import { trackContactFormSubmitted } from '@/lib/analytics';
 describe('analytics helpers', () => {
   beforeEach(() => {
     vi.unstubAllEnvs();
-    // @ts-expect-error testing
     window.gtag = undefined;
   });
 

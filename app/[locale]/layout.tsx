@@ -1,16 +1,26 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Suspense } from "react";
 import { Inter, Teko } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 
+import corporateMessages from "@/messages/es.json";
+import imperpreMessages from "@/messages/es-imperpre.json";
 import "../globals.css";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { CookieConsent } from "@/components/analytics/CookieConsent";
 import { routing } from "@/i18n/routing";
-import { getIndustrialCompanySchema } from "@/lib/schema";
-import { companyName, getLanguageAlternates, getLocaleUrl, getSiteUrl } from "@/lib/site";
+import {
+  companyName,
+  contactEmail,
+  contactPhone,
+  getRuntimeSiteUrl,
+  imperpreTagline,
+  isImperpreHost,
+  postalAddress,
+  siteTagline,
+} from "@/lib/site";
 import type { Locale } from "@/types/content";
 
 const inter = Inter({
@@ -27,17 +37,138 @@ const teko = Teko({
   fallback: ["Arial Narrow", "Arial", "sans-serif"],
 });
 
+function getSchema(host: string | null, imperpre: boolean) {
+  const siteUrl = getRuntimeSiteUrl(host);
+  const imageUrl = `${siteUrl}/og-image.jpg`;
+  const logoUrl = `${siteUrl}/logo.png`;
+
+  if (imperpre) {
+    return {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": `${siteUrl}#localbusiness`,
+          name: "Imperpre",
+          url: siteUrl,
+          image: imageUrl,
+          logo: logoUrl,
+          telephone: contactPhone,
+          email: contactEmail,
+          description: imperpreTagline,
+          areaServed: "Mexico",
+          address: { "@type": "PostalAddress", ...postalAddress },
+        },
+        {
+          "@type": "Service",
+          "@id": `${siteUrl}#service`,
+          name: "Revisión y definición de solución para losas de concreto",
+          serviceType: "Revisión de losa de concreto con filtraciones, desgaste o humedad",
+          provider: { "@type": "Organization", name: companyName },
+          areaServed: "Mexico",
+          description: imperpreTagline,
+          url: siteUrl,
+        },
+      ],
+    };
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": `${siteUrl}#localbusiness`,
+        name: companyName,
+        legalName: companyName,
+        url: siteUrl,
+        image: imageUrl,
+        logo: logoUrl,
+        telephone: contactPhone,
+        email: contactEmail,
+        description: siteTagline,
+        areaServed: "Mexico",
+        address: { "@type": "PostalAddress", ...postalAddress },
+      },
+      {
+        "@type": "ConstructionCompany",
+        "@id": `${siteUrl}#constructioncompany`,
+        name: companyName,
+        url: siteUrl,
+        image: imageUrl,
+        logo: logoUrl,
+        telephone: contactPhone,
+        email: contactEmail,
+        areaServed: "Mexico",
+        knowsAbout: [
+          "Industrial infrastructure execution",
+          "Institutional infrastructure execution",
+          "Structural fabrication",
+          "Structural installation",
+          "Industrial construction services",
+        ],
+        description: siteTagline,
+        address: { "@type": "PostalAddress", ...postalAddress },
+      },
+    ],
+  };
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: localeParam } = await params;
   const locale = localeParam as Locale;
-  const t = await getTranslations({ locale, namespace: "Index" });
-  const title = `${t("title")} | FITA`;
-  const description = t("description");
-  const siteUrl = getSiteUrl();
-  const localeUrl = getLocaleUrl(locale);
-  const ogLocale = locale === "es" ? "es_MX" : "en_US";
-  const metadataBase = siteUrl ? new URL(siteUrl) : undefined;
+  const host = (await headers()).get("host");
+  const imperpre = isImperpreHost(host);
+  const siteUrl = getRuntimeSiteUrl(host);
+  const localeUrl = `${siteUrl}/${locale}`;
+  const metadataBase = new URL(siteUrl);
 
+  if (imperpre) {
+    const title = imperpreMessages.Index.title;
+    const description = imperpreMessages.Index.description;
+    return {
+      metadataBase,
+      title,
+      description,
+      applicationName: "Imperpre",
+      keywords: [
+        "imperpre",
+        "losa de concreto",
+        "filtraciones en techo",
+        "humedad en azotea",
+        "revision de techo por whatsapp",
+      ],
+      authors: [{ name: companyName }],
+      creator: companyName,
+      publisher: companyName,
+      category: "roof inspection services",
+      alternates: { canonical: localeUrl },
+      openGraph: {
+        type: "website",
+        locale: "es_MX",
+        url: localeUrl,
+        siteName: "Imperpre",
+        title,
+        description,
+        images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: title }],
+      },
+      twitter: { card: "summary_large_image", title, description, images: ["/og-image.jpg"] },
+      icons: {
+        icon: [
+          { url: "/favicon.ico", sizes: "any" },
+          { url: "/icon.png", type: "image/png", sizes: "1024x1024" },
+        ],
+        apple: [{ url: "/apple-icon.png", sizes: "1024x1024", type: "image/png" }],
+        shortcut: ["/favicon.ico"],
+      },
+      manifest: "/manifest.webmanifest",
+      verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
+      robots: { index: true, follow: true },
+    };
+  }
+
+  const title = `${corporateMessages.Index.title} | FITA`;
+  const description = corporateMessages.Index.description;
   return {
     metadataBase,
     title,
@@ -50,21 +181,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       "instalación estructural",
       "obra civil industrial",
       "mantenimiento estructural",
-      "contratista industrial Mexico",
-      "Ciudad Madero Tamaulipas",
     ],
     authors: [{ name: companyName }],
     creator: companyName,
     publisher: companyName,
     category: "industrial services",
-    alternates: {
-      canonical: localeUrl ?? `/${locale}`,
-      languages: getLanguageAlternates(),
-    },
+    alternates: { canonical: localeUrl },
     openGraph: {
       type: "website",
-      locale: ogLocale,
-      url: localeUrl ?? `/${locale}`,
+      locale: "es_MX",
+      url: localeUrl,
       siteName: "FITA",
       title,
       description,
@@ -81,20 +207,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
     manifest: "/manifest.webmanifest",
     verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
-    },
+    robots: { index: true, follow: true },
   };
 }
 
 export default async function RootLayout({ children, params }: Readonly<{ children: React.ReactNode; params: Promise<{ locale: string }> }>) {
   const { locale: localeParam } = await params;
   const locale = localeParam as Locale;
-  if (!routing.locales.includes(locale)) notFound();
-  const messages = await getMessages({ locale });
-  const organizationSchema = getIndustrialCompanySchema();
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) notFound();
+  const host = (await headers()).get("host");
+  const imperpre = isImperpreHost(host);
+  const messages = imperpre ? imperpreMessages : corporateMessages;
+  const organizationSchema = getSchema(host, imperpre);
 
   return (
     <html lang={locale} className={`${inter.variable} ${teko.variable}`}>
@@ -104,7 +228,7 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
         </a>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <Suspense fallback={null}><GoogleAnalytics /></Suspense>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
           <CookieConsent locale={locale} />
         </NextIntlClientProvider>
