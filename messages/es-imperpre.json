@@ -30,7 +30,7 @@
     "panelLabel": "La diferencia",
     "panelTitle": "Cada azotea se revisa en sitio para definir una solución según su condición real.",
     "panelBullet1": "Diagnóstico real en sitio — no estimados de escritorio",
-    "panelBullet2": "Resolvemos de fondo — no tapamos el síntoma",
+    "panelBullet2": "La solución se define según el problema real y la condición de la azotea.",
     "panelBullet3": "Si durante la siguiente temporada de lluvias se presenta una filtración en la zona intervenida, realizamos una revisión correctiva sin costo",
     "formalLabel": "Para quién es",
     "formalValue": "Escuelas privadas con azotea de concreto y filtraciones activas o recurrentes en zona costera",
@@ -42,7 +42,7 @@
     "eyebrow": "Filtraciones en zona costera",
     "title": "No es la gotera. Es lo que la gotera le está costando a tu escuela.",
     "description1": "Un salón con humedad, olor a moho o plafón dañado no es solo un problema de mantenimiento. También deteriora la percepción de cuidado, orden y confianza que recibe cada familia. En zona costera — donde el salitre y la humedad aceleran el deterioro — el problema no espera al siguiente ciclo escolar.",
-    "description2": "La mayoría de las escuelas atienden el síntoma: tapan la gotera, pintan el plafón, esperan. El problema regresa en la siguiente lluvia y cada vez llega más adentro: equipos dañados, mobiliario arruinado, clases interrumpidas — y los padres que lo notan no avisan antes de irse.",
+    "description2": "La mayoría de las escuelas atienden el síntoma: tapan la gotera, pintan el plafón, esperan. El problema regresa en la siguiente lluvia y cada vez llega más adentro: equipos dañados, mobiliario arruinado, clases interrumpidas — y muchas veces el deterioro se vuelve visible antes de que se atienda correctamente.",
     "stats": {
       "symptom1": {
         "value": "Clases interrumpidas",
@@ -65,8 +65,8 @@
         "label": "daño visible que comunica descuido a cada padre que entra"
       },
       "symptom6": {
-        "value": "Matrículas en riesgo",
-        "label": "un plantel deteriorado es el primer argumento para cambiar de escuela"
+        "value": "Imagen del plantel afectada",
+        "label": "un plantel deteriorado afecta la percepción de confianza y cuidado que reciben las familias"
       }
     },
     "cta": "Quiero resolver esto — agendar visita gratuita"
@@ -87,7 +87,7 @@
       },
       {
         "title": "Ejecución bajo procedimientos constructivos",
-        "description": "Retiro del material existente, preparación de superficie, nivelación y membrana instalada paso a paso. No improvisamos en obra."
+        "description": "Retiro del material existente, preparación de superficie, nivelación y membrana instalada paso a paso. La ejecución se realiza con un procedimiento definido desde el inicio."
       },
       {
         "title": "Compromiso de continuidad",
