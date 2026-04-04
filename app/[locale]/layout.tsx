@@ -16,6 +16,7 @@ import {
   contactEmail,
   contactPhone,
   getRuntimeSiteUrl,
+  imperpreSeo,
   imperpreTagline,
   isImperpreHost,
   postalAddress,
@@ -37,41 +38,58 @@ const teko = Teko({
   fallback: ["Arial Narrow", "Arial", "sans-serif"],
 });
 
-function getSchema(host: string | null, imperpre: boolean) {
+function getSchema(host: string | null, imperpre: boolean, locale: string) {
   const siteUrl = getRuntimeSiteUrl(host);
-  const imageUrl = `${siteUrl}/og-image.jpg`;
+  const localeUrl = `${siteUrl}/${locale}`;
   const logoUrl = `${siteUrl}/logo.png`;
 
   if (imperpre) {
+    const imageUrl = `${siteUrl}/imperpre-og.png`;
+    const serviceArea = imperpreSeo.areas.map((name) => ({
+      "@type": "City",
+      name,
+      containedInPlace: {
+        "@type": "State",
+        name: "Tamaulipas",
+      },
+    }));
+
     return {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "LocalBusiness",
-          "@id": `${siteUrl}#localbusiness`,
+          "@id": `${localeUrl}#localbusiness`,
           name: "Imperpre",
-          url: siteUrl,
+          url: localeUrl,
           image: imageUrl,
           logo: logoUrl,
           telephone: contactPhone,
           email: contactEmail,
-          description: imperpreTagline,
-          areaServed: "Mexico",
-          address: { "@type": "PostalAddress", ...postalAddress },
+          description: imperpreSeo.description,
+          areaServed: serviceArea,
+          serviceArea,
+          availableLanguage: "es-MX",
         },
         {
           "@type": "Service",
-          "@id": `${siteUrl}#service`,
-          name: "Revisión y definición de solución para losas de concreto",
+          "@id": `${localeUrl}#service`,
+          name: imperpreSeo.serviceName,
           serviceType: "Revisión de losa de concreto con filtraciones, desgaste o humedad",
-          provider: { "@type": "Organization", name: companyName },
-          areaServed: "Mexico",
-          description: imperpreTagline,
-          url: siteUrl,
+          provider: { "@id": `${localeUrl}#localbusiness` },
+          areaServed: serviceArea,
+          audience: {
+            "@type": "Audience",
+            audienceType: "Escuelas privadas",
+          },
+          description: imperpreSeo.serviceDescription,
+          url: localeUrl,
         },
       ],
     };
   }
+
+  const imageUrl = `${siteUrl}/og-image.jpg`;
 
   return {
     "@context": "https://schema.org",
@@ -124,20 +142,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const metadataBase = new URL(siteUrl);
 
   if (imperpre) {
-    const title = imperpreMessages.Index.title;
-    const description = imperpreMessages.Index.description;
+    const title = imperpreSeo.title;
+    const description = imperpreSeo.description;
     return {
       metadataBase,
       title,
       description,
       applicationName: "Imperpre",
-      keywords: [
-        "imperpre",
-        "losa de concreto",
-        "filtraciones en techo",
-        "humedad en azotea",
-        "revision de techo por whatsapp",
-      ],
       authors: [{ name: companyName }],
       creator: companyName,
       publisher: companyName,
@@ -150,9 +161,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         siteName: "Imperpre",
         title,
         description,
-        images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: title }],
+        images: [{ url: "/imperpre-og.png", width: 1536, height: 1024, alt: title }],
       },
-      twitter: { card: "summary_large_image", title, description, images: ["/og-image.jpg"] },
+      twitter: { card: "summary_large_image", title, description, images: ["/imperpre-og.png"] },
       icons: {
         icon: [
           { url: "/favicon.ico", sizes: "any" },
@@ -163,7 +174,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       },
       manifest: "/manifest.webmanifest",
       verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
-      robots: { index: true, follow: true },
+      robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          "max-image-preview": "large",
+          "max-snippet": -1,
+          "max-video-preview": -1,
+        },
+      },
     };
   }
 
@@ -218,7 +239,7 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
   const host = (await headers()).get("host");
   const imperpre = isImperpreHost(host);
   const messages = imperpre ? imperpreMessages : corporateMessages;
-  const organizationSchema = getSchema(host, imperpre);
+  const organizationSchema = getSchema(host, imperpre, locale);
 
   return (
     <html lang={locale} className={`${inter.variable} ${teko.variable}`}>

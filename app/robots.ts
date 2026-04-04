@@ -1,16 +1,18 @@
 import type { MetadataRoute } from "next";
+import { headers } from "next/headers";
 
-import { getSiteUrl } from "@/lib/site";
+import { getRuntimeSiteUrl } from "@/lib/site";
 
-export default function robots(): MetadataRoute.Robots {
-  const siteUrl = getSiteUrl();
+export default async function robots(): Promise<MetadataRoute.Robots> {
+  const host = (await headers()).get("host");
+  const siteUrl = getRuntimeSiteUrl(host);
 
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: siteUrl ? `${siteUrl}/sitemap.xml` : undefined,
-    host: siteUrl ?? undefined,
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   };
 }

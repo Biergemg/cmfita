@@ -14,6 +14,16 @@ export const whatsappPrefillMessage =
 export const siteTagline = "Empresa especializada en fabricación, instalación y construcción de infraestructura industrial e institucional.";
 export const imperpreTagline =
   "Revisión y definición de solución para losas de concreto con filtraciones, desgaste o deterioro por humedad y exposición climática.";
+export const imperpreSeo = {
+  title: "Filtraciones en azotea de concreto para escuelas | Imperpre",
+  description:
+    "Visita técnica gratuita para escuelas privadas en Tampico, Ciudad Madero y Altamira con filtraciones, humedad o desgaste en azotea de concreto. Agenda por WhatsApp.",
+  serviceName:
+    "Visita técnica gratuita para escuelas con filtraciones en azotea de concreto",
+  serviceDescription:
+    "Revisión en sitio de azotea de concreto para escuelas privadas, con identificación de zonas críticas y propuesta según la condición real encontrada.",
+  areas: ["Tampico", "Ciudad Madero", "Altamira"] as const,
+};
 
 export const postalAddress = {
   streetAddress: "Paseo de los Mexicas 126-D Col. 16 de Septiembre",

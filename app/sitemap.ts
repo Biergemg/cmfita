@@ -1,14 +1,48 @@
 import type { MetadataRoute } from "next";
+import { headers } from "next/headers";
 
 import { getBlogPosts, getServices } from "@/lib/content";
-import { getLocalePath, getSiteUrl, supportedLocales } from "@/lib/site";
+import { getLocalePath, getRuntimeSiteUrl, isImperpreHost, supportedLocales } from "@/lib/site";
 import type { Locale } from "@/types/content";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const siteUrl = getSiteUrl();
-  if (!siteUrl) return [];
-
+  const host = (await headers()).get("host");
+  const siteUrl = getRuntimeSiteUrl(host);
+  const imperpre = isImperpreHost(host);
   const lastModified = new Date();
+
+  if (imperpre) {
+    const locale = "es";
+    const base = `${siteUrl}${getLocalePath(locale)}`;
+
+    return [
+      {
+        url: base,
+        lastModified,
+        changeFrequency: "weekly",
+        priority: 1,
+      },
+      {
+        url: `${base}/privacy`,
+        lastModified,
+        changeFrequency: "yearly",
+        priority: 0.3,
+      },
+      {
+        url: `${base}/terms`,
+        lastModified,
+        changeFrequency: "yearly",
+        priority: 0.3,
+      },
+      {
+        url: `${base}/cookies`,
+        lastModified,
+        changeFrequency: "yearly",
+        priority: 0.3,
+      },
+    ];
+  }
+
   const baseRoutes = ["", "/services", "/blog", "/team", "/privacy", "/terms", "/cookies"];
 
   const routeEntries = supportedLocales.flatMap((locale) =>
