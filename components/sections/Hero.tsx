@@ -42,10 +42,10 @@ export function Hero() {
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
           <div className="max-w-5xl lg:col-span-7">
             <div className="section-kicker">FITA</div>
-            <h1 ref={headlineRef} className="text-shadow-display mb-6 max-w-5xl text-5xl font-bold leading-[0.9] tracking-[0.01em] text-steel-light text-balance md:text-6xl lg:text-[5.5rem]">
+            <h1 ref={headlineRef} className="text-shadow-display mb-6 max-w-5xl text-5xl font-bold leading-[0.9] tracking-[0.005em] text-steel-light text-balance md:text-6xl lg:text-[5.5rem]">
               {t("headline")}
             </h1>
-            <p ref={subheadlineRef} className="mb-10 max-w-[42rem] text-balance text-lg leading-relaxed text-industrial-300 md:text-[1.15rem]">
+            <p ref={subheadlineRef} className="reading-measure mb-10 max-w-[40rem] text-pretty text-[1.05rem] leading-[1.72] text-industrial-300 md:text-[1.125rem]">
               {t("subheadline")}
             </p>
             <div ref={ctaRef} className="flex flex-col gap-4 sm:flex-row">
@@ -80,8 +80,8 @@ export function Hero() {
           <div className="hidden lg:col-span-5 lg:block">
             <div className="glass-panel premium-card rounded-sm p-8">
               <p className="mb-3 text-xs uppercase tracking-[0.2em] text-industrial-400">{t("panelLabel")}</p>
-              <h2 className="mb-5 text-3xl leading-tight text-steel-light">{t("panelTitle")}</h2>
-              <ul className="space-y-3 text-sm text-industrial-300">
+              <h2 className="mb-5 text-3xl leading-[1.04] tracking-[0.01em] text-steel-light">{t("panelTitle")}</h2>
+              <ul className="space-y-3 text-[0.95rem] leading-[1.65] text-industrial-300">
                 <li className="border-l-2 border-industrial-400 pl-3">{t("panelBullet1")}</li>
                 <li className="border-l-2 border-industrial-400 pl-3">{t("panelBullet2")}</li>
                 <li className="border-l-2 border-industrial-400 pl-3">{t("panelBullet3")}</li>

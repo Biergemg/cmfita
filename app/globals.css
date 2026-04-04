@@ -28,6 +28,9 @@
 
   body {
     @apply bg-industrial-950 text-steel-light font-inter antialiased;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+    font-optical-sizing: auto;
     background-image:
       radial-gradient(circle at top left, rgba(249, 115, 22, 0.08), transparent 28%),
       radial-gradient(circle at top right, rgba(148, 163, 184, 0.08), transparent 24%),
@@ -35,7 +38,8 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-teko uppercase tracking-[0.02em];
+    @apply font-teko uppercase tracking-[0.015em];
+    text-wrap: balance;
   }
 
   ::selection {
@@ -106,5 +110,17 @@
 
   .text-shadow-display {
     text-shadow: 0 10px 40px rgba(2, 6, 23, 0.35);
+  }
+
+  .reading-measure {
+    max-width: 62ch;
+  }
+
+  .section-title {
+    @apply text-4xl leading-[0.96] tracking-[0.012em] text-steel-light md:text-5xl;
+  }
+
+  .section-subtitle {
+    @apply text-lg leading-[1.72] text-industrial-300 md:text-[1.125rem];
   }
 }

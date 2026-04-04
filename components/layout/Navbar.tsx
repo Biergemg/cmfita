@@ -45,8 +45,8 @@ export function Navbar() {
             <Image src="/logo.png" alt="FITA Logo" fill priority className="object-contain drop-shadow-md" sizes="112px" />
           </div>
           <div className="hidden min-w-0 md:block">
-            <p className="text-xs uppercase tracking-[0.24em] text-industrial-500">Construcción y Mantenimientos</p>
-            <p className="font-teko text-[2rem] leading-none tracking-[0.04em] text-steel-light">FITA</p>
+            <p className="text-[0.7rem] uppercase tracking-[0.18em] text-industrial-500">Construcción y Mantenimientos</p>
+            <p className="font-teko text-[2rem] leading-none tracking-[0.025em] text-steel-light">FITA</p>
           </div>
         </Link>
 
@@ -56,7 +56,7 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               aria-current={pathname === link.href || (isHome && link.href.startsWith("/#")) ? "page" : undefined}
-              className="text-xs font-semibold uppercase tracking-[0.18em] text-industrial-400 transition-colors hover:text-steel-light"
+              className="text-xs font-semibold uppercase tracking-[0.14em] text-industrial-400 transition-colors hover:text-steel-light"
             >
               {link.label}
             </Link>

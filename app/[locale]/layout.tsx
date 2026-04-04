@@ -13,8 +13,19 @@ import { getIndustrialCompanySchema } from "@/lib/schema";
 import { companyName, getLanguageAlternates, getLocaleUrl, getSiteUrl } from "@/lib/site";
 import type { Locale } from "@/types/content";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const teko = Teko({ subsets: ["latin"], variable: "--font-teko", weight: ["300", "400", "500", "600", "700"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+  fallback: ["system-ui", "Arial", "sans-serif"],
+});
+const teko = Teko({
+  subsets: ["latin"],
+  variable: "--font-teko",
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  fallback: ["Arial Narrow", "Arial", "sans-serif"],
+});
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale: localeParam } = await params;

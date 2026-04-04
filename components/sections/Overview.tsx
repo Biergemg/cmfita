@@ -39,10 +39,10 @@ export function Overview() {
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-12 px-6 text-center">
         <div className="w-full">
           <div className="section-kicker justify-center">{locale === "es" ? "Por qué FITA" : "Why FITA"}</div>
-          <h2 className="overview-elem mb-6 text-4xl text-steel-light md:text-6xl">{t("title")}</h2>
+          <h2 className="overview-elem section-title mb-6 md:text-6xl">{t("title")}</h2>
           <div className="overview-elem mx-auto mb-10 h-1.5 w-32 bg-industrial-400" />
-          <p className="overview-elem mx-auto mb-8 max-w-3xl text-xl leading-relaxed text-industrial-400">{t("description1")}</p>
-          <p className="overview-elem mx-auto max-w-3xl text-xl leading-relaxed text-industrial-400">{t("description2")}</p>
+          <p className="overview-elem reading-measure mx-auto mb-8 max-w-3xl text-[1.08rem] leading-[1.78] text-industrial-400 md:text-[1.16rem]">{t("description1")}</p>
+          <p className="overview-elem reading-measure mx-auto max-w-3xl text-[1.08rem] leading-[1.78] text-industrial-400 md:text-[1.16rem]">{t("description2")}</p>
         </div>
 
         {stats.length > 0 && (
@@ -50,7 +50,7 @@ export function Overview() {
             {stats.map((stat) => (
               <div key={stat.label} className="overview-elem premium-card p-6 text-left">
                 <p className="text-3xl text-steel-light">{stat.value}</p>
-                <p className="mt-2 text-sm uppercase tracking-[0.18em] text-industrial-400">{stat.label}</p>
+                <p className="mt-2 text-sm uppercase tracking-[0.12em] text-industrial-400">{stat.label}</p>
               </div>
             ))}
           </div>

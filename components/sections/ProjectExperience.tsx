@@ -39,11 +39,11 @@ export function ProjectExperience() {
       <div className="mb-16 flex flex-col items-end gap-12 md:flex-row">
         <div className="md:w-1/2">
           <div className="section-kicker">Experiencia documentada</div>
-          <h2 className="mb-4 text-4xl text-steel-light md:text-5xl">{t("title")}</h2>
+          <h2 className="section-title mb-4">{t("title")}</h2>
           <div className="h-1 w-20 bg-industrial-400" />
         </div>
         <div className="md:w-1/2">
-          <p className="border-l-2 border-industrial-800 py-2 pl-6 text-lg text-industrial-400">{t("subtitle")}</p>
+          <p className="reading-measure border-l-2 border-industrial-800 py-2 pl-6 text-[1.05rem] leading-[1.72] text-industrial-400">{t("subtitle")}</p>
         </div>
       </div>
 
@@ -57,10 +57,10 @@ export function ProjectExperience() {
           <div key={toStableKey(project.title, i)} className="project-row group flex flex-col border-b border-industrial-800 py-8 transition-colors hover:bg-industrial-800/20 md:flex-row">
             <div className="mb-4 pr-8 md:mb-0 md:w-1/3">
               <span className="mb-2 block text-3xl text-industrial-500 opacity-50">0{i + 1}</span>
-              <h3 className="text-2xl tracking-wide text-steel-light transition-colors group-hover:text-steel-metallic">{project.title}</h3>
+              <h3 className="text-2xl tracking-[0.02em] text-steel-light transition-colors group-hover:text-steel-metallic">{project.title}</h3>
             </div>
             <div className="flex items-center md:w-2/3 md:border-l md:border-industrial-800 md:pl-8">
-              <p className="max-w-[56ch] leading-relaxed text-industrial-400 transition-colors duration-500 group-hover:text-steel-light">{project.description}</p>
+              <p className="reading-measure max-w-[56ch] leading-[1.72] text-industrial-400 transition-colors duration-500 group-hover:text-steel-light">{project.description}</p>
             </div>
           </div>
         ))}

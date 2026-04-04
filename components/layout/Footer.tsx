@@ -16,17 +16,17 @@ export function Footer() {
       <div className="container mx-auto max-w-7xl px-6">
         <div className="premium-card mb-14 grid grid-cols-1 gap-10 p-8 md:grid-cols-[1.25fr_0.8fr] md:p-10">
           <div>
-            <p className="mb-3 text-xs uppercase tracking-[0.24em] text-industrial-500">
+            <p className="mb-3 text-xs uppercase tracking-[0.18em] text-industrial-500">
               {locale === "es" ? "Empresa de ejecución multidisciplina" : "Multidisciplinary execution company"}
             </p>
             <h2 className="max-w-3xl text-4xl leading-[0.92] text-steel-light md:text-6xl">
               {locale === "es" ? "Ejecución sin sorpresas de alcance." : "Execution without scope surprises."}
             </h2>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-industrial-300 md:text-lg">{t("description")}</p>
+            <p className="reading-measure mt-5 max-w-[58ch] text-base leading-[1.72] text-industrial-300 md:text-lg">{t("description")}</p>
           </div>
           <div className="flex flex-col justify-between gap-6">
             <div className="space-y-3">
-              <p className="text-xs uppercase tracking-[0.24em] text-industrial-500">
+              <p className="text-xs uppercase tracking-[0.18em] text-industrial-500">
                 {locale === "es" ? "Contacto formal y rápido" : "Formal and quick contact"}
               </p>
               <p className="text-sm leading-relaxed text-industrial-300">
