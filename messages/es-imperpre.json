@@ -1,237 +1,259 @@
 {
   "Index": {
-    "title": "Imperpre | Solución seria para losas de concreto con filtraciones y humedad",
-    "description": "Revisión y definición de solución para losas de concreto con filtraciones, desgaste o deterioro por humedad y exposición climática. Atención por WhatsApp para revisar fotos, ubicación y condición real del techo."
+    "title": "Imperpre | Filtraciones, moho y humedad en tu escuela — solución real para losas de concreto",
+    "description": "¿Tu plantel huele a moho, tiene manchas en plafones o goteras que regresan cada lluvia? Imperpre revisa tu losa de concreto y define la solución antes de que los padres de familia lo noten primero. Atención directa por WhatsApp. Tampico, Madero y Altamira."
   },
   "Navbar": {
-    "problem": "Problema",
-    "idealFor": "Para quién es",
-    "offer": "Oferta",
+    "problem": "El problema",
+    "idealFor": "¿Para quién?",
+    "offer": "Qué hacemos",
     "faq": "Preguntas",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp directo"
   },
   "Footer": {
-    "description": "Imperpre es una landing-producto enfocada en revisión y definición de solución para losas de concreto con filtraciones, desgaste o humedad, operada por FITA.",
+    "description": "Imperpre resuelve filtraciones, humedad, moho y deterioro en losas de concreto. Tampico, Madero y Altamira. Operado por FITA. Atención directa por WhatsApp.",
     "contact": "Contacto",
-    "quickLinks": "Enlaces rápidos",
-    "problem": "Problema",
-    "offer": "Oferta",
+    "quickLinks": "Secciones",
+    "problem": "El problema",
+    "offer": "Qué hacemos",
     "faq": "Preguntas",
     "whatsapp": "Hablar por WhatsApp"
   },
   "Hero": {
-    "eyebrow": "Imperpre",
-    "headline": "Solución profesional para losas de concreto con filtraciones, desgaste y fallas por humedad",
-    "subheadline": "Atendemos escuelas, edificios e inmuebles con losa de concreto que necesitan una revisión seria del techo para definir la mejor solución según su condición real, exposición y nivel de deterioro.",
-    "ctaProposal": "Solicitar revisión por WhatsApp",
-    "ctaWhatsapp": "Quiero enviar fotos de mi techo",
-    "microcopy": "Respuesta directa por WhatsApp para revisar tu caso y orientarte sobre el siguiente paso.",
-    "panelLabel": "Valor de la revisión",
-    "panelTitle": "Una revisión seria antes de decidir evita intervenir a ciegas.",
-    "panelBullet1": "Atención enfocada en losas de concreto",
-    "panelBullet2": "Ideal para inmuebles con filtraciones, humedad, grietas o sistemas vencidos",
-    "panelBullet3": "Propuesta según superficie, pendientes, puntos críticos y metros reales",
-    "formalLabel": "Qué revisamos",
-    "formalValue": "Condición real, zonas críticas, superficie y exposición del techo",
-    "quickLabel": "Qué puedes enviar",
-    "quickValue": "Fotos, ubicación, tipo de inmueble y una breve descripción del problema"
+    "eyebrow": "Imperpre · Tampico · Madero · Altamira",
+    "headline": "Cuando los salones huelen a moho, el techo ya lleva tiempo fallando.",
+    "subheadline": "En la zona costera el salitre, el calor y la humedad destruyen las losas de concreto más rápido que en cualquier otra región. Lo que en otra ciudad tarda cinco años, aquí ocurre en dos. Y cuando los padres lo empiezan a notar, el daño ya llegó adentro.",
+    "ctaProposal": "Revisar mi plantel por WhatsApp",
+    "ctaWhatsapp": "Enviar fotos del techo",
+    "microcopy": "Solo necesitas fotos del techo y tu ubicación. Respuesta directa el mismo día.",
+    "panelLabel": "Por qué actuar antes de que llueva",
+    "panelTitle": "Cada temporada que pasa sin atenderlo, el daño ya fue más adentro.",
+    "panelBullet1": "Salitre + humedad costera = deterioro acelerado en losas de concreto",
+    "panelBullet2": "Moho en salones, olor activo y plafones dañados son señal de que la losa ya falló",
+    "panelBullet3": "Una revisión hoy cuesta una fracción de lo que cuesta recuperar equipos, mobiliario o la confianza de los padres",
+    "formalLabel": "Lo que revisamos",
+    "formalValue": "Condición real de la losa, zonas críticas, nivel de deterioro por exposición costera",
+    "quickLabel": "Lo que necesitas enviar",
+    "quickValue": "Fotos del techo y del interior: manchas, humedad, plafones dañados u olor visible"
   },
   "Overview": {
-    "eyebrow": "Problema real",
-    "title": "Cuando un techo empieza a fallar, el problema no suele quedarse solo arriba",
-    "description1": "La humedad, las filtraciones y el deterioro progresivo del techo pueden terminar afectando plafones, muros, instalaciones, equipos, salones, oficinas y áreas de uso diario.",
-    "description2": "En muchos casos, el daño visible aparece después de que la losa ya lleva tiempo acumulando desgaste, grietas, encharcamientos o puntos débiles.",
+    "eyebrow": "El problema real",
+    "title": "No es solo una gotera. Es el proceso que ya está dañando tu plantel por dentro.",
+    "description1": "En Tampico, Madero y Altamira el ambiente costero trabaja en contra de cualquier losa de concreto: el salitre se mete por las grietas, la humedad no se evapora como en el interior y el calor hace el resto. El resultado es un deterioro silencioso que avanza temporada tras temporada sin que nadie lo vea desde afuera.",
+    "description2": "Cuando aparece el primer síntoma visible —una mancha, una gotera, un olor— la losa ya lleva meses acumulando daño. Y ese daño no se queda en el techo: baja a plafones, invade muros, arruina instalaciones eléctricas, daña equipos, pudre mobiliario y termina generando hongos y olor a moho en los espacios donde estudian los alumnos.",
     "stats": {
       "symptom1": {
-        "value": "Goteras",
-        "label": "En temporada de lluvia"
+        "value": "Olor a moho",
+        "label": "En salones, pasillos o áreas techadas — señal de humedad activa dentro de la losa"
       },
       "symptom2": {
-        "value": "Humedad",
-        "label": "En techos o paredes"
+        "value": "Hongos visibles",
+        "label": "En muros, plafones o esquinas — resultado directo de humedad sin resolver"
       },
       "symptom3": {
-        "value": "Grietas",
-        "label": "En remates, orillas o zonas críticas"
+        "value": "Goteras activas",
+        "label": "Que regresan cada temporada de lluvia sin importar cuántas veces se hayan tapado"
       },
       "symptom4": {
-        "value": "Encharcamientos",
-        "label": "Sobre la azotea o cubierta"
+        "value": "Equipos dañados",
+        "label": "Proyectores, computadoras, laboratorio — expuestos a humedad y filtraciones constantes"
       },
       "symptom5": {
-        "value": "Desprendimientos",
-        "label": "Ampollamiento, zonas vencidas o acabados dañados"
+        "value": "Mobiliario arruinado",
+        "label": "Sillas, escritorios, libros y material didáctico deteriorado por humedad recurrente"
       },
       "symptom6": {
-        "value": "Reparaciones vencidas",
-        "label": "Señales de arreglos previos que ya no funcionan"
+        "value": "Plafones y pintura",
+        "label": "Manchas, descascaramiento y plafones caídos que los padres ven al entrar al plantel"
       }
     },
-    "cta": "Revisar mi caso por WhatsApp"
+    "cta": "Quiero revisar mi caso ahora por WhatsApp"
   },
   "Capabilities": {
-    "eyebrow": "Para quién es",
-    "title": "Este servicio es para inmuebles con losa de concreto que necesitan una solución bien definida",
-    "subtitle": "La oferta está pensada para propiedades donde el techo requiere una revisión formal antes de tomar decisiones, especialmente cuando ya existen señales de desgaste, filtración o afectación por exposición climática.",
+    "eyebrow": "¿Esto es para tu plantel?",
+    "title": "Este servicio es para escuelas que ya no pueden darse el lujo de ignorar el techo.",
+    "subtitle": "Si tu plantel tiene losa de concreto y ya hay señales visibles de humedad, moho, goteras o deterioro, esta revisión está diseñada exactamente para tu situación. En zona costera el problema no se detiene solo.",
     "items": [
       {
-        "title": "Escuelas privadas",
-        "description": "Planteles que no pueden darse el lujo de seguir operando con filtraciones, humedad o daño progresivo en salones y áreas comunes."
+        "title": "Escuelas privadas en zona costera",
+        "description": "Planteles en Tampico, Madero y Altamira donde el salitre y la humedad aceleran el deterioro. Cuando los salones huelen a moho, los padres empiezan a hacer preguntas que no tienen buena respuesta."
       },
       {
-        "title": "Edificios con losa de concreto",
-        "description": "Inmuebles que requieren una revisión seria de la cubierta antes de definir el tipo de intervención."
+        "title": "Planteles con goteras recurrentes",
+        "description": "Escuelas que llevan una o más temporadas tapando el mismo punto. Si el problema regresa, no es la reparación lo que falló — es que nunca se revisó la losa de fondo."
       },
       {
-        "title": "Oficinas y espacios administrativos",
-        "description": "Espacios donde la humedad y las filtraciones ya empiezan a afectar plafones, equipos o continuidad operativa."
+        "title": "Inmuebles con daño visible en interiores",
+        "description": "Salones con manchas en plafón, pintura descascarada, humedad en muros o equipos que ya sufrieron daño. El origen siempre está arriba."
       },
       {
-        "title": "Techos expuestos al sol, humedad y lluvia",
-        "description": "Cubiertas castigadas por el clima, escurrimientos, detalles vencidos o deterioro acumulado."
+        "title": "Techos con sistemas anteriores vencidos",
+        "description": "Cuando ya hubo intentos de impermeabilización y el problema regresó, repetir el mismo procedimiento no es la solución. Hay que revisar la losa desde cero."
       },
       {
-        "title": "Sistemas anteriores deteriorados o vencidos",
-        "description": "Casos donde ya hubo intentos previos y ahora hace falta revisar la condición real de la losa para decidir mejor."
+        "title": "Edificios, oficinas e inmuebles con losa de concreto",
+        "description": "No solo escuelas. Cualquier inmueble en zona costera con losa de concreto que ya muestre filtraciones, humedad activa o deterioro acumulado."
       }
     ],
-    "filterNote": "Enfocado exclusivamente en losas de concreto."
+    "filterNote": "Exclusivo para losas de concreto. Tampico, Madero y Altamira."
   },
   "Projects": {
-    "eyebrow": "Oferta principal",
-    "title": "Oferta principal: revisión + definición de solución para losas de concreto",
-    "subtitle": "Cada techo tiene una condición distinta. Por eso la propuesta parte de revisar la losa, su estado general, sus puntos críticos, sus pendientes, su superficie y el nivel de desgaste existente.",
+    "eyebrow": "Lo que hacemos",
+    "title": "No llegamos a vender un producto. Llegamos a resolver el problema de tu techo.",
+    "subtitle": "Antes de proponer cualquier solución revisamos la losa completa. Un techo mal diagnosticado genera una propuesta incorrecta — y eso termina costándote el doble mientras el moho sigue avanzando.",
     "items": [
       {
-        "title": "Revisión inicial del caso",
-        "description": "Primer contacto para entender el tipo de inmueble, el problema visible, antecedentes y urgencia del caso."
+        "title": "Revisión inicial por WhatsApp",
+        "description": "Primer contacto para entender el tipo de inmueble, los síntomas visibles y la urgencia del caso. Fotos del techo y del interior son suficientes para empezar."
       },
       {
-        "title": "Identificación de síntomas visibles",
-        "description": "Se documentan filtraciones, humedad, grietas, reparaciones previas, encharcamientos y señales de deterioro ya presentes."
+        "title": "Diagnóstico completo de la losa en sitio",
+        "description": "Revisión presencial de la cubierta: filtraciones activas, grietas, zonas con humedad acumulada, sistemas anteriores vencidos y nivel real de deterioro por exposición costera."
       },
       {
-        "title": "Evaluación general de la losa",
-        "description": "Se revisa el estado de la cubierta de concreto, su exposición y el nivel de desgaste observable."
+        "title": "Evaluación de puntos críticos",
+        "description": "Orillas, encuentros, pendientes y remates — donde los techos en zona de salitre fallan primero. Los revisamos con atención específica, no con un recorrido general."
       },
       {
-        "title": "Revisión de puntos críticos",
-        "description": "Orillas, encuentros, pendientes, remates y zonas sensibles que suelen definir el comportamiento del techo."
+        "title": "Propuesta técnica sobre condición real",
+        "description": "La solución se define con base en los metros reales, el estado de la superficie y los puntos críticos. No hay estimados de escritorio ni ajustes sorpresa cuando empieza el trabajo."
       },
       {
-        "title": "Consideración de metros y condición de superficie",
-        "description": "La solución no se plantea al aire: se aterriza con base en superficie, geometría y condición general real."
+        "title": "Ejecución del sistema de protección",
+        "description": "Preparación de superficie, sellado de puntos críticos y aplicación del sistema de impermeabilización adecuado al caso real y al entorno costero de la zona."
       },
       {
-        "title": "Recomendación técnica según el estado observado",
-        "description": "Con esa base se define qué ruta tiene más sentido para proteger la cubierta y reducir el avance del problema."
+        "title": "Sin intermediarios en ningún paso",
+        "description": "Hablas con quien va a revisar el techo y ejecutar la solución. No hay un vendedor en medio y un técnico diferente el día del trabajo."
       }
     ],
-    "cta": "Hablar por WhatsApp y revisar mi techo"
+    "cta": "Quiero que revisen mi techo — escribir por WhatsApp"
   },
   "Safety": {
-    "eyebrow": "Lo que busca resolver",
-    "title": "Lo que esta solución busca proteger",
-    "subtitle": "Antes de intervenir conviene entender qué está en riesgo y qué se quiere proteger con una decisión mejor informada.",
+    "eyebrow": "Nuestra garantía antes de empezar",
+    "title": "Te decimos exactamente qué tiene tu techo antes de cobrarte un peso.",
+    "subtitle": "La mayoría de los problemas con impermeabilizaciones mal hechas empiezan antes del trabajo: con un diagnóstico que nunca ocurrió y un precio que no tenía base real. Nosotros hacemos lo contrario.",
+    "guarantee": "Si revisamos tu losa y no podemos resolver el problema, te lo decimos directo — sin cobrarte la visita.",
     "items": [
       {
-        "title": "Menos exposición a filtraciones recurrentes",
-        "description": "Una cubierta mejor atendida reduce la posibilidad de que la humedad siga avanzando en cada temporada."
+        "title": "Primero revisamos, luego proponemos",
+        "description": "Ningún precio sale de escritorio. La propuesta se define después de ver la losa en sitio: su condición real, el nivel de deterioro por salitre y humedad, los puntos críticos y los metros exactos. Si no lo vemos, no lo cotizamos."
       },
       {
-        "title": "Más claridad antes de intervenir",
-        "description": "Conocer el estado real del techo ayuda a tomar mejores decisiones y evita actuar por intuición."
+        "title": "El precio que acordamos es el precio final",
+        "description": "No hay ajustes sorpresa a la mitad del trabajo. El alcance, el proceso y el costo quedan definidos antes de empezar. Si la revisión revela algo que cambia el alcance, te avisamos antes — no después."
       },
       {
-        "title": "Mejor protección de espacios interiores",
-        "description": "Salones, oficinas, equipos, plafones y áreas operativas agradecen un techo en mejores condiciones."
+        "title": "Hablas con quien ejecuta, no con un vendedor",
+        "description": "No hay intermediario entre la conversación y el trabajo. La persona que revisa tu techo es la misma que define la solución y la que aparece el día de la ejecución. Sin teléfono descompuesto."
       },
       {
-        "title": "Más orden en la planeación del trabajo",
-        "description": "Una revisión adecuada permite entender mejor el alcance del proyecto y el siguiente paso lógico."
+        "title": "Si no podemos resolverlo, te lo decimos",
+        "description": "Hay casos donde el daño ya requiere otro tipo de intervención estructural. En ese caso te lo comunicamos en la revisión, con claridad, para que tomes la mejor decisión — no para venderte algo que no aplica."
       }
     ]
   },
   "Methodology": {
-    "title": "Una cubierta bien resuelta empieza por entender la condición real de la losa",
-    "subtitle": "El enfoque parte de revisar el techo de forma integral y no solo su capa visible.",
+    "title": "De gotera activa a techo protegido: cuatro pasos y tú solo haces el primero.",
+    "subtitle": "No necesitas saber qué tiene tu techo ni cómo se resuelve. Solo necesitas mandarnos fotos. El resto lo hacemos nosotros.",
     "steps": [
       {
-        "title": "Condición real antes que suposiciones",
-        "description": "Cada losa se revisa según desgaste, humedad acumulada, grietas, detalles vencidos y problemas de escurrimiento visibles."
+        "title": "Tú mandas fotos. Nosotros analizamos.",
+        "description": "Por WhatsApp: fotos del techo desde arriba, manchas en plafones, zonas con olor o humedad visible. Con eso ya tenemos suficiente para entender el tipo de problema y decirte si es algo que podemos resolver."
       },
       {
-        "title": "Lectura integral de la superficie",
-        "description": "La superficie, las pendientes, las orillas, los encuentros y los puntos críticos influyen directamente en el desempeño del sistema final de protección."
+        "title": "Nosotros agendamos la visita técnica.",
+        "description": "Sin formularios, sin esperas innecesarias. Coordinamos la visita según la urgencia del caso. Si hay goteras activas o daño a equipos en curso, lo priorizamos."
       },
       {
-        "title": "Definición del alcance con base real",
-        "description": "Con la información del techo se define una ruta más clara y más congruente con la condición actual del inmueble."
+        "title": "Nosotros hacemos el diagnóstico completo.",
+        "description": "Revisamos la losa entera: superficie, pendientes, puntos críticos, nivel de deterioro por salitre y humedad costera. Tú no tienes que saber qué buscar — eso es nuestro trabajo."
       },
       {
-        "title": "Siguiente paso con mejor criterio",
-        "description": "La conversación por WhatsApp ayuda a ordenar el caso y a entender qué tipo de revisión o solución conviene continuar."
+        "title": "Tú decides con información real. Nosotros ejecutamos.",
+        "description": "Te presentamos la solución con alcance y costo definidos sobre lo que encontramos. Sin letra chica, sin ajustes sorpresa. Si apruebas, ejecutamos. Si tienes preguntas, las resolvemos antes de empezar."
       }
     ]
   },
   "Procurement": {
-    "title": "Decisiones más claras para un trabajo más confiable",
-    "description": "Una intervención sobre losa de concreto requiere atención a las condiciones reales del techo, al entorno de exposición y al alcance específico del inmueble. El objetivo es que la solución propuesta tenga sentido para la superficie, el uso del edificio y el nivel de desgaste existente.",
-    "bullet1": "Atención enfocada en losas de concreto",
-    "bullet2": "Evaluación previa del área",
-    "bullet3": "Definición del alcance según condición real"
+    "eyebrow": "Lo que incluye la revisión",
+    "title": "Todo esto antes de que pagues un peso.",
+    "description": "No cobramos por revisar. La visita técnica, el diagnóstico y la propuesta son el primer paso — no el producto. Si después de revisar decides no continuar, quedas libre. Sin presión, sin compromisos.",
+    "stackTitle": "Qué recibes cuando nos contactas",
+    "stack1title": "Diagnóstico real de tu losa",
+    "stack1desc": "Revisión completa en sitio: superficie, deterioro, puntos críticos, efecto del salitre y humedad costera.",
+    "stack2title": "Identificación de todos los focos de problema",
+    "stack2desc": "Goteras, moho, humedad en muros, daño en plafones — mapeamos todo lo que el techo está causando adentro.",
+    "stack3title": "Propuesta técnica y económica concreta",
+    "stack3desc": "Alcance, proceso y precio definidos sobre lo que vimos. Sin estimados genéricos ni sorpresas después.",
+    "stack4title": "Respuesta directa el mismo día",
+    "stack4desc": "No hay formulario ni fila de espera. WhatsApp directo con quien va a resolver el problema.",
+    "reversal": "Si revisamos y el caso no es para nosotros, te lo decimos — y si podemos orientarte a quien sí puede, lo hacemos.",
+    "bullet1": "Losas de concreto · Tampico, Madero y Altamira",
+    "bullet2": "Diagnóstico en sitio antes de cualquier cobro",
+    "bullet3": "Precio final definido sobre condición real"
   },
   "Faq": {
-    "eyebrow": "Objeciones comunes",
-    "title": "Preguntas comunes antes de revisar una losa",
-    "subtitle": "Respuestas directas para entender cómo funciona el primer paso y qué tipo de casos atiende Imperpre.",
+    "eyebrow": "Lo que preguntan antes de decidir",
+    "title": "Si tienes dudas, aquí están las respuestas.",
+    "subtitle": "Directas, sin rodeos. Si tu pregunta no está aquí, escríbenos por WhatsApp — respondemos el mismo día.",
     "items": [
       {
-        "title": "¿Pueden dar precio sin revisar?",
-        "description": "Cada techo tiene condiciones distintas de superficie, detalles, desgaste, pendientes y metros reales. La revisión ayuda a definir mejor el alcance."
+        "title": "¿Pueden darme precio sin venir a revisar?",
+        "description": "No — y eso te protege a ti. En zona costera el deterioro por salitre y humedad varía mucho entre un inmueble y otro. Quien te da precio sin revisar está inventando un número. Ese número cambia cuando lleguen y vean la realidad. La revisión en sitio es lo que hace que el precio tenga sentido y no haya sorpresas a la mitad del trabajo.",
+        "tag": "Sobre el precio"
       },
       {
-        "title": "¿Atienden cualquier tipo de techo?",
-        "description": "La atención está enfocada exclusivamente en losas de concreto."
+        "title": "¿El olor a moho desaparece cuando se resuelve el techo?",
+        "description": "Si el problema se atiende a tiempo, sí. Si la humedad ya penetró muros, plafones o estructuras interiores, esas áreas también necesitan atención por separado. La revisión de la losa es el primer paso — con eso podemos orientarte sobre el alcance real del problema y si hay daño interior que también requiere intervención.",
+        "tag": "Sobre el moho"
       },
       {
-        "title": "¿Se puede revisar con fotos?",
-        "description": "Sí. En muchos casos WhatsApp ayuda como primer paso para entender el problema y orientar mejor la revisión."
+        "title": "¿Pueden hacer una evaluación inicial con fotos?",
+        "description": "Sí, y es exactamente el primer paso recomendado. Fotos del techo desde arriba y del interior — manchas, plafones, zonas con olor — nos dan suficiente para entender el tipo de problema y su urgencia. Con eso agendamos la visita técnica. No necesitas tener nada preparado antes de escribirnos.",
+        "tag": "Cómo empezar"
       },
       {
-        "title": "¿Atienden escuelas?",
-        "description": "Sí, así como otros inmuebles con cubierta de concreto que presenten filtraciones, deterioro o necesidad de intervención."
+        "title": "¿Atienden escuelas privadas en Tampico, Madero y Altamira?",
+        "description": "Sí, es el perfil principal que atendemos. Planteles con losa de concreto afectada por el ambiente costero: filtraciones que regresan cada temporada, humedad activa en salones, olor a moho que los padres ya empezaron a notar, y sistemas anteriores que no resolvieron el problema de fondo.",
+        "tag": "Zona y perfil"
       },
       {
-        "title": "¿Qué pasa si ya tiene sistema anterior?",
-        "description": "Se puede revisar el estado actual del techo y valorar la condición de la superficie para definir la mejor ruta."
+        "title": "Mi techo ya tiene impermeabilizante y el problema regresó. ¿Pueden revisarlo?",
+        "description": "Sí — y es uno de los casos más comunes que atendemos. Cuando un sistema anterior falla, generalmente es porque no se diagnosticó bien la losa antes de aplicarlo. Revisamos el estado actual por encima y por debajo del sistema existente para entender qué falló y cuál es la ruta correcta ahora.",
+        "tag": "Reparaciones previas"
+      },
+      {
+        "title": "¿Cuánto tiempo tarda en resolverse un caso urgente?",
+        "description": "La primera respuesta por WhatsApp es el mismo día. La visita técnica se agenda según disponibilidad y urgencia — si hay goteras activas, daño a equipos o el ciclo de lluvias está encima, lo indicamos desde el primer contacto para priorizarlo. No dejamos casos urgentes para después.",
+        "tag": "Tiempos"
       }
     ],
-    "cta": "Enviar fotos por WhatsApp"
+    "cta": "Tengo una duda — escribir por WhatsApp"
   },
   "Contact": {
-    "title": "¿Tu losa de concreto ya presenta filtraciones, desgaste o señales de humedad?",
-    "subtitle": "Comparte ubicación, fotos y una breve descripción del problema para orientarte por WhatsApp y ayudarte a definir el siguiente paso.",
-    "emotionalTitle": "Un techo con señales de desgaste rara vez mejora solo con el tiempo",
-    "emotionalBody": "La humedad, el calor, la exposición constante y el paso del tiempo pueden seguir afectando una losa si no se revisa su condición de forma oportuna. Una conversación inicial por WhatsApp puede ser el primer paso para entender qué está pasando y qué tipo de solución puede necesitar el inmueble.",
-    "directContact": "Puedes enviar",
+    "title": "¿Tu plantel ya tiene filtraciones, humedad o olor a moho?",
+    "subtitle": "Mándanos fotos del techo y del interior, tu ubicación y una descripción breve del problema. Te respondemos el mismo día.",
+    "emotionalTitle": "Un padre que entra al salón y huele moho no espera la junta de fin de mes para hablar.",
+    "emotionalBody": "En la zona costera el deterioro de una losa no se detiene entre temporadas. El salitre, el calor y la humedad trabajan todo el año. Cada ciclo que pasa sin atención es más daño en la estructura, más humedad en los muros, más riesgo para los equipos — y más probabilidad de que un padre llegue antes que tú al problema.",
+    "directContact": "Lo que ayuda a revisar tu caso",
     "engineerLabel": "Canal directo",
     "phoneLabel": "WhatsApp",
     "emailLabel": "Correo de respaldo",
     "name": "Equipo Imperpre",
     "phone": "+52 833 518 1171",
     "email": "cmfitasadecv@gmail.com",
-    "ctaProposal": "Quiero revisar mi techo por WhatsApp",
+    "ctaProposal": "Revisar mi plantel por WhatsApp ahora",
     "ctaWhatsapp": "Enviar mensaje por WhatsApp",
-    "locationLabel": "Qué ayuda a revisar mejor tu caso",
-    "address": "Fotos del techo, ubicación, tipo de inmueble y una descripción breve del problema.",
-    "coverageLabel": "Enfoque del servicio",
-    "coverage": "Revisión y definición de solución para losas de concreto con filtraciones, desgaste o deterioro por humedad y exposición climática.",
-    "formalLabel": "Qué hacemos primero",
-    "formalValue": "Revisar el caso, entender síntomas visibles y orientar el siguiente paso según la condición real del techo.",
-    "quickLabel": "Qué recibes",
-    "quickValue": "Respuesta directa por WhatsApp para ordenar tu caso y definir si conviene revisión, envío de fotos o siguiente acción.",
-    "microcopy": "También puedes compartir ubicación, fotos y una breve descripción para acelerar la orientación inicial."
+    "locationLabel": "Qué necesitamos ver",
+    "address": "Fotos del techo y del interior: manchas en plafones, humedad en muros, zonas con olor o goteras activas.",
+    "coverageLabel": "Zona de atención",
+    "coverage": "Tampico, Ciudad Madero y Altamira. Losas de concreto con filtraciones, humedad, moho o deterioro por exposición costera.",
+    "formalLabel": "Primer paso",
+    "formalValue": "Revisar fotos, entender los síntomas visibles y orientarte sobre urgencia y siguiente acción.",
+    "quickLabel": "Lo que recibes",
+    "quickValue": "Respuesta directa el mismo día para ordenar tu caso y definir si requiere visita técnica urgente.",
+    "microcopy": "También puedes enviar fotos del interior: manchas en plafones, humedad en muros, zonas con olor activo o daño en equipos."
   },
   "notFoundTitle": "No encontramos esa página",
   "notFoundBody": "La ruta solicitada no existe o cambió de ubicación.",

@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, AlertTriangle } from "lucide-react";
 import gsap from "gsap";
 
 import { Button } from "@/components/ui/button";
@@ -13,18 +12,20 @@ import { getWhatsappUrl } from "@/lib/site";
 export function ImperpreHero() {
   const t = useTranslations("Hero");
   const containerRef = useRef<HTMLDivElement>(null);
+  const eyebrowRef = useRef<HTMLDivElement>(null);
   const headlineRef = useRef<HTMLHeadingElement>(null);
   const subheadlineRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
-  const bgRef = useRef<HTMLDivElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.fromTo(bgRef.current, { scale: 1.1, opacity: 0 }, { scale: 1, opacity: 0.35, duration: 2.5, ease: "power2.out" });
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-      tl.fromTo(headlineRef.current, { y: 50, opacity: 0 }, { y: 0, opacity: 1, duration: 1, delay: 0.2 })
-        .fromTo(subheadlineRef.current, { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 0.8 }, "-=0.6")
-        .fromTo(ctaRef.current, { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, "-=0.4");
+      tl.fromTo(eyebrowRef.current, { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 })
+        .fromTo(headlineRef.current, { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9 }, "-=0.3")
+        .fromTo(subheadlineRef.current, { y: 25, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7 }, "-=0.5")
+        .fromTo(ctaRef.current, { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, "-=0.4")
+        .fromTo(panelRef.current, { x: 30, opacity: 0 }, { x: 0, opacity: 1, duration: 0.8 }, "-=0.7");
     }, containerRef);
 
     return () => ctx.revert();
@@ -36,24 +37,40 @@ export function ImperpreHero() {
   };
 
   return (
-    <section ref={containerRef} className="relative flex min-h-[88vh] items-center overflow-hidden bg-industrial-950 pt-20">
-      <div ref={bgRef} className="absolute inset-0 z-0 select-none opacity-40">
-        <Image src="/hero.png" alt="Imperpre hero" fill priority className="object-cover" sizes="100vw" />
+    <section ref={containerRef} className="relative flex min-h-[92vh] items-center overflow-hidden bg-industrial-950 pt-20">
+      {/* Subtle geometric accent — no background image */}
+      <div className="pointer-events-none absolute inset-0 z-0">
+        <div className="absolute right-0 top-0 h-[600px] w-[600px] -translate-y-1/4 translate-x-1/3 rounded-full border border-industrial-800/40 opacity-60" />
+        <div className="absolute right-0 top-0 h-[400px] w-[400px] -translate-y-1/6 translate-x-1/3 rounded-full border border-industrial-800/30 opacity-40" />
+        <div className="absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-industrial-700/30 to-transparent" />
       </div>
-      <div className="absolute inset-0 z-[1] bg-grid opacity-50 mix-blend-overlay pointer-events-none" />
-      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-industrial-950 via-industrial-950/60 to-transparent pointer-events-none" />
-      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-industrial-950 via-transparent to-transparent pointer-events-none" />
 
       <div className="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
-          <div className="max-w-5xl lg:col-span-7">
-            <div className="section-kicker">{t("eyebrow")}</div>
-            <h1 ref={headlineRef} className="text-shadow-display mb-6 max-w-5xl text-4xl font-bold leading-[0.92] tracking-[0.005em] text-steel-light text-balance sm:text-5xl md:text-6xl lg:text-[5.5rem]">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
+
+          {/* Left — Main copy */}
+          <div className="lg:col-span-7">
+            <div ref={eyebrowRef} className="mb-6 flex items-center gap-3">
+              <div className="flex items-center gap-2 rounded-sm border border-amber-500/30 bg-amber-500/10 px-3 py-1.5">
+                <AlertTriangle className="h-3.5 w-3.5 text-amber-400" />
+                <span className="text-xs font-medium uppercase tracking-[0.18em] text-amber-400">{t("eyebrow")}</span>
+              </div>
+            </div>
+
+            <h1
+              ref={headlineRef}
+              className="mb-6 text-4xl font-bold leading-[1.0] tracking-[-0.01em] text-steel-light text-balance sm:text-5xl md:text-6xl lg:text-[5rem]"
+            >
               {t("headline")}
             </h1>
-            <p ref={subheadlineRef} className="reading-measure mb-10 max-w-[40rem] text-pretty text-[1.05rem] leading-[1.72] text-industrial-300 md:text-[1.125rem]">
+
+            <p
+              ref={subheadlineRef}
+              className="mb-10 max-w-[42rem] text-pretty text-[1.1rem] leading-[1.75] text-industrial-300 md:text-[1.2rem]"
+            >
               {t("subheadline")}
             </p>
+
             <div ref={ctaRef} className="flex flex-col gap-4 sm:flex-row">
               <Button
                 variant="metallic"
@@ -73,30 +90,46 @@ export function ImperpreHero() {
                 {t("ctaWhatsapp")}
               </Button>
             </div>
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-industrial-400">{t("microcopy")}</p>
+
+            <p className="mt-5 text-sm leading-relaxed text-industrial-500">{t("microcopy")}</p>
           </div>
 
-          <div className="hidden lg:col-span-5 lg:block">
-            <div className="glass-panel premium-card rounded-sm p-8">
-              <p className="mb-3 text-xs uppercase tracking-[0.2em] text-industrial-400">{t("panelLabel")}</p>
-              <h2 className="mb-5 text-3xl leading-[1.04] tracking-[0.01em] text-steel-light">{t("panelTitle")}</h2>
-              <ul className="space-y-3 text-[0.95rem] leading-[1.65] text-industrial-300">
-                <li className="border-l-2 border-industrial-400 pl-3">{t("panelBullet1")}</li>
-                <li className="border-l-2 border-industrial-400 pl-3">{t("panelBullet2")}</li>
-                <li className="border-l-2 border-industrial-400 pl-3">{t("panelBullet3")}</li>
+          {/* Right — Value panel */}
+          <div ref={panelRef} className="hidden lg:col-span-5 lg:block">
+            <div className="rounded-sm border border-industrial-800 bg-industrial-900/70 p-8 backdrop-blur-sm">
+              <p className="mb-2 text-xs uppercase tracking-[0.22em] text-industrial-500">{t("panelLabel")}</p>
+              <h2 className="mb-6 text-2xl leading-[1.2] tracking-[-0.01em] text-steel-light">
+                {t("panelTitle")}
+              </h2>
+
+              <ul className="mb-8 space-y-4">
+                {[t("panelBullet1"), t("panelBullet2"), t("panelBullet3")].map((bullet, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-sm bg-amber-500/15 text-[10px] font-bold text-amber-400">
+                      {i + 1}
+                    </span>
+                    <span className="text-[0.95rem] leading-[1.65] text-industrial-300">{bullet}</span>
+                  </li>
+                ))}
               </ul>
-              <div className="mt-6 grid gap-3 border-t border-industrial-800 pt-5 text-sm md:grid-cols-2">
-                <div className="rounded-sm border border-industrial-800 bg-industrial-950/60 p-4">
-                  <p className="mb-1 text-xs uppercase tracking-[0.18em] text-industrial-500">{t("formalLabel")}</p>
-                  <p className="text-steel-light">{t("formalValue")}</p>
+
+              <div className="grid gap-3 border-t border-industrial-800/70 pt-6 md:grid-cols-2">
+                <div className="rounded-sm border border-industrial-800/60 bg-industrial-950/50 p-4">
+                  <p className="mb-1.5 text-[10px] uppercase tracking-[0.2em] text-industrial-500">
+                    {t("formalLabel")}
+                  </p>
+                  <p className="text-sm leading-relaxed text-steel-light">{t("formalValue")}</p>
                 </div>
-                <div className="rounded-sm border border-industrial-800 bg-industrial-950/60 p-4">
-                  <p className="mb-1 text-xs uppercase tracking-[0.18em] text-industrial-500">{t("quickLabel")}</p>
-                  <p className="text-steel-light">{t("quickValue")}</p>
+                <div className="rounded-sm border border-industrial-800/60 bg-industrial-950/50 p-4">
+                  <p className="mb-1.5 text-[10px] uppercase tracking-[0.2em] text-industrial-500">
+                    {t("quickLabel")}
+                  </p>
+                  <p className="text-sm leading-relaxed text-steel-light">{t("quickValue")}</p>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

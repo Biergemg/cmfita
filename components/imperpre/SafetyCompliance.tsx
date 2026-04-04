@@ -3,71 +3,75 @@
 import { useRef, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Section } from "@/components/ui/section";
-import { CalendarRange, ShieldCheck, Waves, WalletCards } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { asTitledDescriptionList, toStableKey } from "@/lib/i18n";
 
-const icons = [Waves, ShieldCheck, WalletCards, CalendarRange];
-
 export function ImperpreSafetyCompliance() {
   const t = useTranslations("Safety");
   const sectionRef = useRef<HTMLDivElement>(null);
+  const items = asTitledDescriptionList(t.raw("items"));
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
     const ctx = gsap.context(() => {
       gsap.fromTo(
         ".safety-item",
         { y: 40, opacity: 0 },
         {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          stagger: 0.2,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 75%",
-          },
+          y: 0, opacity: 1, duration: 0.7, stagger: 0.15, ease: "power2.out",
+          scrollTrigger: { trigger: sectionRef.current, start: "top 75%" },
         },
       );
     }, sectionRef);
-
     return () => ctx.revert();
   }, []);
 
-  const items = asTitledDescriptionList(t.raw("items"));
-
   return (
-    <Section ref={sectionRef} className="bg-industrial-950 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] border border-industrial-800 rounded-full opacity-20 -translate-y-1/2 translate-x-1/4 pointer-events-none" />
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] border border-industrial-800 rounded-full opacity-20 -translate-y-1/2 translate-x-1/4 pointer-events-none" />
-
-      <div className="text-center mb-16 relative z-10">
+    <Section ref={sectionRef} className="bg-industrial-950 border-t border-industrial-800">
+      {/* Header */}
+      <div className="mb-14 text-center">
         <div className="section-kicker justify-center">{t("eyebrow")}</div>
-        <h2 className="text-4xl md:text-5xl font-teko text-steel-light mb-4 tracking-wide uppercase">
+        <h2 className="mb-5 text-4xl font-bold leading-[1.1] text-steel-light text-balance md:text-5xl">
           {t("title")}
         </h2>
-        <p className="text-industrial-400 max-w-2xl mx-auto text-lg">
+        <p className="mx-auto max-w-2xl text-lg leading-relaxed text-industrial-400">
           {t("subtitle")}
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
-        {items.map((item, i) => {
-          const Icon = icons[i % icons.length];
-          return (
-            <div key={toStableKey(item.title, i)} className="safety-item premium-card p-8 text-center flex flex-col items-center border-t-4 border-t-industrial-400 hover:border-t-steel-light transition-colors duration-500 rounded-sm">
-              <div className="w-16 h-16 bg-industrial-950 border border-industrial-800 rounded-full flex items-center justify-center mb-6 shadow-highlight">
-                <Icon className="w-8 h-8 text-steel-metallic" />
-              </div>
-              <h3 className="font-teko text-2xl text-steel-light mb-3 tracking-wide">{item.title}</h3>
-              <p className="text-industrial-400 text-sm leading-relaxed max-w-[34ch]">{item.description}</p>
+      {/* Guarantee badge — prominent risk reversal */}
+      <div className="mx-auto mb-14 max-w-3xl">
+        <div className="flex items-start gap-5 rounded-sm border border-green-500/20 bg-green-500/5 p-6 md:p-8">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-green-500/30 bg-green-500/10">
+            <ShieldCheck className="h-6 w-6 text-green-400" />
+          </div>
+          <div>
+            <p className="mb-1 text-xs font-semibold uppercase tracking-[0.2em] text-green-400">Garantía</p>
+            <p className="text-base leading-relaxed text-steel-light md:text-lg">
+              {t("guarantee")}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Items grid */}
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+        {items.map((item, i) => (
+          <div
+            key={toStableKey(item.title, i)}
+            className="safety-item rounded-sm border border-industrial-800 bg-industrial-900 p-7 transition-colors hover:border-industrial-700"
+          >
+            <div className="mb-4 flex items-center gap-3">
+              <span className="flex h-7 w-7 items-center justify-center rounded-sm bg-industrial-800 text-xs font-bold text-steel-metallic">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="text-lg font-semibold text-steel-light">{item.title}</h3>
             </div>
-          );
-        })}
+            <p className="text-sm leading-relaxed text-industrial-400">{item.description}</p>
+          </div>
+        ))}
       </div>
     </Section>
   );
