@@ -1,0 +1,40 @@
+# Captura base del negocio. Usa MISSING_CRITICAL_INPUT si falta un dato clave.
+hechos_verificados:
+  brand_name: MISSING_CRITICAL_INPUT
+  niche: MISSING_CRITICAL_INPUT
+  geography: MISSING_CRITICAL_INPUT
+  offer_type: MISSING_CRITICAL_INPUT # servicio | producto | consultoría | instalación | software | educación | clínica | retail
+  sales_model: MISSING_CRITICAL_INPUT # one-shot | recurrente | alto_ticket | cita | ecommerce | suscripcion
+  current_offer_summary: MISSING_CRITICAL_INPUT
+  ticket_objetivo_o_rango: MISSING_CRITICAL_INPUT
+  canal_principal_actual: MISSING_CRITICAL_INPUT
+  canal_secundario_actual: null
+  capacidad_de_entrega:
+    fulfillment_method: MISSING_CRITICAL_INPUT
+    capacity_limit: MISSING_CRITICAL_INPUT
+    team_available: MISSING_CRITICAL_INPUT
+    turnaround_time: MISSING_CRITICAL_INPUT
+  cliente_objetivo:
+    ideal_customer: MISSING_CRITICAL_INPUT
+    problema_doloroso: MISSING_CRITICAL_INPUT
+    resultado_deseado: MISSING_CRITICAL_INPUT
+    urgency_level: MISSING_CRITICAL_INPUT
+    common_objections: []
+    current_alternatives: []
+  economics:
+    price_floor: MISSING_CRITICAL_INPUT
+    target_price: MISSING_CRITICAL_INPUT
+    margin_constraints: MISSING_CRITICAL_INPUT
+    cac_tolerance: null
+    ltv_if_known: null
+  evidencia_disponible:
+    case_studies: []
+    testimonials: []
+    before_after_assets: []
+    operational_proof: []
+restricciones:
+  legales_y_operativas: []
+  geografias_excluidas: []
+  promesas_prohibidas: []
+supuestos_explicitos: []
+pendientes_de_validacion: []

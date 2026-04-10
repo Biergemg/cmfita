@@ -1,0 +1,22 @@
+# Diagnóstico específico por nicho. No escribir copy aquí.
+hechos_verificados:
+  niche: MISSING_CRITICAL_INPUT
+  demand_temperature: MISSING_CRITICAL_INPUT # HOT | WARM | COLD
+  painful_problem: MISSING_CRITICAL_INPUT
+  desired_transformation: MISSING_CRITICAL_INPUT
+  current_substitutes: []
+  segmentation_axes: []
+  trust_required: MISSING_CRITICAL_INPUT # high | medium | low
+  regulation_level: MISSING_CRITICAL_INPUT # high | medium | low
+  purchase_trigger: MISSING_CRITICAL_INPUT
+  decision_cycle: MISSING_CRITICAL_INPUT
+  commoditization_signals: []
+inferencias_iniciales:
+  why_this_is_or_is_not_a_commodity: MISSING_CRITICAL_INPUT
+  monetization_shape: MISSING_CRITICAL_INPUT
+  likely_objections: []
+restricciones:
+  prohibited_claims: []
+  channel_constraints: []
+supuestos_explicitos: []
+pendientes_de_validacion: []

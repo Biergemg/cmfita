@@ -1,0 +1,23 @@
+# Registro de evidencia y huecos. No mezclar con propuestas.
+hechos_verificados:
+  available_evidence:
+    testimonials: []
+    case_studies: []
+    metrics: []
+    screenshots_or_media: []
+    operational_artifacts: []
+  missing_evidence:
+    - MISSING_CRITICAL_INPUT
+  unsupported_claims_detected: []
+  compliance_risks: []
+inferencias:
+  credibility_level: MISSING_CRITICAL_INPUT # high | medium | low
+  proof_gaps_that_block_premium_price: []
+propuestas:
+  evidence_to_collect_next: []
+  claims_to_downgrade: []
+  validation_tests: []
+restricciones:
+  legal_or_regulatory_notes: []
+supuestos_explicitos: []
+pendientes_de_validacion: []

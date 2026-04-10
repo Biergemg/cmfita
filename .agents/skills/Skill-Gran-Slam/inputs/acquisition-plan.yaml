@@ -1,0 +1,35 @@
+# Plan de adquisición. No producir anuncios hasta validar oferta y canal.
+hechos_verificados:
+  main_channel: MISSING_CRITICAL_INPUT # WARM_OUTREACH | FREE_CONTENT | COLD_OUTREACH | PAID_ADS
+  secondary_channel: null
+  followup_capacity: MISSING_CRITICAL_INPUT
+  lead_capture_method: MISSING_CRITICAL_INPUT
+  appointment_or_checkout_flow: MISSING_CRITICAL_INPUT
+  crm_or_followup_stack: null
+  existing_content_assets: []
+  existing_paid_assets: []
+propuestas:
+  acquisition_system:
+    primary_channel: MISSING_CRITICAL_INPUT
+    secondary_channel: null
+    why: MISSING_CRITICAL_INPUT
+    lead_magnet:
+      type: MISSING_CRITICAL_INPUT
+      title: MISSING_CRITICAL_INPUT
+      narrow_problem: MISSING_CRITICAL_INPUT
+      bigger_problem_revealed: MISSING_CRITICAL_INPUT
+      delivery_format: MISSING_CRITICAL_INPUT
+    capture_flow: MISSING_CRITICAL_INPUT
+    followup_flow: MISSING_CRITICAL_INPUT
+    appointment_or_checkout_logic: MISSING_CRITICAL_INPUT
+    key_metrics:
+      lead_volume: null
+      qualified_rate: null
+      appointment_rate: null
+      close_rate: null
+      cac_if_paid: null
+restricciones:
+  prohibited_channels: []
+  response_time_limits: []
+supuestos_explicitos: []
+pendientes_de_validacion: []

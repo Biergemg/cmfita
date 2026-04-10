@@ -1,0 +1,33 @@
+# Diseño preliminar de oferta. Mantener separados hechos, inferencias y propuestas.
+hechos_verificados:
+  dream_outcome: MISSING_CRITICAL_INPUT
+  perceived_likelihood_score: MISSING_CRITICAL_INPUT
+  time_delay_score: MISSING_CRITICAL_INPUT
+  effort_sacrifice_score: MISSING_CRITICAL_INPUT
+  weakest_variable: MISSING_CRITICAL_INPUT
+  fulfillment_constraints: []
+  proof_available: []
+propuestas:
+  offer_architecture:
+    main_offer_name: MISSING_CRITICAL_INPUT
+    target_customer: MISSING_CRITICAL_INPUT
+    transformation: MISSING_CRITICAL_INPUT
+    deliverables: []
+    exclusions: []
+  bonuses: []
+  lead_in_mechanism:
+    type: MISSING_CRITICAL_INPUT
+    narrow_problem_solved: MISSING_CRITICAL_INPUT
+    bigger_problem_revealed: MISSING_CRITICAL_INPUT
+  guarantee:
+    type: MISSING_CRITICAL_INPUT # UNCONDITIONAL | CONDITIONAL | ANTI_GUARANTEE | PERFORMANCE_BASED
+    terms: MISSING_CRITICAL_INPUT
+    abuse_risk: MISSING_CRITICAL_INPUT
+  pricing_model:
+    pricing_logic: MISSING_CRITICAL_INPUT
+    anchor_or_comparison: MISSING_CRITICAL_INPUT
+    payment_structure: MISSING_CRITICAL_INPUT
+    why_this_price_is_defensible: MISSING_CRITICAL_INPUT
+    margin_risks: []
+supuestos_explicitos: []
+pendientes_de_validacion: []
