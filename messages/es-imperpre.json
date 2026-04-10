@@ -28,7 +28,7 @@
     "ctaWhatsapp": "Agendar por WhatsApp",
     "microcopy": "La visita es sin costo ni compromiso. La revisión es en sitio y sirve para entender qué necesita realmente la azotea antes de definir el alcance.",
     "panelLabel": "El procedimiento",
-    "panelTitle": "La intervención se define según la condición real de la losa y los puntos críticos encontrados en sitio.",
+    "panelTitle": "La intervención se define según la condición real de la losa, sus puntos críticos y el trabajo previo que requiera la superficie.",
     "panelBullet1": "Visita técnica gratuita en sitio, no precios improvisados por WhatsApp",
     "panelBullet2": "Tratamiento de puntos críticos previo a instalar el sistema prefabricado APP o SBS de 4 mm. No se trabaja sobre el problema sin revisar la condición real de la superficie.",
     "panelBullet3": "Si durante la siguiente temporada de lluvias reaparece una filtración en la zona intervenida, regresamos a revisar y corregir sin costo, conforme al alcance originalmente atendido.",
@@ -83,7 +83,7 @@
       },
       {
         "title": "2. Preparación de la superficie",
-        "description": "Antes de instalar el sistema, la superficie se prepara. Esto incluye limpieza, tratamiento y sellado de grietas, así como atención de puntos críticos con cemento plástico, según lo que requiera la losa."
+        "description": "Antes de instalar el sistema, la superficie se prepara según la condición real de la losa. Esto puede incluir limpieza, tratamiento y sellado de grietas, atención de puntos críticos con cemento plástico, regularización local, corrección de pendientes y, cuando aplique, formación o corrección de entortado y chaflanes."
       },
       {
         "title": "3. Colocación del sistema prefabricado de 4 mm",
@@ -104,7 +104,7 @@
     "items": [
       {
         "title": "¿Por qué no me pueden dar el precio por WhatsApp o por metro?",
-        "description": "Porque el alcance no depende solo de metros cuadrados de losa. También influyen el estado del sistema anterior, la cantidad y severidad de grietas, los pretiles, bajadas, tuberías, domos, bases, juntas, remates y otros puntos críticos. Por eso el precio real solo se define después de revisar el caso en sitio.",
+        "description": "Porque el alcance no depende solo de metros cuadrados de losa. También influyen el estado del sistema anterior, la cantidad y severidad de grietas, los pretiles, bajadas, tuberías, domos, bases, juntas, remates, puntos críticos y el nivel de preparación o corrección previa que requiera la superficie. Por eso el precio real solo se define después de revisar el caso en sitio.",
         "tag": "El Precio"
       },
       {
