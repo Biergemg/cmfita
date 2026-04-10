@@ -1,17 +1,17 @@
 {
   "Index": {
-    "title": "Imperpre | Impermeabilización Definitiva para Escuelas Privadas — Tampico, Madero y Altamira",
-    "description": "Si hoy su escuela tiene filtraciones, tiene un problema de operación y riesgo. Visita técnica sin costo para revisar el verdadero problema antes de cotizar. Garantía de intervención."
+    "title": "Imperpre | Sistema prefabricado para Escuelas Privadas — Tampico, Madero y Altamira",
+    "description": "Atendemos escuelas privadas con azotea o losa de concreto. Visita técnica en sitio para entender la condición real de la superficie. Revisión correctiva sin costo en zona intervenida."
   },
   "Navbar": {
     "problem": "El Riesgo",
     "idealFor": "Para Escuelas",
     "offer": "Procedimiento",
     "faq": "Preguntas",
-    "whatsapp": "Agendar Diagnóstico"
+    "whatsapp": "Agendar Visita Técnica"
   },
   "Footer": {
-    "description": "Imperpre resuelve filtraciones en azoteas de concreto exclusivo para escuelas privadas. Tampico, Madero y Altamira. Operado por FITA.",
+    "description": "Imperpre atiende exclusivamente escuelas privadas con azotea o losa de concreto en Tampico, Ciudad Madero y Altamira. Operado por FITA.",
     "contact": "Contacto",
     "quickLinks": "Secciones",
     "problem": "El Riesgo",
@@ -23,131 +23,131 @@
   "Hero": {
     "eyebrow": "Para Escuelas Privadas · Tampico · Ciudad Madero · Altamira",
     "headline": "Si su escuela tiene humedad, ya no es 'mantenimiento'. Es un riesgo operativo.",
-    "subheadline": "Atendemos planteles en zona costera con losas de concreto. El primer paso siempre es una visita técnica presencial y gratuita para dictaminar la humedad, parches mal hechos y puntos críticos, y entregarte la cotización que resolverá el origen.",
+    "subheadline": "Atendemos escuelas privadas con azotea o losa de concreto en Tampico, Ciudad Madero y Altamira. El primer paso es una visita técnica gratuita en sitio para revisar visualmente la condición real de la losa, los puntos críticos y el sistema existente. Si el caso sí aplica, después de la visita se presenta una cotización formal según lo que realmente requiera el plantel.",
     "ctaProposal": "Agendar visita técnica gratuita",
     "ctaWhatsapp": "Agendar por WhatsApp",
-    "microcopy": "La visita es sin costo ni compromiso. El dictamen es real y enfocado a tu escuela.",
-    "panelLabel": "La promesa",
-    "panelTitle": "Se acabó el pagar por parchar de más.",
-    "panelBullet1": "Visita técnica auditada, no precios improvisados por WhatsApp",
-    "panelBullet2": "Tratamiento intensivo a puntos críticos (bajantes, pretiles, grietas) previo a instalar APP/SBS de 4mm. No tapan sobre el problema al garete.",
-    "panelBullet3": "Garantía de rendimiento: Si vuelve a filtrar agua en la zona cubierta la siguiente lluvia, acudiremos a corregir sin costo al plantel.",
+    "microcopy": "La visita es sin costo ni compromiso. La revisión es en sitio y sirve para entender qué necesita realmente la azotea antes de definir el alcance.",
+    "panelLabel": "El procedimiento",
+    "panelTitle": "La intervención se define según la condición real de la losa y los puntos críticos encontrados en sitio.",
+    "panelBullet1": "Visita técnica gratuita en sitio, no precios improvisados por WhatsApp",
+    "panelBullet2": "Tratamiento de puntos críticos previo a instalar el sistema prefabricado APP o SBS de 4 mm. No se trabaja sobre el problema sin revisar la condición real de la superficie.",
+    "panelBullet3": "Si durante la siguiente temporada de lluvias reaparece una filtración en la zona intervenida, regresamos a revisar y corregir sin costo, conforme al alcance originalmente atendido.",
     "formalLabel": "Requisitos del Plantel",
-    "formalValue": "Escuela privada (Preescolar a Posgrado), losa de concreto (no lámina), en zona conurbada Tampico.",
+    "formalValue": "Escuela privada con azotea o losa de concreto, ubicada en Tampico, Ciudad Madero o Altamira.",
     "quickLabel": "Qué NO hacemos",
-    "quickValue": "No trabajamos techos de lámina. No damos cotizaciones genéricas por metro sin revisar. No hacemos reparaciones estructurales mayúsculas."
+    "quickValue": "No trabajamos techos de lámina. No damos cotizaciones genéricas por metro sin revisar. No hacemos reparaciones estructurales mayores."
   },
 
   "Overview": {
-    "eyebrow": "El costo real del agua",
-    "title": "Las lluvias están afectando algo más valioso que tu techo: tu imagen y operación.",
+    "eyebrow": "El impacto real del agua",
+    "title": "Las lluvias están afectando la imagen y operación de tu plantel.",
     "description1": "La mayoría de los problemas de goteras no se agravan por falta de intención en el colegio de arreglarlos. Se agravan por lo mismo de siempre: parches a la carrera, sellados superficiales de emergencia y trabajos hechos sin revisar la losa completa ni sus puntos críticos.",
-    "description2": "Cada lluvia que se mete a tu escuela termina cobrando una factura distinta: plafones derrumbándose sobre pupitres, salones enteros que hay que clausurar, y mamás que reportan olores de humedad que evidencian descuido visual y de salud.",
+    "description2": "Plafones dañados, salones que deben cerrarse temporalmente y humedad visible que afecta la operación, la imagen del plantel y la percepción de los padres.",
     "stats": {
       "symptom1": {
-        "value": "Salones Clausurados",
-        "label": "Interrumpir clases afecta los procesos de cobranza y genera dudas académicas."
+        "value": "Salones en desuso",
+        "label": "Interrumpir clases afecta los procesos operativos del plantel."
       },
       "symptom2": {
-        "value": "Plafones y Yeso",
-        "label": "Manchas amarillas, escurrimientos en falso techo que colapsan durante clase."
+        "value": "Plafones dañados",
+        "label": "Cielos falsos manchados o caídos que deben cerrarse temporalmente."
       },
       "symptom3": {
-        "value": "Equipos Expuestos",
-        "label": "Computadoras, laboratorios o equipo audiovisual con riesgo a cortocircuito."
+        "value": "Afectaciones de equipo",
+        "label": "Computadoras, laboratorios o equipo audiovisual expuestos a goteo."
       },
       "symptom4": {
-        "value": "Pisos Mojados",
-        "label": "Riesgo absoluto de caídas para el alumnado y personal administrativo."
+        "value": "Riesgo de incidentes",
+        "label": "Riesgo de resbalones y accidentes para alumnado y personal."
       },
       "symptom5": {
-        "value": "Olor a Moho",
-        "label": "Impresión inmediata de insalubridad frente a los padres de familia."
+        "value": "Olor a moho",
+        "label": "Humedad visible que afecta la imagen general ante visitantes."
       },
       "symptom6": {
-        "value": "Quejas de Padres",
-        "label": "Grupos de WhatsApp de padres insatisfechos dudando de dónde acaba su colegiatura."
+        "value": "Quejas de padres",
+        "label": "Quejas de padres y percepción de descuido cuando el problema persiste."
       }
     },
-    "cta": "Frenar esto: Agendar diagnóstico gratis"
+    "cta": "Agendar visita técnica gratuita"
   },
 
   "Projects": {
     "eyebrow": "Propuesta y Ejecución",
-    "title": "Si decides avanzar después del dictamen, no se hará 'solo un parche'",
-    "subtitle": "Aquí hacemos un proceso completo de impermeabilización certificada APP/SBS de 4mm. No vendemos litros de pintura roja.",
+    "title": "Si decides avanzar después de la visita, no se hará solo un parche",
+    "subtitle": "Aquí se realiza un proceso completo de impermeabilización con sistema prefabricado APP o SBS de 4 mm, según la condición real de la losa. No se propone una solución superficial.",
     "items": [
       {
-        "title": "1. Auditoría en sitio gratuita",
-        "description": "Subimos a revisar la azotea con visión técnica. Encontramos acumulación de agua, grietas severas, selladores asfálticos reventados, juntas frías destrozadas y bajadas tapadas."
+        "title": "1. Visita técnica gratuita en sitio",
+        "description": "Subimos a revisar visualmente la azotea para detectar acumulación de agua, grietas, deterioro del sistema anterior, bajadas pluviales compromisedas y otros puntos críticos que afecten el desempeño de la superficie."
       },
       {
-        "title": "2. Albañilería correctiva básica",
-        "description": "Antes de tapar, reparamos. Incluye limpieza, curado de grietas y puntos críticos rellenados con cemento plástico. No ignoramos el problema subyacente."
+        "title": "2. Preparación de la superficie",
+        "description": "Antes de instalar el sistema, la superficie se prepara. Esto incluye limpieza, tratamiento y sellado de grietas, así como atención de puntos críticos con cemento plástico, según lo que requiera la losa."
       },
       {
-        "title": "3. Termofusión de Mando 4mm",
-        "description": "Colocamos sistema prefabricado APP o SBS (dependiendo de tu losa) por termofusión, con refuerzo de poliéster de máxima resistencia capaz de soportar tráfico mantenimiento."
+        "title": "3. Colocación del sistema prefabricado de 4 mm",
+        "description": "Colocamos sistema prefabricado APP o SBS de 4 mm por termofusión, con refuerzo de fibra poliéster. La selección entre APP y SBS se valida según la condición real de la losa y sus puntos críticos."
       },
       {
-        "title": "4. Garantía Contractual Real",
-        "description": "Bajo las reglas: si la próxima temporada de lluvias regresa a haber cualquier filtración dentro del área cubierta y pagada, regresamos a ejecutar correcciones sin cargos ridículos al colegio."
+        "title": "4. Revisión correctiva sobre la zona intervenida",
+        "description": "Si durante la siguiente temporada de lluvias reaparece una filtración en la zona intervenida, regresamos a revisar y corregir sin costo, conforme al alcance originalmente atendido."
       }
     ],
-    "cta": "Agendar ahora visita técnica al plantel"
+    "cta": "Agendar ahora visita técnica en el plantel"
   },
 
   "Faq": {
     "eyebrow": "Transparencia Total",
-    "title": "Dudas operativas regulares de las escuelas.",
-    "subtitle": "Si tu duda amerita inspección, el técnico te la responderá en tu plantel.",
+    "title": "Información frecuente para escuelas.",
+    "subtitle": "Si tienes casos específicos, el técnico evaluará detalles en el plantel.",
     "items": [
       {
-        "title": "¿Por qué no me pueden enviar precio base o 'a como salga el metro' por WhatsApp?",
-        "description": "Porque el alcance varía inmensamente. Un techo que está totalmente podrido abajo requerirá raspado total y tratamiento de muretes, mientras otro solo requiere preparar fisuras. Darte precio a medias por chat terminaría siendo una trampa porque te cobraríamos extras después.",
+        "title": "¿Por qué no me pueden dar el precio por WhatsApp o por metro?",
+        "description": "Porque el alcance no depende solo de metros cuadrados de losa. También influyen el estado del sistema anterior, la cantidad y severidad de grietas, los pretiles, bajadas, tuberías, domos, bases, juntas, remates y otros puntos críticos. Por eso el precio real solo se define después de revisar el caso en sitio.",
         "tag": "El Precio"
       },
       {
-        "title": "Tengo instalaciones de clima, bases y domos enormes en mi escuela. ¿Lo trabajan?",
-        "description": "Sí. Precisamente esos son los llamados 'Puntos Críticos', y es allí por donde la humedad entra al salón el 90% de las veces. Se tratan detalladamente con cemento plástico o detalles perimetrales específicos antes de desplegar el manto impermeable general.",
+        "title": "Tengo instalaciones de clima, bases y domos en mi escuela. ¿Lo trabajan?",
+        "description": "Sí. Esos elementos forman parte de los puntos críticos que deben revisarse en sitio. Su tratamiento se define según la condición real del área y se atiende antes de colocar el sistema prefabricado general.",
         "tag": "Ejecución"
       },
       {
-        "title": "¿Debemos suspender clases mientras aplican el producto caliente?",
-        "description": "Generalmente no, podemos arreglarnos para no impactar de forma severa según el ruido de la limpieza inicial y la dimensión. Nos adaptamos a las políticas de tu escuela (fines de semana, tardes, etc.) todo eso se acuerda en la visita gratis.",
+        "title": "¿Debemos suspender clases?",
+        "description": "Generalmente se puede planear el trabajo para reducir afectaciones a la operación del plantel. La forma de ejecución, horarios y condicionantes se revisan directamente en la visita.",
         "tag": "Operación de Colegio"
       }
     ],
-    "cta": "Contactar para agenda de visita"
+    "cta": "Contactar para agendar visita"
   },
 
   "Contact": {
-    "title": "¿Es momento de arrancar el problema de las goteras de raíz en la escuela?",
-    "subtitle": "Tú solo escríbenos qué tan mal suena la queja de este mes y dinos en qué zona (Tampico, Altamira, Madero) se ubican. Vamos sin compromiso.",
-    "emotionalTitle": "Seguir parchando le sale más caro a tu prestigio. Y a tus finanzas.",
-    "emotionalBody": "El material de parcheo en ferreterías es barato, pero perder clientes, lidiar con directores enojados, y retrasar clases, es carísimo. Invierte en soluciones definitivas, y haz que nos audite tu equipo de mantenimiento.",
+    "title": "¿Es momento de revisar el problema en la azotea de la escuela?",
+    "subtitle": "Escríbenos con la ubicación exacta (Tampico, Altamira, Ciudad Madero). Confirmaremos si el plantel requiere nuestra visita presencial.",
+    "emotionalTitle": "Seguir parchando termina saliendo más caro en operación, tiempo y correcciones repetidas.",
+    "emotionalBody": "El parche puede parecer barato al inicio, pero cuando el problema regresa, el costo real se refleja en la operación del plantel, en las interrupciones y en volver a pagar por trabajos que no resolvieron el origen. Si tu escuela está dentro de cobertura y la azotea es de concreto, agenda la visita y revisamos si el caso sí aplica.",
     "directContact": "Nuestros Accesos",
-    "engineerLabel": "Auditorías de Losa",
+    "engineerLabel": "Visitas Técnicas",
     "phoneLabel": "WhatsApp",
-    "emailLabel": "Oficina Virtual",
-    "name": "Equipo Técnico Escuelas",
+    "emailLabel": "Correo",
+    "name": "Equipo Imperpre Escuelas",
     "phone": "+52 833 518 1171",
     "email": "cmfitasadecv@gmail.com",
-    "ctaProposal": "Agendar nuestra inspección sin costo",
-    "ctaWhatsapp": "Conversar con el especialista en WhatsApp",
+    "ctaProposal": "Agendar nuestra visita sin costo",
+    "ctaWhatsapp": "Conversar por WhatsApp",
     "locationLabel": "Requisito de Agenda",
-    "address": "Únicamente requerimos la escuela donde están, y si es techo de concreto con problema claro.",
+    "address": "Únicamente requerimos la ubicación de la escuela, y que sea losa de concreto.",
     "coverageLabel": "Exclusivo para",
-    "coverage": "Instituciones prividas preescolar a carrera en zona conurbada (Sur de Tamaulipas).",
+    "coverage": "Instituciones privadas en la zona conurbada (Tampico, Altamira, Madero).",
     "formalLabel": "Salida",
-    "formalValue": "Dictamen sin obligación de compra. Solo la verdad de tu losa y presupuesto formal para aprobar.",
-    "quickLabel": "Garantía",
-    "quickValue": "No te mentiremos diciendo que somos invencibles: si falla en nuestra área, volvemos.",
-    "microcopy": "La auditoría gratuita está sujeta a capacidad técnica. Envía mensaje rápido."
+    "formalValue": "Revisión en sitio y presupuesto formal apegado al estado real de la azotea.",
+    "quickLabel": "Garantía Aplicable",
+    "quickValue": "Revisión correctiva sobre la zona intervenida en la próxima lluvia, sin costo por concepto de alcance anterior.",
+    "microcopy": "La visita técnica gratuita está sujeta a disponibilidad operativa. Envía mensaje para revisar el caso."
   },
 
-  "notFoundTitle": "No encontramos la ruta de las aulas",
-  "notFoundBody": "Al parecer esta calle no existe o fue modificada.",
+  "notFoundTitle": "No encontramos la ruta",
+  "notFoundBody": "Al parecer esta ruta no existe o fue modificada.",
   "errorTitle": "Ocurrió un error en sistema",
-  "errorBody": "Nuestros servidores técnicos cayeron. Intenta contactarnos directo al WhatsApp."
+  "errorBody": "Nuestros sistemas no responden en este momento. Intenta comunicarte al WhatsApp."
 }
