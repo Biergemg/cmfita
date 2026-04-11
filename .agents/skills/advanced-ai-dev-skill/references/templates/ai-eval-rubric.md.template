@@ -1,0 +1,96 @@
+# AI Evaluation Rubric
+
+> Operationalizes the qualitative evaluation questions from
+> references/06-evals-and-tracing.md into a reproducible rubric.
+>
+> Complete at the end of a significant project phase (first sprint, first
+> major feature, first production deploy, quarterly review).
+
+Project: [FILL IN]
+Phase / Period: [FILL IN — e.g., "Sprint 3", "Q2 2026", "Auth module release"]
+Evaluator: [FILL IN — human, agent, or both]
+Date: [YYYY-MM-DD]
+
+---
+
+## Part 1: Skill Effectiveness
+
+Rate each question for the evaluation period.
+
+**Scale:**
+- **Prevented** — the skill actively stopped the failure mode from occurring
+- **Partial** — the skill helped but did not fully prevent the failure
+- **Did Not** — the skill was present but did not prevent the failure
+- **N/A** — the failure mode was not triggered in this period
+
+| Question | Rating | Evidence | Notes |
+|----------|--------|----------|-------|
+| Q1: Did the skill prevent invented file contents, field names, or library versions? | | [specific instance or "none observed"] | |
+| Q2: Did the skill reduce context loss between sessions? Was architectural context recoverable after sessions closed? | | [specific instance or "all sessions recovered"] | |
+| Q3: Did the skill avoid adding friction to trivial tasks without benefit? Was light mode used appropriately? | | [% of tasks in light mode] | |
+| Q4: Did the skill activate the correct fallback when a capability was unavailable? | | [which capability, which fallback] | |
+| Q5: Did the skill detect risk before a destructive action (MCP install, schema migration, prod deploy)? | | [specific instance or "no destructive actions in period"] | |
+
+**Overall effectiveness score:** [count of Prevented + 0.5×Partial] / [count of non-N/A questions]
+= [N] / [N] = [score]%
+
+---
+
+## Part 2: Skill Cost Metrics
+
+Quantitative data from AI-WORKFLOW.md for this period.
+
+| Metric | Value | Target | Delta from target |
+|--------|-------|--------|------------------|
+| Gate override rate | [N]% | < 30% per gate | |
+| Gate false positive rate | [N]% | < 20% | |
+| Light mode usage rate | [N]% | 10–40% of tasks | |
+| Abandonment events | [N] | 0 per week | |
+| Unnecessary re-reads per session (avg) | [N] | 0 | |
+| Task completion without major rework | [N]% | > 80% | |
+| Context recovery success rate | [N]% | > 90% (Engram) / > 70% (native) | |
+
+---
+
+## Part 3: Gate Performance
+
+Review each gate's behavior during this period.
+
+| Gate | Times triggered | Pass rate | False positives | Notes |
+|------|----------------|-----------|-----------------|-------|
+| Gate 1 (before code) | [N] | [N]% | [N] | |
+| Gate 2 (after code) | [N] | [N]% | [N] | |
+| Gate 3 (before merge) | [N] | [N]% | [N] | |
+| Gate 4 (weekly metrics) | [N] | [N]% | [N] | |
+
+---
+
+## Part 4: Findings and Actions
+
+**What worked well:**
+- [FILL IN]
+
+**What didn't work:**
+- [FILL IN]
+
+**Calibration adjustments proposed:**
+- [FILL IN — e.g., "Gate 1 false-positive rate is 35% for this project because
+  all files have 'auth' in path. Propose: override to standard mode for
+  this project by adding to CLAUDE.md."]
+
+**Actions before next review:**
+- [ ] [FILL IN]
+- [ ] [FILL IN]
+
+---
+
+## Trend (Fill in after second evaluation)
+
+| Period | Q1 | Q2 | Q3 | Q4 | Q5 | Override% | Completion% |
+|--------|----|----|----|----|----|-----------|-----------  |
+| [Period 1] | | | | | | | |
+| [Period 2] | | | | | | | |
+
+A declining trend in Q1 (invented facts) or Q2 (context loss) after the
+skill has been active for 2+ periods indicates a calibration issue.
+Investigate mode assignments and memory protocol adherence.

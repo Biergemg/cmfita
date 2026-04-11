@@ -1,0 +1,72 @@
+# AI Risk Register
+
+> Tracks risks introduced or amplified by AI-assisted development in this project.
+> Review monthly or after any significant architecture change, agent upgrade,
+> or MCP server update.
+>
+> Source: references/04-security-checklist.md (threat model in docs/threat-model.md)
+
+Last reviewed: [YYYY-MM-DD]
+Reviewed by: [name or "agent + human"]
+
+---
+
+## Active Risks
+
+| Risk | Impact | Probability | Audit Trigger | Mitigation | Status |
+|------|--------|------------|---------------|-----------|--------|
+| Unaudited MCP server in config | High | Medium | New MCP server added | Pre-installation checklist (04-security-checklist.md) | Open |
+| Context loss after compaction | Medium | High | Session > 2h or complex task | Context rotation at 65% (05-context-rotation.md) | Open |
+| Contract drift (CLAUDE.md stale) | Medium | Medium | Architecture refactor or dependency upgrade | Pre-commit hook updates .ai-context/ | Open |
+| Skill overhead on trivial tasks | Low | High | User overrides gate repeatedly | Use `light` mode for trivial tasks | Open |
+| Engram unavailable or truncating | Medium | Low | Artifacts shorter than saved | Chunk saves < 2000 tokens; verify retrieval after save | Open |
+| Destructive action without validation | High | Low | rm/drop/delete command in context | Tier-3 approval required before execution | Open |
+| Stale decisions in Engram memory | Medium | Medium | Post-refactor session | Run mem_context + compare against CLAUDE.md | Open |
+
+---
+
+## Closed Risks
+
+| Risk | Resolution | Closed On |
+|------|-----------|-----------|
+| [risk description] | [what was done to close it] | [YYYY-MM-DD] |
+
+---
+
+## Risk Definitions
+
+**Impact:**
+- **High** — could cause data loss, security breach, production incident, or
+  regulatory issue
+- **Medium** — causes rework, delays, or context loss (recoverable)
+- **Low** — causes friction, minor inefficiency, or requires extra attention
+
+**Probability:**
+- **High** — likely to occur in most sessions or regularly
+- **Medium** — occurs occasionally, in specific conditions
+- **Low** — rare, but possible and worth tracking
+
+**Status:**
+- **Open** — risk is present and not yet fully mitigated
+- **Mitigated** — mitigation is in place but risk still exists at reduced level
+- **Monitoring** — mitigation applied; watching for recurrence
+- **Closed** — risk has been eliminated or is no longer applicable
+
+---
+
+## How to Update This Register
+
+**Add a row when:**
+- A new MCP server is installed (Status: Open until checklist passes)
+- A new AI agent or tool is adopted
+- An incident occurs that this register did not anticipate
+- A new CVE is published for any tool in the stack
+- A risk pattern is observed that isn't listed
+
+**Update status when:**
+- A mitigation is put in place (Open → Mitigated)
+- A mitigated risk recurs (Mitigated → Open)
+- A risk is permanently eliminated (any → Closed)
+
+**Review cadence:** Monthly for active projects. After major releases. After
+any security incident in the AI toolchain.

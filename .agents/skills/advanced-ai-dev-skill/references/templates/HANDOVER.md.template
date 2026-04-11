@@ -1,0 +1,85 @@
+# HANDOVER — [YYYY-MM-DDThh:mmZ]
+
+> **For the agent resuming this session:** Read this file FIRST, before any
+> other action. Then run `mem_context` to retrieve stored decisions. Then
+> read `.ai-context/session-context.md`. Only then continue from "Exact Next
+> Step."
+>
+> Do not start any task before completing this read sequence.
+
+---
+
+## What We Were Doing
+
+> Be concrete. Not "working on auth" — "implementing the validateToken function
+> in src/auth/tokens.ts to check JWT expiry against the Redis session record
+> stored at key `session:{userId}:{tokenJti}`."
+
+[FILL IN]
+
+---
+
+## Decisions Made This Session
+
+> Every decision listed here must not be re-derived. The next session inherits
+> these as established facts.
+
+- **[Decision topic]:** [what was decided] — **Reason:** [why, and what alternatives were rejected]
+- **[Decision topic]:** [what was decided] — **Reason:** [why]
+- [Add entries throughout the session, not just at the end]
+
+---
+
+## Exact Next Step When Resuming
+
+> Precise instruction with file path, function name, and line number when
+> relevant. "Continue the auth work" is not acceptable here.
+
+[FILL IN — e.g., "Implement createSession in src/auth/session.ts. The Session
+interface is defined at line 23. The test at src/auth/session.test.ts:45
+currently fails with 'createSession is not a function' and should pass when
+the function is implemented. Use the existing db client from src/db/client.ts."]
+
+---
+
+## Files Modified This Session
+
+> Output of: `git diff --name-only` or `git diff HEAD --name-only`
+
+```
+[paste output here]
+```
+
+---
+
+## Files Read but Not Modified
+
+> These files contain information already loaded into the previous session's
+> context. The next session can skip re-reading them unless content has changed.
+
+- [file path] — [what was relevant: e.g., "read to understand the Session schema"]
+- [file path] — [what was relevant]
+
+---
+
+## Open Questions / Deferred Items
+
+> Items that need human input or were intentionally deferred.
+
+- [ ] [question or deferred task]
+- [ ] [question or deferred task]
+
+---
+
+## Context at Handover
+
+| Field | Value |
+|-------|-------|
+| Context usage at rotation | ~[N]% |
+| Active mode | [light / standard / strict] |
+| Memory saved to Engram | [yes / no / partial — what was saved] |
+| Tests passing | [yes / no / partial] |
+| Warnings delta from baseline | [+N / 0 / −N] |
+| Gate 1 last result | [PASS / FAIL / not checked] |
+| Gate 2 last result | [PASS / FAIL / not checked] |
+| Gate 3 last result | [PASS / FAIL / not reached] |

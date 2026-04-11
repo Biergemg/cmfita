@@ -1,0 +1,125 @@
+---
+contract_version: 1
+last_updated: YYYY-MM-DD
+changed_by: initialization
+---
+
+# Project Contract
+
+> **Agent instruction:** Read this file at the start of every session.
+> Do not proceed with any task until you can confirm the tech stack, critical
+> commands, and no-guessing rules. If any section says [FILL IN], stop and
+> ask the user before proceeding — do not invent defaults.
+
+---
+
+## Tech Stack
+
+> Source: read from package.json / pyproject.toml / go.mod / Cargo.toml.
+> Do NOT fill in from memory. Read the actual dependency file first.
+
+- Runtime: [FILL IN — e.g., Node.js 20.11 (from .nvmrc), Python 3.12.3]
+- Framework: [FILL IN — e.g., Next.js 14.2, FastAPI 0.110, Gin 1.9]
+- Database: [FILL IN — e.g., PostgreSQL 16.2, SQLite 3.45]
+- ORM / Query layer: [FILL IN — e.g., Prisma 5.14, SQLAlchemy 2.0]
+- Testing: [FILL IN — e.g., Jest 29, pytest 8.2, go test]
+- Linting: [FILL IN — e.g., ESLint 9.x, ruff 0.4, golangci-lint 1.57]
+
+---
+
+## Critical Commands
+
+> Verify these commands work before filling them in. Do not invent them.
+
+```bash
+# Run all tests
+[FILL IN — e.g., npm test, pytest, go test ./...]
+
+# Run a single test by name
+[FILL IN — e.g., npm test -- --testNamePattern="test name", pytest -k test_name]
+
+# Run lint
+[FILL IN — e.g., npm run lint, ruff check ., golangci-lint run]
+
+# Build
+[FILL IN — e.g., npm run build, go build ./..., python -m build]
+
+# Start development server
+[FILL IN — e.g., npm run dev, uvicorn app.main:app --reload]
+```
+
+---
+
+## No-Guessing Rules
+
+These are mandatory. No exceptions, no "reasonable defaults."
+
+- If you haven't read the file, you do not know its contents. Read it first.
+- If a field name, function signature, or type is not confirmed by a file
+  you actually read, do not use it.
+- If a test does not fail before you write code, you have not written the
+  correct test.
+- If information is missing, ask. Do not assume.
+- "The user already explained the context" is not equivalent to reading the file.
+
+---
+
+## Files Prohibited from Modification Without Explicit Approval
+
+> Add any file where an accidental change would be high-impact.
+
+- `.env` and all `*.env.*` files (credentials)
+- `migrations/` directory (schema changes require review)
+- `secrets/` or `credentials/` directories
+- CI/CD pipeline files (`.github/workflows/`, `.gitlab-ci.yml`, etc.)
+- [FILL IN — project-specific files that need protection]
+
+---
+
+## Naming Conventions
+
+> Read from existing code. Do not invent conventions.
+
+- Files: [FILL IN — e.g., kebab-case.ts, snake_case.py, PascalCase.go]
+- Functions/methods: [FILL IN — e.g., camelCase, snake_case]
+- Database tables/columns: [FILL IN — e.g., snake_case, pluralized]
+- Components (if frontend): [FILL IN — e.g., PascalCase, one per file]
+- Test files: [FILL IN — e.g., *.test.ts, test_*.py, *_test.go]
+
+---
+
+## Baseline (Established: YYYY-MM-DD)
+
+> Run lint and complexity analysis before filling these in.
+> Use actual output — not estimates. New projects start at 0.
+> Existing projects: run the tool, record the actual number.
+
+```
+baseline_warnings: [FILL IN — actual lint warning count]
+baseline_complexity: [FILL IN — cyclomatic complexity score if measurable]
+baseline_test_count: [FILL IN — number of existing tests]
+```
+
+Gates compare delta from these values. Pre-existing debt above these
+baselines does not block current work in standard mode.
+
+---
+
+## Active MCP Servers
+
+> List only servers that have passed references/04-security-checklist.md.
+> Do not list servers that haven't been through the checklist.
+
+| Server | Scope | Purpose | Verified On |
+|--------|-------|---------|-------------|
+| [name] | local / project | [what it does] | [YYYY-MM-DD] |
+
+---
+
+## Notes and Decisions
+
+> Date-stamped architectural decisions so the next session starts with
+> full context. Format: `[YYYY-MM-DD] Decision: [what] — Reason: [why]`
+
+[FILL IN as decisions are made — do not leave this section empty after
+the first session]

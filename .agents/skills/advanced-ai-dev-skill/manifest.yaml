@@ -1,0 +1,59 @@
+repo_name: advanced-ai-dev-skill
+skill_version: 0.9.0
+status: draft
+last_validated_at: "2026-04-07"
+maintainer_model: claude-sonnet-4-6
+
+minimum_supported_agents:
+  - claude-code
+  - cursor
+  - codex
+  - windsurf
+
+recommended_agents:
+  - claude-code
+
+default_mode: standard
+
+required_components:
+  - project-contract       # references/01-project-contract.md
+  - verification-gates     # references/03-verification-gates.md
+
+optional_components:
+  - engram                 # Persistent memory — brew install gentleman-programming/tap/engram
+  - context7               # Documentation retrieval — use with security checklist first
+  - hooks                  # Claude Code SessionStart, PreCompact, PreToolUse hooks
+
+experimental_features:
+  - automatic-context-rotation  # Hook-based 65% threshold detection
+
+deprecated_features: []
+
+assumed_mcp_spec_version: "2025-06-18"
+
+artifact_outputs:
+  - CLAUDE.md                         # Project constitution — root of project
+  - AGENTS.md                         # Multi-agent phase coordination — root of project
+  - .ai-context/session-context.md    # Rolling last-10-commits context
+  - HANDOVER.md                       # Session state handover — root of project
+  - AI-WORKFLOW.md                    # Documented workflow decisions
+  - tooling-compatibility.md          # Agent capability map per project
+  - ai-risk-register.md               # Active AI-related risks
+  - ai-eval-rubric.md                 # Skill evaluation rubric
+
+evidence_sources:
+  - "DiD study: 807 repos with Cursor (2025) — +30% static analysis warnings, +41% cyclomatic complexity post-adoption without verification"
+  - "567 PRs Claude Code study (2025) — 16.2% required human modification, especially bugfixes and standards adherence"
+  - "DoltHub Engineering Blog (Jun 2025) — 'Claude Code is definitely dumber after the compaction' — compaction at 80% is lossy by design"
+  - "MCP Spec 2025-06-18 — tool descriptions must be treated as untrusted; tool output may contain instructions designed to modify agent behavior"
+  - "Context Rot article (VNX, Feb 2026) — 65% threshold prevents lossy compaction; 15% buffer needed for safe handover"
+  - "Lost in the Middle (Liu et al., TACL 2024) — LLM performance degrades with long context, particularly for information in the middle of context window"
+  - "r/cursor community (2025) — agents follow stale architecture after refactors; linked docs not read without explicit @-mention"
+
+known_limitations:
+  - "Lossy compaction at 80% is inevitable — skill mitigates, does not eliminate"
+  - "CLAUDE.md is not enforced as system prompt — can be ignored without @-mention in some agents"
+  - "Skill adds overhead for trivial tasks — light mode reduces friction"
+  - "Third-party MCP servers are not guaranteed secure — checklist reduces risk, does not eliminate it"
+  - "No automatic correction of pre-existing technical debt"
+  - "Engram not tested across all agent/OS combinations"

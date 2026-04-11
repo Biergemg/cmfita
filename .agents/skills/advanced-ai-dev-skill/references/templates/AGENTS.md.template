@@ -1,0 +1,101 @@
+# AGENTS.md — Multi-Agent Coordination
+
+> **For teams using multiple AI agents or multi-agent pipelines.**
+> Single-agent projects use CLAUDE.md alone — this file is optional for them.
+>
+> This file defines which agent handles which phase, the handoff protocol
+> between phases, and the exit gate each phase must clear before the next begins.
+
+---
+
+## Phase Table
+
+| Phase | Agent / Role | Produces | Consumes | Exit Gate |
+|-------|-------------|----------|----------|-----------|
+| `init` | Setup agent | CLAUDE.md, baseline | — | Contract loaded; agent knows stack without prompting |
+| `explore` | Research agent | Architecture map, dependency list, test coverage map | CLAUDE.md | Agent describes project structure and constraints correctly |
+| `propose` | Design agent | 2–3 solution options with tradeoffs | Explore output | Human selects option |
+| `spec` | Spec agent | Detailed specification document | Selected proposal | Spec reviewed and approved by human |
+| `design` | Design agent | Technical design, interface definitions | Approved spec | Design reviewed (no Critical findings) |
+| `tasks` | Planning agent | Atomic task list with dependencies | Approved design | Tasks are independently testable; each has a test stub |
+| `apply` | Implementation agent | Working code + tests | Task list | Gates 1 and 2 pass for each task |
+| `verify` | Review agent | Review report (Critical / Important / Minor / Approved) | Apply output | No Critical or Important findings unresolved |
+| `archive` | Archive agent | HANDOVER.md, mem_session_summary, updated CLAUDE.md | Verify output | Next session can resume from archive without re-derivation |
+
+---
+
+## Phase Rules
+
+1. Each phase produces a **concrete artifact** before the next phase begins.
+2. No phase skips its exit gate.
+3. **Human approval required at:**
+   - `propose → spec` (human selects the approach)
+   - `spec → design` (human approves the specification)
+   - `verify → archive` (human reviews the final report)
+4. If an exit gate fails, the current phase is **not complete** — return to
+   the beginning of that phase, not the previous phase.
+5. Phases that produce code (`apply`) must include tests. Code without a
+   corresponding failing test cannot exit the `apply` phase.
+
+---
+
+## Agent Assignment
+
+> Map agent types or personas to phases for this project.
+
+| Phase | Assigned agent / model | Notes |
+|-------|----------------------|-------|
+| init | [FILL IN] | |
+| explore | [FILL IN] | |
+| propose | [FILL IN] | |
+| spec | [FILL IN] | |
+| design | [FILL IN] | |
+| tasks | [FILL IN] | |
+| apply | [FILL IN] | |
+| verify | [FILL IN] | Ideally different agent than apply |
+| archive | [FILL IN] | |
+
+---
+
+## Handoff Protocol
+
+When handing off from one phase to the next, the completing agent must:
+
+1. Confirm the exit gate is passed (specific evidence, not "I think it's done")
+2. Update `.ai-context/session-context.md` with the phase completion event
+3. Update HANDOVER.md with: what was produced, what the next phase should
+   receive, and any open decisions the next agent must know about
+4. Run `mem_save` with a summary of decisions made in this phase
+5. Explicitly name the artifact produced: file path and brief description
+
+The receiving agent must:
+1. Read HANDOVER.md before any action
+2. Run `mem_context` to load phase history
+3. Confirm what artifact it received and that it is complete
+4. Not begin work until it has confirmed the input artifact
+
+---
+
+## Escalation Protocol
+
+If an agent encounters a blocker that prevents completing the current phase:
+
+1. Stop — do not attempt to work around the blocker unilaterally
+2. Document the blocker in HANDOVER.md under "Open Questions"
+3. Escalate to human with: what the blocker is, what information is needed,
+   what options exist, and which option the agent recommends
+4. Do not advance to the next phase while blocked
+
+---
+
+## Active Project State
+
+> Update after each phase completion.
+
+| Field | Value |
+|-------|-------|
+| Current phase | [FILL IN] |
+| Last completed phase | [FILL IN] |
+| Last completed on | [YYYY-MM-DD] |
+| Next action | [FILL IN — specific, not vague] |
+| Blocking items | [FILL IN or "None"] |

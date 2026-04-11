@@ -1,0 +1,67 @@
+# OS artifacts
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Node / npm (if tooling is added later)
+node_modules/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment / credentials (never commit these)
+.env
+.env.local
+.env.*.local
+*.env
+secrets/
+credentials/
+
+# Temporary / generated
+*.tmp
+*.bak
+*.log
+*.cache
+dist/
+build/
+out/
+
+# ──────────────────────────────────────────────────────────
+# AI-generated output artifacts
+#
+# These files are OUTPUTS of the skill when used in a
+# project. They belong in that project's repository, not in
+# this skill repository. Excluding them here prevents
+# accidental commits of project-specific state.
+# ──────────────────────────────────────────────────────────
+HANDOVER.md
+HANDOVER-*.md
+.ai-context/
+ai-risk-register.md
+AI-WORKFLOW.md
+ai-eval-rubric.md
+tooling-compatibility.md
+
+# CLAUDE.md and AGENTS.md are also output artifacts, but
+# they are intentionally tracked in project repos.
+# Excluded here because they don't belong in the skill repo
+# itself — only in repositories that ADOPT the skill.
+CLAUDE.md
+AGENTS.md
+.cursorrules

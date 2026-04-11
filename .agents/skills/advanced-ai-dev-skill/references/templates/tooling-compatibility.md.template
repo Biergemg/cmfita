@@ -1,0 +1,72 @@
+# Tooling Compatibility
+
+> Per-project map of which AI agents are used, what capabilities are active,
+> and what fallbacks are in effect. Prevents assumptions about capability
+> availability when multiple agents or team members use different tools.
+
+Last updated: [YYYY-MM-DD]
+Updated by: [agent / human]
+
+---
+
+## Active Agents
+
+| Agent | Version | Role | Configuration | Support Level |
+|-------|---------|------|---------------|---------------|
+| [e.g., Claude Code] | [version] | Primary development | ~/.claude/skills/ | Complete |
+| [e.g., Cursor] | [version] | Frontend editing | .cursor/mcp.json | Adapted |
+
+---
+
+## Capability Status
+
+| Capability | Available | Configuration | Fallback Active |
+|------------|-----------|---------------|-----------------|
+| Persistent memory (Engram) | [yes/no] | [path to config] | [fallback description] |
+| MCP servers | [yes/no] | [.mcp.json or equivalent] | N/A |
+| Hooks (automated) | [yes/no] | [~/.claude/settings.json] | Manual checkpoints |
+| Subagent dispatch | [yes/no] | N/A | Manual review checklist |
+| Skill auto-loading | [yes/no] | ~/.claude/skills/ | Manual @-mention |
+| Native memory | [yes/no] | ~/.claude/projects/ | CLAUDE.md + HANDOVER.md |
+
+---
+
+## Active MCP Servers
+
+| Server | Transport | Scope | Verified | Permissions |
+|--------|-----------|-------|----------|-------------|
+| [name] | stdio / HTTP | local / project | [YYYY-MM-DD] | [what it can do] |
+
+---
+
+## Known Conflicts and Limitations
+
+> Document anything that breaks, behaves unexpectedly, or requires workarounds
+> in this specific project/team configuration.
+
+- [e.g., Engram MCP conflicts with context7 when both are active — use only one per session]
+- [e.g., Cursor 40-tool limit reached — removed X server to make room for Y]
+
+---
+
+## Degraded Mode Declaration
+
+If any required capability is unavailable, declare the active degraded mode here:
+
+> **Current degraded mode:** [describe which capabilities are missing and which
+> fallbacks are active. E.g., "No hooks available (Cursor). Using manual
+> session-start checklist: read HANDOVER.md + .cursorrules each session."]
+
+---
+
+## Onboarding for New Team Members
+
+> Quick-start for a team member setting up their agent for this project.
+
+1. Install [primary agent] version [X]
+2. Configure MCP: [link to or copy of .mcp.json]
+3. Copy CLAUDE.md: already in repo root — read it before first session
+4. [Optional] Install Engram: `brew install gentleman-programming/tap/engram`
+5. Run validation test 1 from docs/validation.md to confirm setup
+
+Known issues on first setup: [FILL IN or "None"]

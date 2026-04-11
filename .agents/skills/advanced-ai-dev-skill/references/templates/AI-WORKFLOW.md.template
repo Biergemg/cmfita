@@ -1,0 +1,80 @@
+# AI Workflow Log
+
+> Audit trail for AI-assisted development sessions. Agents write to this file
+> as events occur. Humans read it for audit, calibration, and retrospectives.
+>
+> Format: `[YYYY-MM-DDThh:mmZ] [event_type] [mode] [detail]`
+> See references/06-evals-and-tracing.md for the full event taxonomy.
+
+---
+
+## Session Log
+
+> Each session appends entries below. Do not delete old entries.
+
+```
+[YYYY-MM-DDThh:mmZ] session_start [mode] agent=[agent-name] contract_version=[N] memory=[engram|native|manual]
+[YYYY-MM-DDThh:mmZ] contract_load [mode] CLAUDE.md contract_version=[N] baseline_warnings=[N]
+[YYYY-MM-DDThh:mmZ] memory_retrieval [mode] source=[engram|native|handover] retrieved=[what]
+...
+[YYYY-MM-DDThh:mmZ] session_close [mode] mem_summary=[saved|failed] handover=[updated|created|skipped]
+```
+
+---
+
+## Architectural Decision Log
+
+> Significant decisions that affect the project long-term. More detail than
+> the session log format above.
+
+### [YYYY-MM-DD] — [Decision title]
+
+**Context:** [why this decision was needed]
+**Decision:** [what was decided]
+**Evidence:** [file:line or test result that informed the decision]
+**Alternatives rejected:** [what was not chosen and why]
+**Mode:** [light / standard / strict]
+
+---
+
+## Gate Results Summary
+
+> Running table of gate results for quick calibration review.
+
+| Date | Gate | Mode | Result | Task | Notes |
+|------|------|------|--------|------|-------|
+| [YYYY-MM-DD] | 1 | standard | PASS | [task] | Tests existed and failed first |
+| [YYYY-MM-DD] | 2 | strict | FAIL | [task] | 3 new warnings — blocked |
+| [YYYY-MM-DD] | 3 | strict | Approved | [task] | Minor: missing error handling (tracked) |
+
+---
+
+## Override Log
+
+> When the user overrides a gate or policy, record it here.
+> This is not a hall of shame — it's calibration data.
+
+| Date | Gate / Policy | Override reason | Outcome |
+|------|--------------|-----------------|---------|
+| [YYYY-MM-DD] | Gate 1 | Time pressure, tests added in follow-up PR | No regressions found |
+
+---
+
+## MCP Server Registry
+
+> Servers verified and installed in this project.
+
+| Server | Version | Verified | Checklist | Notes |
+|--------|---------|----------|-----------|-------|
+| [name] | [version] | [YYYY-MM-DD] | Passed | [any notes] |
+
+---
+
+## Calibration Notes
+
+> Observations about skill performance in this project. Used to propose
+> adjustments to mode thresholds or gate conditions.
+
+- [YYYY-MM-DD] Gate 1 triggered for a documentation-only .md file due to
+  "auth" appearing in the filename. Resolved by adding user override.
+  Consider: mode detection should check file extension before keywords.
