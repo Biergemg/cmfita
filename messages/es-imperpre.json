@@ -23,14 +23,14 @@
   "Hero": {
     "eyebrow": "Para Escuelas Privadas · Tampico · Ciudad Madero · Altamira",
     "headline": "No impermeabilizamos encima del problema. Primero corregimos la losa que recibe el sistema.",
-    "subheadline": "Imperpre trabaja exclusivamente con escuelas privadas en Tampico, Ciudad Madero y Altamira. Antes de instalar la membrana, revisamos la condición real de la losa, tratamos grietas, corregimos pendientes y chaflanes cuando aplica, y revisamos bajantes pluviales. Solo entonces se instala el sistema prefabricado.",
+    "subheadline": "Imperpre trabaja exclusivamente con escuelas privadas en Tampico, Ciudad Madero y Altamira. Antes de instalar la membrana, revisamos la condición real de la losa. Según el diagnóstico, tratamos grietas, corregimos pendientes y chaflanes, revisamos bajantes y definimos el alcance real antes de instalar el sistema.",
     "ctaProposal": "Agendar visita técnica gratuita",
-    "ctaWhatsapp": "Agendar por WhatsApp",
-    "microcopy": "La visita es sin costo ni compromiso. Es el paso necesario para definir el alcance real antes de presupuestar.",
+    "ctaWhatsapp": "Solicitar revisión de la losa",
+    "microcopy": "En temporada de lluvias, la agenda se mueve por capacidad de cuadrilla y condiciones del clima. La visita define alcance antes de presupuestar.",
     "panelLabel": "Sistema Imperpre 3C",
     "panelTitle": "Corrección. Canalización. Cobertura.",
-    "panelBullet1": "Corrección — Grietas, entortado, chaflanes, pretiles y puntos críticos se tratan antes de instalar el sistema, no después.",
-    "panelBullet2": "Canalización — Se revisan y corrigen pendientes hacia bajantes pluviales. Si el agua no fluye, se corrige antes de cubrir.",
+    "panelBullet1": "Corrección — Tratamos grietas, entortado, chaflanes, pretiles y puntos críticos antes de instalar el sistema, no después.",
+    "panelBullet2": "Canalización — Revisamos y corregimos pendientes hacia bajantes pluviales. Si el agua no fluye, lo corregimos antes de cubrir.",
     "panelBullet3": "Cobertura — Membrana prefabricada APP o SBS de 4 mm sobre base ya preparada y verificada. Revisión correctiva sobre la zona intervenida, conforme al alcance contratado.",
     "formalLabel": "Requisitos del Plantel",
     "formalValue": "Escuela privada con azotea o losa de concreto, ubicada en Tampico, Ciudad Madero o Altamira.",
@@ -42,7 +42,7 @@
     "eyebrow": "El impacto real del agua",
     "title": "Las lluvias están afectando la imagen y operación de tu plantel.",
     "description1": "La mayoría de los problemas de goteras no se agravan por falta de intención en el colegio de arreglarlos. Se agravan por lo mismo de siempre: parches a la carrera, sellados superficiales de emergencia y trabajos hechos sin revisar la losa completa ni sus puntos críticos.",
-    "description2": "Plafones dañados, salones que deben cerrarse temporalmente y humedad visible que afecta la operación, la imagen del plantel y la percepción de los padres.",
+    "description2": "Esto genera plafones dañados, salones cerrados temporalmente y humedad visible que afecta la imagen del plantel y la percepción de los padres.",
     "stats": {
       "symptom1": {
         "value": "Salones en desuso",
@@ -75,23 +75,23 @@
   "Projects": {
     "eyebrow": "Sistema Imperpre 3C",
     "title": "La membrana es la última capa. La diferencia está en lo que se corrige antes.",
-    "subtitle": "Corrección. Canalización. Cobertura. Tres etapas técnicas que se aplican según la condición real de la losa, no según un precio estándar por metro.",
+    "subtitle": "Corrección. Canalización. Cobertura. Tres etapas técnicas que aplicamos según la condición real de la losa, no según un precio estándar por metro.",
     "items": [
       {
         "title": "1. Diagnóstico Técnico Documentado",
-        "description": "Visita en sitio para revisar la losa por abajo y por arriba. Se documentan fotografías, se identifican grietas, pretiles, chaflanes, bajantes, bases, encharcamientos y sistema anterior. La propuesta se emite con base en lo que se revisa, no en lo que se supone."
+        "description": "Visitamos el plantel y revisamos la losa por abajo y por arriba. Documentamos fotografías e identificamos grietas, pretiles, chaflanes, bajantes, bases, encharcamientos y sistema anterior. Emitimos la propuesta con base en lo que revisamos, no en lo que suponemos."
       },
       {
         "title": "2. Corrección — La base primero",
-        "description": "Tratamiento de grietas, retiro de material deteriorado cuando aplica, demolición de entortado dañado si es necesario, corrección de chaflanes y puntos críticos. La membrana no se instala sobre un problema: se instala sobre una base ya corregida."
+        "description": "Tratamos grietas, retiramos material deteriorado cuando aplica, demolemos entortado dañado si es necesario y corregimos chaflanes y puntos críticos. No instalamos la membrana sobre un problema: la instalamos sobre una base ya corregida."
       },
       {
         "title": "3. Canalización y Cobertura prefabricada",
-        "description": "Se verifican y corrigen pendientes hacia bajantes pluviales. Se realizan pruebas de flujo de agua antes de cerrar. Después se instala membrana prefabricada APP o SBS de 4 mm con refuerzo de fibra poliéster, según condición real de la losa."
+        "description": "Verificamos y corregimos pendientes hacia bajantes pluviales. Realizamos pruebas de flujo de agua antes de cerrar. Después instalamos membrana prefabricada APP o SBS de 4 mm con refuerzo de fibra poliéster, según condición real de la losa."
       },
       {
         "title": "4. Garantía correctiva de zona intervenida",
-        "description": "Si durante la siguiente temporada de lluvias reaparece una filtración en la zona intervenida y dentro del alcance contratado, Imperpre regresa a revisar y corregir sin costo. La garantía aplica sobre la zona intervenida, no sobre toda la escuela."
+        "description": "Si durante la siguiente temporada de lluvias reaparece una filtración en la zona intervenida y dentro del alcance contratado, regresamos a revisar y corregir sin costo. La garantía aplica sobre la zona intervenida, no sobre toda la escuela."
       }
     ],
     "cta": "Agendar diagnóstico técnico en el plantel"
@@ -99,41 +99,41 @@
 
   "Faq": {
     "eyebrow": "Transparencia Total",
-    "title": "Información frecuente para escuelas.",
+    "title": "Lo que nos preguntan antes de decidir",
     "subtitle": "Si tienes casos específicos, el técnico evaluará detalles en el plantel.",
     "items": [
       {
         "title": "¿Por qué no me pueden dar el precio por WhatsApp o por metro?",
-        "description": "Porque el alcance no depende solo de metros cuadrados de losa. También influyen el estado del sistema anterior, la cantidad y severidad de grietas, los pretiles, bajadas, tuberías, domos, bases, juntas, remates, puntos críticos y el nivel de preparación o corrección previa que requiera la superficie. Por eso el precio real solo se define después de revisar el caso en sitio.",
+        "description": "Porque el alcance no depende solo de metros cuadrados de losa. También influyen el estado del sistema anterior, la cantidad y severidad de grietas, los pretiles, bajadas, tuberías, domos, bases, juntas, remates, puntos críticos y el nivel de preparación o corrección previa que requiera la superficie. Por eso el precio real solo lo definimos después de revisar el caso en sitio.",
         "tag": "El Precio"
       },
       {
         "title": "Tengo instalaciones de clima, bases y domos en mi escuela. ¿Lo trabajan?",
-        "description": "Sí. Esos elementos forman parte de los puntos críticos que deben revisarse en sitio. Su tratamiento se define según la condición real del área y se atiende antes de colocar el sistema prefabricado general.",
+        "description": "Sí. Esos elementos forman parte de los puntos críticos que revisamos en sitio. Definimos su tratamiento según la condición real del área y lo atendemos antes de colocar el sistema prefabricado general.",
         "tag": "Ejecución"
       },
       {
         "title": "¿Debemos suspender clases?",
-        "description": "Generalmente se puede planear el trabajo para reducir afectaciones a la operación del plantel. La forma de ejecución, horarios y condicionantes se revisan directamente en la visita.",
+        "description": "Planeamos el trabajo para reducir afectaciones a la operación del plantel. La forma de ejecución, horarios y condicionantes los revisamos directamente en la visita.",
         "tag": "Operación de Colegio"
       },
       {
         "title": "¿La garantía cubre toda la escuela?",
-        "description": "No. La garantía correctiva aplica únicamente sobre la zona intervenida y dentro del alcance originalmente contratado. Si reaparece una filtración en esa zona durante la siguiente temporada de lluvias, se regresa a revisar y corregir sin costo. Zonas no intervenidas, modificaciones posteriores o daños fuera del alcance quedan excluidos.",
+        "description": "No. La garantía correctiva aplica únicamente sobre la zona intervenida y dentro del alcance originalmente contratado. Si reaparece una filtración en esa zona durante la siguiente temporada de lluvias, regresamos a revisar y corregir sin costo. Zonas no intervenidas, modificaciones posteriores o daños fuera del alcance quedan excluidos.",
         "tag": "La Garantía"
       },
       {
         "title": "¿Todos los casos se trabajan igual?",
-        "description": "No. Después del diagnóstico, el caso se clasifica según la condición real de la losa. Algunos requieren solo sellado y membrana en zona localizada. Otros requieren corrección de pendientes y chaflanes. Los más complejos pueden incluir demolición de entortado, reconstrucción de pendientes y retiro de escombro. El alcance y el precio se definen después del diagnóstico y quedan documentados en la propuesta formal aprobada por la institución.",
+        "description": "No. Después del diagnóstico, clasificamos el caso según la condición real de la losa. Algunos requieren solo sellado y membrana en zona localizada. Otros requieren corrección de pendientes y chaflanes. Los más complejos pueden incluir demolición de entortado, reconstrucción de pendientes y retiro de escombro. El alcance y el precio se definen después del diagnóstico y quedan documentados en la propuesta formal aprobada por la institución.",
         "tag": "El Alcance"
       }
     ],
-    "cta": "Contactar para agendar visita"
+    "cta": "Solicitar diagnóstico en el plantel"
   },
 
   "Contact": {
     "title": "¿Es momento de revisar el problema en la azotea de la escuela?",
-    "subtitle": "Escríbenos con la ubicación exacta (Tampico, Altamira, Ciudad Madero). Confirmaremos si el plantel requiere nuestra visita presencial.",
+    "subtitle": "Revisamos los datos iniciales y coordinamos la visita técnica si el plantel está dentro de cobertura y la superficie es losa de concreto.",
     "emotionalTitle": "Cada temporada de lluvias sin resolver el origen es otra temporada parchando encima del mismo problema.",
     "emotionalBody": "El parche puede parecer barato al inicio. Pero cuando el agua vuelve a entrar, el costo real se refleja en la operación del plantel, los plafones dañados, las interrupciones y volver a pagar por trabajo que no resolvió nada. Si la escuela está dentro de cobertura y la azotea es de concreto, el siguiente paso es la visita técnica. El alcance se define ahí.",
     "directContact": "Nuestros Accesos",
@@ -144,7 +144,7 @@
     "phone": "+52 833 518 1171",
     "email": "cmfitasadecv@gmail.com",
     "ctaProposal": "Agendar nuestra visita sin costo",
-    "ctaWhatsapp": "Conversar por WhatsApp",
+    "ctaWhatsapp": "Solicitar visita técnica",
     "locationLabel": "Requisito de Agenda",
     "address": "Únicamente requerimos la ubicación de la escuela, y que sea losa de concreto.",
     "coverageLabel": "Exclusivo para",
