@@ -59,12 +59,12 @@ export function ImperpreProjectExperience() {
           </div>
           {/* Central message */}
           <div className="relative text-center">
-            <p className="mb-2 text-xs uppercase tracking-[0.22em] text-industrial-500">El resultado</p>
+            <p className="mb-2 text-xs uppercase tracking-[0.22em] text-industrial-500">Sistema Imperpre 3C</p>
             <p className="text-2xl font-bold leading-snug text-steel-light md:text-3xl">
-              La intervención se define según la condición real de la losa, sus puntos críticos y el trabajo previo que requiera la superficie.
+              Corrección, Canalización y Cobertura. Tres etapas técnicas según la condición real de la losa.
             </p>
             <p className="mt-3 text-sm text-industrial-400">
-              Visita técnica gratuita · Sin compromiso · Revisión correctiva sin costo sobre la zona intervenida
+              Diagnóstico en sitio · Sin cotización a ciegas · Revisión correctiva sobre zona intervenida
             </p>
           </div>
         </div>
