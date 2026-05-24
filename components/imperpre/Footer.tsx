@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { legalIdentifier, getWhatsappUrl } from "@/lib/site";
 import { WhatsappIcon } from "@/components/ui/WhatsappIcon";
 import { trackWhatsappClick } from "@/lib/analytics";
@@ -30,12 +32,30 @@ export function ImperpreFooter() {
       <footer className="border-t border-industrial-800/40 bg-industrial-950 py-8">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           {/* Meta disclaimer */}
-          <p className="mb-6 text-center text-[11px] leading-relaxed text-industrial-600">
-            Este sitio web no está afiliado a Meta Platforms Inc. ni a Facebook Inc. Esta página no está
-            respaldada por Facebook de ninguna manera. FACEBOOK es una marca registrada de META PLATFORMS, INC.
+          <p className="mb-5 text-center text-[11px] leading-relaxed text-industrial-600">
+            Este sitio no forma parte de Meta Platforms, Inc., Facebook, Instagram o WhatsApp, ni está
+            respaldado, administrado o asociado con dichas plataformas. Facebook, Instagram y WhatsApp
+            son marcas registradas de sus respectivos titulares.
           </p>
-          <div className="flex flex-col items-center justify-between gap-3 text-xs text-industrial-500 sm:flex-row">
-            <p>© {new Date().getFullYear()} Imperpre · Tampico, Madero y Altamira</p>
+          {/* Legal links */}
+          <div className="mb-5 flex justify-center gap-5 text-[11px] text-industrial-500">
+            <Link
+              href="/es/privacidad"
+              className="transition-colors hover:text-industrial-300"
+            >
+              Aviso de privacidad
+            </Link>
+            <span className="text-industrial-700">·</span>
+            <Link
+              href="/es/terminos"
+              className="transition-colors hover:text-industrial-300"
+            >
+              Términos y condiciones
+            </Link>
+          </div>
+          {/* Copyright */}
+          <div className="flex flex-col items-center justify-between gap-2 text-[11px] text-industrial-500 sm:flex-row">
+            <p>© {new Date().getFullYear()} Imperpre / CMFITA. Todos los derechos reservados.</p>
             <span>{legalIdentifier}</span>
           </div>
         </div>
