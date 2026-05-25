@@ -10,11 +10,12 @@ import { Section } from "@/components/ui/section";
 
 const WORKS = [
   {
-    src: "/imperpre/obra-resultado-panoramica-hero.jpg",
+    src: "/imperpre/obra-resultado-perspectiva.jpg",
     altKey: "alt1" as const,
     tagKey: "tagResult" as const,
     span: "col-span-2 row-span-2",
     aspect: "aspect-[4/3]",
+    objectPosition: "50% 40%",
   },
   {
     src: "/imperpre/obra-instalacion-altura.jpg",
@@ -22,6 +23,7 @@ const WORKS = [
     tagKey: "tagInstall" as const,
     span: "col-span-1 row-span-1",
     aspect: "aspect-[3/4]",
+    objectPosition: "50% 30%",
   },
   {
     src: "/imperpre/obra-materiales-montacargas.jpg",
@@ -29,13 +31,15 @@ const WORKS = [
     tagKey: "tagMaterials" as const,
     span: "col-span-1 row-span-1",
     aspect: "aspect-[3/4]",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/imperpre/obra-resultado-perspectiva.jpg",
-    altKey: "alt3" as const,
-    tagKey: "tagResult" as const,
+    src: "/imperpre/obra-progreso-skyline.jpg",
+    altKey: "alt5" as const,
+    tagKey: "tagProgress" as const,
     span: "col-span-2 row-span-1",
     aspect: "aspect-[16/7]",
+    objectPosition: "50% 40%",
   },
   {
     src: "/imperpre/obra-proceso-equipo.jpg",
@@ -43,6 +47,7 @@ const WORKS = [
     tagKey: "tagProcess" as const,
     span: "col-span-1 row-span-1",
     aspect: "aspect-[4/3]",
+    objectPosition: "50% 50%",
   },
   {
     src: "/imperpre/obra-resultado-azotea-blanca-2.jpg",
@@ -50,13 +55,15 @@ const WORKS = [
     tagKey: "tagResult" as const,
     span: "col-span-1 row-span-1",
     aspect: "aspect-[4/3]",
+    objectPosition: "50% 50%",
   },
   {
-    src: "/imperpre/obra-progreso-skyline.jpg",
-    altKey: "alt5" as const,
-    tagKey: "tagProgress" as const,
+    src: "/imperpre/obra-resultado-panoramica-hero.jpg",
+    altKey: "alt3" as const,
+    tagKey: "tagResult" as const,
     span: "col-span-1 row-span-1",
     aspect: "aspect-[4/3]",
+    objectPosition: "50% 20%",
   },
   {
     src: "/imperpre/obra-resultado-atardecer.jpg",
@@ -64,6 +71,7 @@ const WORKS = [
     tagKey: "tagResult" as const,
     span: "col-span-3 row-span-1",
     aspect: "aspect-[21/6]",
+    objectPosition: "50% 30%",
   },
 ] as const;
 
@@ -124,6 +132,7 @@ export function ImperpreWorksGallery() {
                 alt={t(item.altKey)}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                style={{ objectPosition: item.objectPosition }}
                 sizes="(max-width: 768px) 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-industrial-950/80 via-transparent to-transparent" />
@@ -140,6 +149,7 @@ export function ImperpreWorksGallery() {
               alt={t(WORKS[7].altKey)}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              style={{ objectPosition: WORKS[7].objectPosition }}
               sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-industrial-950/80 via-transparent to-transparent" />
@@ -177,6 +187,7 @@ function GalleryCard({
           alt={alt}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          style={{ objectPosition: item.objectPosition }}
           sizes="(max-width: 1200px) 50vw, 33vw"
         />
         {/* Gradient overlay */}
