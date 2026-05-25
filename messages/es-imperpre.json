@@ -131,6 +131,26 @@
     "cta": "Solicitar diagnóstico en el plantel"
   },
 
+  "WorksGallery": {
+    "eyebrow": "Trabajos Realizados",
+    "title": "Azoteas intervenidas. Resultados documentados.",
+    "subtitle": "Cada trabajo parte de un diagnóstico real. Lo que se ve aquí es lo que se entrega.",
+    "tagResult": "Resultado",
+    "tagInstall": "Instalación",
+    "tagMaterials": "Materiales",
+    "tagProcess": "Proceso",
+    "tagProgress": "Avance",
+    "disclaimer": "Imágenes de trabajos realizados por el equipo Imperpre / CMFITA.",
+    "alt1": "Azotea de escuela con membrana blanca instalada, vista amplia con palmeras y ciudad",
+    "alt2": "Vista lateral de azotea terminada con membrana prefabricada, perspectiva desde pretil",
+    "alt3": "Perspectiva larga de azotea completa con membrana gris instalada y skyline de fondo",
+    "alt4": "Técnico aplicando membrana en pretil a altura, estacionamiento visible abajo",
+    "alt5": "Avance de instalación de membrana gris con vista de la ciudad al fondo",
+    "alt6": "Azotea de edificio con membrana instalada al atardecer, ciudad visible abajo",
+    "alt7": "Montacargas cargando rollos de membrana prefabricada en camioneta de trabajo",
+    "alt8": "Equipo de técnicos trabajando en azotea de concreto durante proceso de corrección"
+  },
+
   "Contact": {
     "title": "¿Es momento de revisar el problema en la azotea de la escuela?",
     "subtitle": "Revisamos los datos iniciales y coordinamos la visita técnica si el plantel está dentro de cobertura y la superficie es losa de concreto.",

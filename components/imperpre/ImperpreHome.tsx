@@ -3,6 +3,7 @@ import { ImperpreFooter } from "@/components/imperpre/Footer";
 import { ImperpreHero } from "@/components/imperpre/Hero";
 import { ImperpreOverview } from "@/components/imperpre/Overview";
 import { ImperpreProjectExperience } from "@/components/imperpre/ProjectExperience";
+import { ImperpreWorksGallery } from "@/components/imperpre/WorksGallery";
 import { ImperpreVoiceSearchFaq } from "@/components/imperpre/VoiceSearchFaq";
 import { ImperpreContact } from "@/components/imperpre/Contact";
 
@@ -15,6 +16,7 @@ export function ImperpreHome({ faqSchema }: { faqSchema: unknown }) {
         <ImperpreHero />
         <ImperpreOverview />
         <ImperpreProjectExperience />
+        <ImperpreWorksGallery />
         <ImperpreVoiceSearchFaq />
         <ImperpreContact />
       </main>
