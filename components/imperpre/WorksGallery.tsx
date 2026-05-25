@@ -10,7 +10,7 @@ import { Section } from "@/components/ui/section";
 
 const WORKS = [
   {
-    src: "/imperpre/obra-resultado-azotea-blanca-1.jpg",
+    src: "/imperpre/obra-resultado-panoramica-hero.jpg",
     altKey: "alt1" as const,
     tagKey: "tagResult" as const,
     span: "col-span-2 row-span-2",
