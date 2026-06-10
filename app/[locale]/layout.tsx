@@ -166,6 +166,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       twitter: { card: "summary_large_image", title, description, images: ["/imperpre-og.png"] },
       icons: {
         icon: [
+          { url: "/favicon.svg", type: "image/svg+xml" },
           { url: "/favicon.ico", sizes: "any" },
           { url: "/icon.png", type: "image/png", sizes: "1024x1024" },
         ],
@@ -220,6 +221,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     twitter: { card: "summary_large_image", title, description, images: ["/og-image.jpg"] },
     icons: {
       icon: [
+        { url: "/favicon.svg", type: "image/svg+xml" },
         { url: "/favicon.ico", sizes: "any" },
         { url: "/icon.png", type: "image/png", sizes: "1024x1024" },
       ],
