@@ -49,7 +49,7 @@ export function Capabilities() {
 
       <div className="relative mb-16 h-[300px] overflow-hidden rounded-sm border border-industrial-800 shadow-2xl md:h-[450px]">
         <div className="absolute inset-0 z-10 bg-gradient-to-t from-industrial-950/80 via-transparent to-transparent" />
-        <Image src="/capabilities.png" alt="Fabrication structural steel welding environment" fill className="object-cover" sizes="(max-width: 768px) 100vw, 1200px" />
+        <Image src="/capabilities-soldadura.jpg" alt="Soldador FITA en fabricación de estructura metálica" fill className="object-cover" sizes="(max-width: 768px) 100vw, 1200px" />
       </div>
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">

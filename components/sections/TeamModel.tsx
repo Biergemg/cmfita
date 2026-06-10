@@ -54,7 +54,7 @@ export function TeamModel() {
 
         <div className="premium-card relative h-[400px] overflow-hidden rounded-sm lg:h-[500px]">
           <div className="absolute inset-0 z-10 bg-gradient-to-t from-industrial-950/80 via-transparent to-transparent" />
-          <Image src="/team.png" alt="Massive structural execution and industrial fabrication" fill className="model-card object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
+          <Image src="/teammodel-sandblast.jpg" alt="Preparación superficial de estructura metálica FITA" fill className="model-card object-cover" sizes="(max-width: 1024px) 100vw, 50vw" />
         </div>
       </div>
     </Section>

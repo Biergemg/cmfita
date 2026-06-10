@@ -60,8 +60,8 @@ export function Overview() {
           <div className="relative h-[400px] overflow-hidden rounded-sm border border-industrial-800 shadow-2xl md:h-[600px]">
             <div className="absolute inset-0 z-10 bg-gradient-to-t from-industrial-950/80 via-transparent to-transparent" />
             <Image
-              src="/crane.png"
-              alt="Structural crane installation and construction site"
+              src="/overview-fabricacion.jpg"
+              alt="Taller de fabricación estructural FITA"
               fill
               className="overview-elem object-cover"
               sizes="(max-width: 768px) 100vw, 1200px"

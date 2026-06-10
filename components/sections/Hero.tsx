@@ -32,7 +32,7 @@ export function Hero() {
   return (
     <section ref={containerRef} className="relative flex min-h-[88vh] items-center overflow-hidden bg-industrial-950 pt-20">
       <div ref={bgRef} className="absolute inset-0 z-0 select-none opacity-40">
-        <Image src="/hero.png" alt="Industrial execution hero" fill priority className="object-cover" sizes="100vw" />
+        <Image src="/hero-fita.jpg" alt="Equipo FITA en instalación estructural con grúa" fill priority className="object-cover" sizes="100vw" />
       </div>
       <div className="absolute inset-0 z-[1] bg-grid opacity-50 mix-blend-overlay pointer-events-none" />
       <div className="absolute inset-0 z-[2] bg-gradient-to-t from-industrial-950 via-industrial-950/60 to-transparent pointer-events-none" />

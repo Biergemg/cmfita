@@ -49,7 +49,7 @@ export function ProjectExperience() {
 
       <div className="relative mb-16 h-[400px] overflow-hidden rounded-sm border border-industrial-800 shadow-2xl lg:h-[500px]">
         <div className="absolute inset-0 z-10 bg-gradient-to-t from-industrial-950/60 via-transparent to-transparent" />
-        <Image src="/infrastructure.png" alt="Massive infrastructure scale pipeline environment" fill className="object-cover" sizes="(max-width: 768px) 100vw, 1200px" />
+        <Image src="/civil-construccion.jpg" alt="Obra civil institucional FITA en progreso" fill className="object-cover" sizes="(max-width: 768px) 100vw, 1200px" />
       </div>
 
       <div className="flex flex-col border-t border-industrial-800">
