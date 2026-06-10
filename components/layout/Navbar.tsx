@@ -42,7 +42,7 @@ export function Navbar() {
       <div className={`nav-shell mx-auto flex max-w-7xl items-center justify-between rounded-sm border px-3 py-3 transition-all duration-300 sm:px-4 md:px-6 ${scrolled ? "glass-panel border-industrial-700/80 bg-industrial-950/78 shadow-[0_24px_60px_rgba(2,6,23,0.45)]" : "border-white/8 bg-industrial-950/48 backdrop-blur-sm"}`}>
         <Link href="/" className="group flex items-center gap-3" aria-label="FITA home">
           <div className="relative h-16 w-16 flex-shrink-0 transition-transform group-hover:scale-105 md:h-20 md:w-20">
-            <Image src="/logo.png" alt="FITA Logo" fill priority className="object-contain drop-shadow-md" sizes="112px" />
+            <Image src="/logo.svg" alt="FITA Logo" fill priority unoptimized className="object-contain drop-shadow-[0_2px_12px_rgba(255,255,255,0.18)]" sizes="112px" />
           </div>
           <div className="hidden min-w-0 md:block">
             <p className="text-[0.7rem] uppercase tracking-[0.18em] text-industrial-500">Construcción y Mantenimientos</p>

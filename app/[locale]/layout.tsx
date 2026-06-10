@@ -41,7 +41,7 @@ const teko = Teko({
 function getSchema(host: string | null, imperpre: boolean, locale: string) {
   const siteUrl = getRuntimeSiteUrl(host);
   const localeUrl = `${siteUrl}/${locale}`;
-  const logoUrl = `${siteUrl}/logo.png`;
+  const logoUrl = `${siteUrl}/logo.svg`;
 
   if (imperpre) {
     const imageUrl = `${siteUrl}/imperpre-og.png`;
