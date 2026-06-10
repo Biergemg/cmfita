@@ -66,7 +66,7 @@ export function Navbar() {
           <Button
             variant="outline"
             size="sm"
-            className="ml-2"
+            className="ml-2 whitespace-nowrap"
             onClick={() => {
               window.location.href = "mailto:cmfitasadecv@gmail.com?subject=Invitaci%C3%B3n%20a%20cotizar%20-%20FITA";
             }}
