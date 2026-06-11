@@ -1,6 +1,6 @@
 import { headers } from "next/headers";
 
-import corporateMessages from "@/messages/es.json";
+import corporateMessagesEs from "@/messages/es.json";
 import imperpreMessages from "@/messages/es-imperpre.json";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -13,6 +13,7 @@ import { ProjectExperience } from "@/components/sections/ProjectExperience";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Certifications } from "@/components/sections/Certifications";
+import { PhotoGallery } from "@/components/sections/PhotoGallery";
 import { Methodology } from "@/components/sections/Methodology";
 import { SafetyCompliance } from "@/components/sections/SafetyCompliance";
 import { ProcurementReady } from "@/components/sections/ProcurementReady";
@@ -47,6 +48,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     return <ImperpreHome faqSchema={buildFaqSchema(faqItems, `${siteUrl}/${locale}`)} />;
   }
 
+  const corporateMessages = locale === "en"
+    ? (await import("@/messages/en.json")).default
+    : corporateMessagesEs;
   const faqItems = (corporateMessages.Faq.items ?? []) as Array<{ title: string; description: string }>;
   const faqSchema = buildFaqSchema(faqItems, `${siteUrl}/${locale}`);
 
@@ -62,6 +66,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <TeamModel />
         <Institutional />
         <Portfolio locale={locale} />
+        <PhotoGallery />
         <Methodology />
         <SafetyCompliance />
         <ProcurementReady />

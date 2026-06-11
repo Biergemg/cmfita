@@ -5,7 +5,7 @@ import { Inter, Teko } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 
-import corporateMessages from "@/messages/es.json";
+import corporateMessagesEs from "@/messages/es.json";
 import imperpreMessages from "@/messages/es-imperpre.json";
 import "../globals.css";
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
@@ -189,6 +189,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     };
   }
 
+  const corporateMessages = locale === "en"
+    ? (await import("@/messages/en.json")).default
+    : corporateMessagesEs;
   const title = `${corporateMessages.Index.title} | FITA`;
   const description = corporateMessages.Index.description;
   return {
@@ -240,7 +243,11 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
   if (!routing.locales.includes(locale as (typeof routing.locales)[number])) notFound();
   const host = (await headers()).get("host");
   const imperpre = isImperpreHost(host);
-  const messages = imperpre ? imperpreMessages : corporateMessages;
+  const messages = imperpre
+    ? imperpreMessages
+    : locale === "en"
+      ? (await import("@/messages/en.json")).default
+      : corporateMessagesEs;
   const organizationSchema = getSchema(host, imperpre, locale);
 
   return (
