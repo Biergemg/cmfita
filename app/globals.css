@@ -87,6 +87,10 @@
   .pause-on-hover:hover .animate-marquee-right {
     animation-play-state: paused;
   }
+  .gallery-fade-mask {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 7%, black 93%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0%, black 7%, black 93%, transparent 100%);
+  }
   .metallic-text {
     background: linear-gradient(180deg, #ffffff 0%, #d1d1d1 100%);
     -webkit-background-clip: text;
