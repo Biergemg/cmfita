@@ -25,8 +25,8 @@
     "ctaProposal": "Send bid package or invitation",
     "ctaWhatsapp": "Ask on WhatsApp",
     "panelLabel": "Why FITA?",
-    "panelTitle": "Fewer promises. More verifiable execution.",
-    "panelBullet1": "We enter the package that belongs to us, not the one that sounds better",
+    "panelTitle": "Clear scope. Documented execution.",
+    "panelBullet1": "We define upfront which part of the scope belongs to FITA",
     "panelBullet2": "Civil, metal-mechanical work, installation, and coatings under one point of contact",
     "panelBullet3": "External specialists when the project requires them, without losing control of the work front",
     "formalLabel": "Formal contact",
@@ -35,13 +35,13 @@
     "quickValue": "WhatsApp for initial questions"
   },
   "Overview": {
-    "title": "The contractor that does not overstate its scope.",
-    "description1": "Many companies enter a bid with a profile larger than what they can sustain in the field. FITA does the opposite: it first defines what it can execute, under what responsibility, and under which project conditions. That reduces surprises on site.",
+    "title": "Scope defined before starting. No surprises in the field.",
+    "description1": "FITA first defines what it can execute, under what responsibility, and under which project conditions. That reduces surprises on site.",
     "description2": "We work in new construction, maintenance, expansion, and rehabilitation — across civil, metal-mechanical, installation, and coating fronts. We can take a single package or a broader execution scope, according to the real project scope and, when applicable, according to the client’s engineering and technical requirements.",
     "stats": {
       "scope": {
         "value": "Real scope",
-        "label": "what we can execute, not what sounds better"
+        "label": "defined before signing, not when arriving on site"
       },
       "markets": {
         "value": "Public and private",
@@ -91,7 +91,7 @@
     ]
   },
   "Projects": {
-    "title": "We have already been in projects like yours.",
+    "title": "Documented fronts. Verifiable clients.",
     "subtitle": "Offshore with Petrofac, metal-mechanical structures, industrial coatings, and institutional civil work. Fronts already executed and documented.",
     "items": [
       {
@@ -100,7 +100,7 @@
       },
       {
         "title": "Metal-mechanical fabrication and erection",
-        "description": "Steel structures, piping assemblies, valves, qualified welding, and structural erection. The kind of work many companies contract badly and end up correcting in the field."
+        "description": "Steel structures, piping assemblies, valves, qualified welding, and structural erection. Field execution with documented scope control and delivery."
       },
       {
         "title": "Coatings and protection",
@@ -122,7 +122,7 @@
   },
   "Safety": {
     "title": "No scope surprises. No avoidable accidents. No half-finished deliveries.",
-    "subtitle": "Clients that hire FITA should not have to supervise what is being promised in the field versus what the contract actually says.",
+    "subtitle": "Contracted scope is executed scope. The client has a direct point of contact throughout the project.",
     "items": [
       {
         "title": "Safety as an entry condition",
@@ -134,7 +134,7 @@
       },
       {
         "title": "Order on site, always",
-        "description": "Cleanliness, waste segregation, and compliance with project and client requirements. You should not have to chase us to keep the work front presentable."
+        "description": "Cleanliness, waste segregation, and compliance with project and client requirements. An organized front is an operational standard, not an afterthought."
       }
     ]
   },

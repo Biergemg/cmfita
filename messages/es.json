@@ -25,8 +25,8 @@
     "ctaProposal": "Enviar bases o invitación",
     "ctaWhatsapp": "Preguntar por WhatsApp",
     "panelLabel": "¿Por qué FITA?",
-    "panelTitle": "Menos promesas. Más ejecución verificable.",
-    "panelBullet1": "Entramos en la partida que nos corresponde, no en la que suena mejor",
+    "panelTitle": "Alcance claro. Ejecución documentada.",
+    "panelBullet1": "Definimos primero qué parte del alcance le corresponde a FITA",
     "panelBullet2": "Civil, metal-mecánica, montaje y recubrimientos bajo un solo interlocutor",
     "panelBullet3": "Especialidades externas cuando el proyecto las requiere, sin perder el control del frente",
     "formalLabel": "Contacto formal",
@@ -35,13 +35,13 @@
     "quickValue": "WhatsApp para dudas iniciales"
   },
   "Overview": {
-    "title": "El contratista que no exagera su alcance.",
-    "description1": "Muchas empresas llegan a licitación con un perfil más grande del que pueden sostener en campo. FITA hace lo contrario: define primero qué puede ejecutar, con qué responsabilidad y bajo qué condiciones del proyecto. Eso reduce sorpresas en obra.",
+    "title": "Alcance definido antes de arrancar. Sin sorpresas en campo.",
+    "description1": "FITA define primero qué puede ejecutar, con qué responsabilidad y bajo qué condiciones del proyecto. Eso reduce sorpresas en obra.",
     "description2": "Trabajamos en obra nueva, mantenimiento, ampliación y rehabilitación — en frentes civiles, metal-mecánicos, de montaje y de recubrimientos. Podemos tomar una sola partida o una ejecución más amplia, según el alcance real del proyecto y, cuando aplica, según los requerimientos e ingeniería del cliente.",
     "stats": {
       "scope": {
         "value": "Alcance real",
-        "label": "lo que podemos ejecutar, no lo que suena mejor"
+        "label": "definido antes de la firma, no al llegar a campo"
       },
       "markets": {
         "value": "Público y privado",
@@ -91,7 +91,7 @@
     ]
   },
   "Projects": {
-    "title": "Ya estuvimos en proyectos como el tuyo.",
+    "title": "Frentes documentados. Clientes verificables.",
     "subtitle": "Offshore con Petrofac, estructuras metal-mecánicas, recubrimientos industriales y obra civil institucional. Frentes ya ejecutados y documentados.",
     "items": [
       {
@@ -100,7 +100,7 @@
       },
       {
         "title": "Fabricación y montaje metal-mecánico",
-        "description": "Estructuras de acero, arreglos de tubería, válvulas, soldadura calificada y montaje estructural. El tipo de trabajo que muchos contratan mal y terminan corrigiendo en campo."
+        "description": "Estructuras de acero, arreglos de tubería, válvulas, soldadura calificada y montaje estructural. Ejecución documentada con control de alcance en campo."
       },
       {
         "title": "Recubrimientos y protección",
@@ -122,7 +122,7 @@
   },
   "Safety": {
     "title": "Sin sorpresas de alcance. Sin accidentes evitables. Sin entregas a medias.",
-    "subtitle": "El cliente que contrata a FITA no necesita supervisar qué se está prometiendo en campo versus qué dice el contrato.",
+    "subtitle": "Alcance contratado es alcance ejecutado. El cliente tiene un punto de contacto directo durante todo el proyecto.",
     "items": [
       {
         "title": "Seguridad como condición de entrada",
@@ -134,7 +134,7 @@
       },
       {
         "title": "Orden en obra, siempre",
-        "description": "Limpieza, segregación de residuos, cumplimiento de requerimientos del cliente y del proyecto. No necesitas perseguirnos para que el frente esté presentable."
+        "description": "Limpieza, segregación de residuos y cumplimiento de requerimientos del cliente y del proyecto. El frente se mantiene presentable como condición operativa."
       }
     ]
   },
