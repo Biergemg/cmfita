@@ -19,7 +19,6 @@
     "faq": "Preguntas",
     "whatsapp": "Agendar visita gratuita"
   },
-
   "Hero": {
     "eyebrow": "Para Escuelas Privadas · Tampico · Ciudad Madero · Altamira",
     "headline": "La gotera regresa cuando se sella encima del problema. Nosotros corregimos el origen antes de instalar el sistema.",
@@ -37,7 +36,6 @@
     "quickLabel": "Qué NO hacemos",
     "quickValue": "No trabajamos techos de lámina. No damos cotizaciones genéricas por metro sin revisar. No hacemos reparaciones estructurales mayores."
   },
-
   "Overview": {
     "eyebrow": "El impacto real del agua",
     "title": "Las lluvias están afectando la imagen y operación de tu plantel.",
@@ -71,7 +69,6 @@
     },
     "cta": "Agendar visita técnica gratuita"
   },
-
   "Projects": {
     "eyebrow": "Sistema Imperpre 3C",
     "title": "La membrana es la última capa. La diferencia está en lo que se corrige antes.",
@@ -96,7 +93,6 @@
     ],
     "cta": "Agendar diagnóstico técnico en el plantel"
   },
-
   "Faq": {
     "eyebrow": "Transparencia Total",
     "title": "Lo que nos preguntan antes de decidir",
@@ -126,11 +122,15 @@
         "title": "¿Todos los casos se trabajan igual?",
         "description": "No. Después del diagnóstico, clasificamos el caso según la condición real de la losa. Algunos requieren solo sellado y membrana en zona localizada. Otros requieren corrección de pendientes y chaflanes. Los más complejos pueden incluir demolición de entortado, reconstrucción de pendientes y retiro de escombro. El alcance y el precio se definen después del diagnóstico y quedan documentados en la propuesta formal aprobada por la institución.",
         "tag": "El Alcance"
+      },
+      {
+        "title": "¿Se puede hacer el trabajo por etapas?",
+        "description": "Sí, cuando el caso lo permite. Si el presupuesto o el calendario escolar lo piden, la propuesta puede dividirse en etapas, empezando por las zonas más urgentes. Lo definimos contigo después del diagnóstico.",
+        "tag": "Etapas"
       }
     ],
     "cta": "Solicitar diagnóstico en el plantel"
   },
-
   "WorksGallery": {
     "eyebrow": "Trabajos Realizados",
     "title": "Azoteas intervenidas. Resultados documentados.",
@@ -150,7 +150,6 @@
     "alt7": "Montacargas cargando rollos de membrana prefabricada en camioneta de trabajo",
     "alt8": "Equipo de técnicos trabajando en azotea de concreto durante proceso de corrección"
   },
-
   "Contact": {
     "title": "¿Es momento de revisar el problema en la azotea de la escuela?",
     "subtitle": "Revisamos los datos iniciales y coordinamos la visita técnica si el plantel está dentro de cobertura y la superficie es losa de concreto.",
@@ -175,7 +174,6 @@
     "quickValue": "Revisión correctiva sobre la zona intervenida en la próxima lluvia, sin costo por concepto de alcance anterior.",
     "microcopy": "La visita técnica gratuita está sujeta a disponibilidad operativa. Envía mensaje para revisar el caso."
   },
-
   "notFoundTitle": "No encontramos la ruta",
   "notFoundBody": "Al parecer esta ruta no existe o fue modificada.",
   "errorTitle": "Ocurrió un error en sistema",
