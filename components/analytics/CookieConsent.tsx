@@ -1,21 +1,43 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/routing";
 import type { Locale } from "@/types/content";
 
 export const ANALYTICS_CONSENT_KEY = "fita-analytics-consent";
+// Evento para volver a mostrar el aviso y cambiar la decisión (p. ej. «Preferencias de cookies» en el pie).
+export const OPEN_CONSENT_EVENT = "analytics-consent-open";
+
+// La decisión guardada se lee como fuente externa (localStorage); en el servidor no hay decisión y el aviso no se pinta.
+const subscribe = (onChange: () => void) => {
+  window.addEventListener("analytics-consent-change", onChange);
+  window.addEventListener("storage", onChange);
+  return () => {
+    window.removeEventListener("analytics-consent-change", onChange);
+    window.removeEventListener("storage", onChange);
+  };
+};
+const readConsent = () => {
+  try {
+    return window.localStorage.getItem(ANALYTICS_CONSENT_KEY) ?? "";
+  } catch {
+    return "";
+  }
+};
 
 export function CookieConsent({ locale }: { locale: Locale }) {
-  const [visible, setVisible] = useState(false);
+  const stored = useSyncExternalStore(subscribe, readConsent, () => "server");
+  const [reopened, setReopened] = useState(false);
 
   useEffect(() => {
-    const value = window.localStorage.getItem(ANALYTICS_CONSENT_KEY);
-    setVisible(value !== "granted" && value !== "denied");
+    const open = () => setReopened(true);
+    window.addEventListener(OPEN_CONSENT_EVENT, open);
+    return () => window.removeEventListener(OPEN_CONSENT_EVENT, open);
   }, []);
 
+  const visible = reopened || (stored !== "server" && stored !== "granted" && stored !== "denied");
   if (!visible) {
     return null;
   }
@@ -37,7 +59,7 @@ export function CookieConsent({ locale }: { locale: Locale }) {
   const updateConsent = (value: "granted" | "denied") => {
     window.localStorage.setItem(ANALYTICS_CONSENT_KEY, value);
     window.dispatchEvent(new CustomEvent("analytics-consent-change", { detail: value }));
-    setVisible(false);
+    setReopened(false);
   };
 
   return (

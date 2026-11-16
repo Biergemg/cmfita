@@ -11,6 +11,15 @@ const nextConfig: NextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 96, 128, 256, 384],
   },
+  // Solo en el host de Imperpre: el sitemap anterior anunciaba /privacy y /terms (páginas de FITA). Se redirigen a las
+  // páginas legales propias de Imperpre. Las rutas de cmfita.com no cambian.
+  async redirects() {
+    const imperpreHost = [{ type: "host" as const, value: "imperpre\\..*" }];
+    return [
+      { source: "/:locale(es|en)/privacy", has: imperpreHost, destination: "/es/privacidad", permanent: true },
+      { source: "/:locale(es|en)/terms", has: imperpreHost, destination: "/es/terminos", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {

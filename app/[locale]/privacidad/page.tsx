@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { ImperpreNavbar } from "@/components/imperpre/Navbar";
 import { ImperpreFooter } from "@/components/imperpre/Footer";
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Aviso de privacidad de Imperpre — servicio especializado de Construcción y Mantenimientos FITA S.A. de C.V. — para solicitudes de diagnóstico, formularios, WhatsApp y contacto comercial.",
   alternates: { canonical: "/es/privacidad" },
+  openGraph: { type: "website", locale: "es_MX", siteName: "Imperpre", url: "/es/privacidad", title: "Aviso de privacidad | Imperpre" },
   robots: { index: true, follow: true },
 };
 
@@ -24,14 +26,15 @@ export default function PrivacidadPage() {
             <h1 className="mb-3 text-3xl font-bold text-steel-light md:text-4xl">
               Aviso de privacidad
             </h1>
-            <p className="text-sm text-industrial-500">Última actualización: 23 de mayo de 2026</p>
+            <p className="text-sm text-industrial-500">Última actualización: 15 de noviembre de 2026</p>
           </div>
 
           {/* Intro */}
           <div className="mb-8 rounded-sm border border-industrial-800 bg-industrial-900/50 p-6">
             <p className="text-sm leading-relaxed text-industrial-300">
               Construcción y Mantenimientos FITA S.A. de C.V., responsable del servicio especializado
-              Imperpre, con domicilio en Col. 16 de Septiembre, C.P. 89512, Ciudad Madero, Tamaulipas,
+              Imperpre (RFC CMF140509C49), con domicilio en Paseo de los Mexicas 126-D, Col. 16 de Septiembre,
+              C.P. 89512, Ciudad Madero, Tamaulipas,
               y correo de contacto{" "}
               <a
                 href="mailto:cmfitasadecv@gmail.com"
@@ -56,7 +59,8 @@ export default function PrivacidadPage() {
               <p className="mb-3">Podemos recabar los siguientes datos personales:</p>
               <ul className="ml-4 space-y-1.5 text-industrial-400">
                 {[
-                  "Nombre.",
+                  "Nombre y cargo.",
+                  "Nombre y tipo de escuela (privada o pública).",
                   "Teléfono.",
                   "Correo electrónico.",
                   "Municipio, colonia, zona o ubicación aproximada del inmueble.",
@@ -176,6 +180,29 @@ export default function PrivacidadPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
+                5.1 Formulario de revisión, cookies y medición
+              </h2>
+              <p className="mb-3 text-industrial-400">
+                El formulario de solicitud de revisión no envía sus datos a nuestro servidor: arma un mensaje en su
+                navegador, que usted puede revisar, y solo se comparte si decide abrirlo y enviarlo por WhatsApp.
+              </p>
+              <p className="mb-3 text-industrial-400">
+                El sitio guarda en su navegador su decisión sobre la medición. Solo si usted la acepta, se carga
+                Google Analytics 4, que utiliza cookies para medir visitas y clics de contacto de forma agregada. El
+                sitio no tiene instalado Meta Pixel. Puede cambiar su decisión en cualquier momento desde
+                «Preferencias de cookies» en el pie de página.
+              </p>
+              <p className="text-industrial-400">
+                El detalle de las tecnologías utilizadas está en la{" "}
+                <Link href="/es/cookies" className="text-steel-light underline decoration-industrial-600 underline-offset-2">
+                  política de cookies
+                </Link>
+                .
+              </p>
+            </section>
+
+            <section>
+              <h2 className="mb-4 text-base font-semibold text-amber-400">
                 6. Derechos ARCO y revocación del consentimiento
               </h2>
               <p className="mb-4 text-industrial-400">
@@ -203,6 +230,10 @@ export default function PrivacidadPage() {
                   </li>
                 ))}
               </ul>
+              <p className="mt-4 text-industrial-400">
+                Atenderemos su solicitud y le comunicaremos la respuesta dentro de los plazos que establece la
+                legislación aplicable en materia de protección de datos personales.
+              </p>
             </section>
 
             <section>
@@ -245,12 +276,12 @@ export default function PrivacidadPage() {
 
           {/* Back link */}
           <div className="mt-14 border-t border-industrial-800 pt-8">
-            <a
+            <Link
               href="/es"
               className="inline-flex items-center gap-2 text-sm text-industrial-400 transition-colors hover:text-steel-light"
             >
               ← Volver al inicio
-            </a>
+            </Link>
           </div>
 
         </div>

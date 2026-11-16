@@ -15,6 +15,8 @@ export function GoogleAnalytics() {
   useEffect(() => {
     const syncConsent = () => {
       const value = window.localStorage.getItem(ANALYTICS_CONSENT_KEY);
+      // Si se revoca después de haber aceptado, GA4 deja de enviar datos en esta misma sesión (bandera oficial ga-disable).
+      if (GA_ID) (window as unknown as Record<string, unknown>)[`ga-disable-${GA_ID}`] = value !== "granted";
       setEnabled(value === "granted");
     };
 

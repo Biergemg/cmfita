@@ -23,13 +23,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 1,
       },
       {
-        url: `${base}/privacy`,
+        url: `${base}/privacidad`,
         lastModified,
         changeFrequency: "yearly",
         priority: 0.3,
       },
       {
-        url: `${base}/terms`,
+        url: `${base}/terminos`,
         lastModified,
         changeFrequency: "yearly",
         priority: 0.3,

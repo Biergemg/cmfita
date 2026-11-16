@@ -1,11 +1,31 @@
+import type { Metadata } from "next";
+import { headers } from "next/headers";
+
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
+import { ImperpreCookiesPolicy, imperpreCookiesMeta } from "@/components/imperpre/CookiesPolicy";
 import { routeCopy } from "@/data/locale-copy";
+import { isImperpreHost } from "@/lib/site";
 import type { Locale } from "@/types/content";
+
+// En el host de Imperpre se sirve su propia política (cabecera, pie y canonical de Imperpre).
+// En cmfita.com la página y sus metadatos quedan exactamente como estaban.
+export async function generateMetadata(): Promise<Metadata> {
+  if (!isImperpreHost((await headers()).get("host"))) return {};
+  const { title, description, path } = imperpreCookiesMeta;
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: { type: "website", locale: "es_MX", siteName: "Imperpre", url: path, title, description },
+    robots: { index: true, follow: true },
+  };
+}
 
 export default async function CookiesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: localeParam } = await params;
   const locale = localeParam as Locale;
+  if (isImperpreHost((await headers()).get("host"))) return <ImperpreCookiesPolicy />;
   const copy = routeCopy[locale].legal;
 
   return (

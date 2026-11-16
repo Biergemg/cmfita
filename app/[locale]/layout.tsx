@@ -17,7 +17,6 @@ import {
   contactPhone,
   getRuntimeSiteUrl,
   imperpreSeo,
-  imperpreTagline,
   isImperpreHost,
   postalAddress,
   siteTagline,
@@ -70,6 +69,14 @@ function getSchema(host: string | null, imperpre: boolean, locale: string) {
           areaServed: serviceArea,
           serviceArea,
           availableLanguage: "es-MX",
+          address: { "@type": "PostalAddress", ...postalAddress },
+          parentOrganization: {
+            "@type": "Organization",
+            name: companyName,
+            legalName: "Construcción y Mantenimientos FITA, S.A. de C.V.",
+            taxID: "CMF140509C49",
+            url: "https://cmfita.com",
+          },
         },
         {
           "@type": "Service",
@@ -251,8 +258,8 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
   const organizationSchema = getSchema(host, imperpre, locale);
 
   return (
-    <html lang={locale} className={`${inter.variable} ${teko.variable}`}>
-      <body className={`${imperpre ? "overflow-x-clip" : "overflow-x-hidden"} bg-slate-950 font-inter text-slate-50 antialiased selection:bg-slate-700 selection:text-white`}>
+    <html lang={locale} className={`${inter.variable} ${teko.variable}${imperpre ? " imperpre-site" : ""}`}>
+      <body className={`${imperpre ? "" : "overflow-x-hidden "}bg-slate-950 font-inter text-slate-50 antialiased selection:bg-slate-700 selection:text-white`}>
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[70] focus:bg-white focus:px-4 focus:py-2 focus:text-black">
           Skip to content
         </a>

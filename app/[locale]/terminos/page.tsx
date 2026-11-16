@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { ImperpreNavbar } from "@/components/imperpre/Navbar";
 import { ImperpreFooter } from "@/components/imperpre/Footer";
@@ -8,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Términos y condiciones de uso del sitio Imperpre y criterios generales para solicitudes, visitas técnicas, cotizaciones y servicios de impermeabilización para escuelas privadas.",
   alternates: { canonical: "/es/terminos" },
+  openGraph: { type: "website", locale: "es_MX", siteName: "Imperpre", url: "/es/terminos", title: "Términos y condiciones | Imperpre" },
   robots: { index: true, follow: true },
 };
 
@@ -24,7 +26,7 @@ export default function TerminosPage() {
             <h1 className="mb-3 text-3xl font-bold text-steel-light md:text-4xl">
               Términos y condiciones
             </h1>
-            <p className="text-sm text-industrial-500">Última actualización: 23 de mayo de 2026</p>
+            <p className="text-sm text-industrial-500">Última actualización: 15 de noviembre de 2026</p>
           </div>
 
           {/* Intro */}
@@ -34,7 +36,9 @@ export default function TerminosPage() {
               diagnóstico, visita técnica, cotización o propuesta relacionada con servicios de
               impermeabilización para escuelas privadas, planteles e inmuebles institucionales o
               comerciales dentro de la zona de atención de Construcción y Mantenimientos FITA S.A. de
-              C.V., responsable del servicio especializado Imperpre.
+              C.V. (RFC CMF140509C49), con domicilio en Paseo de los Mexicas 126-D, Col. 16 de Septiembre,
+              C.P. 89512, Ciudad Madero, Tamaulipas, responsable del servicio especializado Imperpre.
+              Imperpre es un servicio de FITA, no una sociedad independiente.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-industrial-400">
               Al utilizar este sitio, enviar un formulario, contactarnos por WhatsApp, llamada o correo
@@ -116,7 +120,28 @@ export default function TerminosPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                4. No cotización a ciegas
+                4. Revisión técnica sin costo y Ficha de Hallazgos
+              </h2>
+              <ul className="ml-4 space-y-1.5 text-industrial-400">
+                {[
+                  "La revisión sin costo es una inspección visual de las zonas de la azotea y, cuando corresponde, de interiores, que puedan recorrerse de forma segura el día de la visita.",
+                  "Después de la visita se entrega una Ficha de Hallazgos en formato digital, con fotografías y referencias por zona. El plazo de entrega se confirma al agendar.",
+                  "La ficha distingue lo observado de las posibles causas. No es un dictamen estructural, eléctrico ni de otras instalaciones; no incluye pruebas destructivas, de laboratorio ni de estanqueidad, y no garantiza detectar todas las filtraciones existentes u ocultas.",
+                  "Si se observan señales que requieran la evaluación de otro especialista, se indicarán en la ficha. Su atención corresponde a ese especialista y al responsable del inmueble.",
+                  "La escuela conserva la ficha aunque no contrate trabajos y puede usarla para sus decisiones internas.",
+                  "Solicitar o recibir la revisión no obliga a contratar.",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-industrial-600" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="mb-4 text-base font-semibold text-amber-400">
+                5. No cotización a ciegas
               </h2>
               <p className="mb-3 text-industrial-400">
                 Imperpre no está obligado a cotizar por fotografías, mensajes, llamadas, estimaciones
@@ -149,7 +174,7 @@ export default function TerminosPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                5. Alcance del servicio
+                6. Alcance del servicio
               </h2>
               <p className="mb-3 text-industrial-400">
                 El alcance exacto de cada trabajo será únicamente el establecido en la propuesta formal
@@ -165,7 +190,7 @@ export default function TerminosPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                6. Exclusiones generales
+                7. Exclusiones generales
               </h2>
               <p className="mb-3">
                 Salvo que una propuesta formal indique expresamente lo contrario, el servicio no incluye:
@@ -191,7 +216,7 @@ export default function TerminosPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                7. Garantías y revisiones correctivas
+                8. Garantías y revisiones correctivas
               </h2>
               <p className="mb-3 text-industrial-400">
                 Cualquier garantía, revisión correctiva o responsabilidad posterior deberá estar
@@ -223,7 +248,7 @@ export default function TerminosPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                8. Fotografías, videos y evidencia
+                9. Fotografías, videos y evidencia
               </h2>
               <p className="mb-3 text-industrial-400">
                 Durante visitas o ejecución de trabajos, Imperpre/CMFITA podrá tomar fotografías o videos
@@ -240,7 +265,7 @@ export default function TerminosPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                9. Responsabilidad del cliente
+                10. Responsabilidad del cliente
               </h2>
               <p className="mb-3">El cliente deberá:</p>
               <ul className="ml-4 space-y-1.5 text-industrial-400">
@@ -262,7 +287,7 @@ export default function TerminosPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                10. Pagos, anticipos y liquidación
+                11. Pagos, anticipos y liquidación
               </h2>
               <p className="mb-3 text-industrial-400">
                 Los pagos, anticipos, formas de pago, fechas, retenciones, facturación, liquidación y
@@ -276,7 +301,7 @@ export default function TerminosPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                11. Limitación de responsabilidad
+                12. Limitación de responsabilidad
               </h2>
               <p className="text-industrial-400">
                 Imperpre/CMFITA no será responsable por daños indirectos, lucro cesante, pérdida de
@@ -284,11 +309,15 @@ export default function TerminosPage() {
                 afectaciones de terceros o consecuencias no previstas, salvo que exista disposición legal
                 aplicable o pacto expreso por escrito.
               </p>
+              <p className="mt-3 text-industrial-400">
+                Nada de lo dispuesto en estos términos limita los derechos ni las responsabilidades que la
+                legislación aplicable establezca como irrenunciables.
+              </p>
             </section>
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                12. Propiedad intelectual
+                13. Propiedad intelectual
               </h2>
               <p className="text-industrial-400">
                 Los textos, diseño, fotografías, gráficos, nombres comerciales, estructura de oferta y
@@ -299,7 +328,7 @@ export default function TerminosPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                13. Relación con Meta, Facebook, Instagram y WhatsApp
+                14. Relación con Meta, Facebook, Instagram y WhatsApp
               </h2>
               <p className="text-industrial-400">
                 Este sitio no forma parte de Meta Platforms, Inc., Facebook, Instagram o WhatsApp, ni
@@ -310,7 +339,7 @@ export default function TerminosPage() {
 
             <section>
               <h2 className="mb-4 text-base font-semibold text-amber-400">
-                14. Cambios en los términos
+                15. Cambios en los términos
               </h2>
               <p className="text-industrial-400">
                 Imperpre/CMFITA podrá modificar estos términos por cambios operativos, legales, técnicos
@@ -325,12 +354,12 @@ export default function TerminosPage() {
 
           {/* Back link */}
           <div className="mt-14 border-t border-industrial-800 pt-8">
-            <a
+            <Link
               href="/es"
               className="inline-flex items-center gap-2 text-sm text-industrial-400 transition-colors hover:text-steel-light"
             >
               ← Volver al inicio
-            </a>
+            </Link>
           </div>
 
         </div>

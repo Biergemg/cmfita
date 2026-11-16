@@ -43,6 +43,13 @@
       linear-gradient(180deg, #020617 0%, #08101e 45%, #020617 100%);
   }
 
+  /* Imperpre (solo su host): sin recorte horizontal global. Su maquetación no desborda y así cualquier desborde futuro
+     queda a la vista y lo detectan las pruebas, en lugar de ocultarse. cmfita.com no lleva esta clase. */
+  html.imperpre-site,
+  html.imperpre-site body {
+    overflow-x: visible;
+  }
+
   *, *::before, *::after {
     box-sizing: border-box;
   }

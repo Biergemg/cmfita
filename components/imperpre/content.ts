@@ -194,7 +194,7 @@ export const method = {
     },
     {
       n: "3",
-      title: "Impermeabilización",
+      title: "Cobertura",
       body: "Al final se instala membrana prefabricada termofusionada sobre la superficie ya preparada.",
       img: "/imperpre/obra-instalacion-altura.jpg",
       alt: "Técnico de Imperpre termofusionando membrana prefabricada sobre un pretil",
@@ -237,24 +237,71 @@ export const works = {
 
 export const faqTitle = "Antes de solicitar la revisión";
 
+// Calificación: confirma escuela privada, municipio, losa de concreto, superficie y urgencia antes de agendar.
+// La superficie se pregunta en rangos y viaja en el mensaje; el mínimo operativo es un filtro interno, no un requisito publicado.
 export const valuation = {
   title: "Solicita la revisión técnica de tu azotea",
-  intro: "Con estos datos armamos el mensaje de WhatsApp por ti. Tú decides si lo envías.",
-  municipalities: ["Tampico", "Ciudad Madero", "Altamira"],
-  active: ["Sí, hay goteras ahora", "No por ahora"],
+  intro: "Responde con unos toques y armamos el mensaje de WhatsApp por ti. Tú decides si lo envías.",
+  schoolTypes: ["Privada", "Pública"],
+  municipalities: ["Tampico", "Ciudad Madero", "Altamira", "Otro municipio"],
+  roofs: ["Losa de concreto", "Lámina", "No estoy seguro"],
+  sizes: ["Menos de 100 m²", "100 m² o más", "No lo sé"],
+  active: ["Sí, hay goteras ahora", "En las últimas lluvias", "No por ahora"],
+  outOfScope:
+    "Este servicio atiende escuelas privadas con azotea de losa de concreto en Tampico, Ciudad Madero y Altamira. Si tu caso es distinto, puedes enviar el mensaje y te diremos si podemos ayudarte.",
+  missing: "Para enviar el mensaje falta responder:",
   incentiveTitle: "Lo que recibes",
   incentive: "Después de la visita, la Ficha de Hallazgos de tu azotea. Se queda en tu escuela, contrates o no.",
   cta: CTA,
   fine: "Sin costo y sin compromiso. Sujeta a cobertura y agenda.",
 };
 
-export function buildValuationMessage(input: { school: string; who: string; municipality?: string; active?: string }): string {
-  const place = `${input.school ? `la escuela ${input.school}` : "una escuela"}${input.municipality ? ` en ${input.municipality}` : ""}`;
+export type ValuationInput = {
+  school: string;
+  who: string;
+  schoolType?: string;
+  municipality?: string;
+  roof?: string;
+  size?: string;
+  active?: string;
+};
+
+const ACTIVE_TEXT: Record<string, string> = {
+  "Sí, hay goteras ahora": "hay goteras ahora",
+  "En las últimas lluvias": "hubo goteras en las últimas lluvias",
+  "No por ahora": "por ahora no hay goteras",
+};
+
+export function buildValuationMessage(input: ValuationInput): string {
+  const kind = input.schoolType ? ` (${input.schoolType.toLowerCase()})` : "";
+  const town = input.municipality && input.municipality !== "Otro municipio" ? ` en ${input.municipality}` : input.municipality ? " fuera de Tampico, Madero y Altamira" : "";
+  const place = `${input.school ? `la escuela ${input.school}` : "una escuela"}${kind}${town}`;
   const from = input.who ? `Soy ${input.who}, de ${place}.` : `Escribo de ${place}.`;
   const lines = [`Hola, Imperpre. ${from}`, "Quiero solicitar la revisión técnica de la azotea, sin costo."];
-  if (input.active) lines.push(input.active.startsWith("Sí") ? "Ahora mismo tenemos goteras." : "Por ahora no tenemos goteras activas.");
+  const facts = [
+    input.roof ? `Azotea: ${input.roof.toLowerCase()}` : "",
+    input.size ? `Superficie aproximada: ${input.size}` : "",
+    input.active ? `Goteras: ${ACTIVE_TEXT[input.active] ?? input.active.toLowerCase()}` : "",
+  ].filter(Boolean);
+  if (facts.length) lines.push(`${facts.join(". ")}.`);
   lines.push("¿Qué días tienen disponibles para la visita?");
   return lines.join("\n");
+}
+
+// Respuestas necesarias para calificar la solicitud antes de agendar.
+export function missingAnswers(input: ValuationInput): Array<{ id: string; label: string }> {
+  const out: Array<{ id: string; label: string }> = [];
+  if (!input.school.trim()) out.push({ id: "imp-school", label: "nombre de la escuela" });
+  if (!input.schoolType) out.push({ id: "imp-t-0", label: "tipo de escuela" });
+  if (!input.municipality) out.push({ id: "imp-m-0", label: "municipio" });
+  if (!input.roof) out.push({ id: "imp-r-0", label: "tipo de azotea" });
+  if (!input.size) out.push({ id: "imp-z-0", label: "superficie aproximada" });
+  if (!input.active) out.push({ id: "imp-a-0", label: "si hay goteras" });
+  return out;
+}
+
+export function isOutOfScope(input: ValuationInput): boolean {
+  return input.schoolType === "Pública" || input.municipality === "Otro municipio" || input.roof === "Lámina";
 }
 
 export const footerWhatsappMessage = "Hola, Imperpre. Quiero solicitar la revisión técnica de la azotea de mi escuela.";

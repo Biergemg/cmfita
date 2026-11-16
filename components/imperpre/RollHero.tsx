@@ -41,8 +41,10 @@ export function RollHero() {
         }
         textEdge = Math.min(stage.clientHeight * 0.86, Math.max(stage.clientHeight * 0.6, need + 4));
       }
-      stage.style.setProperty("--pw", `${textEdge}px`);
-      stage.style.setProperty("--rd", `${mob ? 64 : Math.max(90, window.innerWidth * 0.075)}px`);
+      const rd = mob ? 64 : Math.max(90, window.innerWidth * 0.075);
+      // En escritorio el rollo se centra en el borde de la hoja: el texto termina antes de su mitad para no quedar debajo.
+      stage.style.setProperty("--pw", `${mob ? textEdge : textEdge - rd / 2 - 8}px`);
+      stage.style.setProperty("--rd", `${rd}px`);
       G = { span, textEdge };
     };
     const paint = () => {

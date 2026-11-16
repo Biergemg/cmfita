@@ -11,7 +11,13 @@ export const ANALYTICS_CONSENT_EVENT = "analytics-consent-change";
 export type GtagEventParams = Record<string, string | number | boolean | undefined>;
 
 function canTrack(): boolean {
-  return typeof window !== "undefined" && typeof window.gtag === "function" && Boolean(GA_ID);
+  if (typeof window === "undefined" || typeof window.gtag !== "function" || !GA_ID) return false;
+  // Solo con consentimiento vigente (la clave es la misma que usa CookieConsent).
+  try {
+    return window.localStorage.getItem("fita-analytics-consent") === "granted";
+  } catch {
+    return false;
+  }
 }
 
 export function pageview(url: string): void {
