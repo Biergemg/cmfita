@@ -3,7 +3,7 @@ import { ImperpreNavbar } from "@/components/imperpre/Navbar";
 import { ImperpreFooter } from "@/components/imperpre/Footer";
 import { RollHero } from "@/components/imperpre/RollHero";
 import { Method } from "@/components/imperpre/Method";
-import { Faq, Offer, Signals, Works } from "@/components/imperpre/Sections";
+import { Consequences, Decide, Discovery, Faq, Offer, Recognition, Works } from "@/components/imperpre/Sections";
 import { Valuation } from "@/components/imperpre/Valuation";
 import { MobileBar } from "@/components/imperpre/MobileBar";
 import { imperpreFontClass } from "@/components/imperpre/fonts";
@@ -17,9 +17,12 @@ export function ImperpreHome({ faqSchema }: { faqSchema: unknown }) {
       <main id="main-content">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <RollHero />
+        <Recognition />
+        <Discovery />
+        <Consequences />
+        <Decide />
         <Offer />
         <Method />
-        <Signals />
         <Works />
         <Faq items={faqItems} />
         <Valuation />

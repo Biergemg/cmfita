@@ -8,8 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { hero } from "@/components/imperpre/content";
 import styles from "@/components/imperpre/imperpre.module.css";
 
-// Hero «Se desenrolla»: un rollo de membrana (ilustración) avanza empujado por el soplete y cubre la losa en revisión;
-// al final se descubre otra azotea terminada. Sin JavaScript o con movimiento reducido queda el estado final legible.
+// Hero «Se desenrolla»: un rollo de membrana (ilustración) avanza empujado por el soplete y cubre la escena inicial;
+// al final se descubre una escena con membrana instalada. Sin JavaScript o con movimiento reducido queda el estado final legible.
 export function RollHero() {
   const stageRef = useRef<HTMLDivElement>(null);
 
@@ -28,7 +28,19 @@ export function RollHero() {
     const dims = () => {
       mob = window.innerWidth <= 760;
       const span = mob ? stage.clientHeight : stage.clientWidth;
-      const textEdge = mob ? stage.clientHeight * 0.6 : Math.max(560, stage.clientWidth * 0.52);
+      // En móvil la hoja debe cubrir todo el texto y el botón del hero: se mide el contenido real en vez de suponer un 60 %.
+      let textEdge = Math.max(560, stage.clientWidth * 0.52);
+      if (mob) {
+        const print = stage.querySelector<HTMLElement>(`.${styles.print}`);
+        let need = 0;
+        if (print) {
+          const prev = print.style.height;
+          print.style.height = "auto";
+          need = print.offsetHeight;
+          print.style.height = prev;
+        }
+        textEdge = Math.min(stage.clientHeight * 0.86, Math.max(stage.clientHeight * 0.6, need + 4));
+      }
       stage.style.setProperty("--pw", `${textEdge}px`);
       stage.style.setProperty("--rd", `${mob ? 64 : Math.max(90, window.innerWidth * 0.075)}px`);
       G = { span, textEdge };
@@ -36,7 +48,7 @@ export function RollHero() {
     const paint = () => {
       stage.style.setProperty("--x", `${S.x}px`);
       stage.style.setProperty("--rp", `${-S.x * 0.9}px`);
-      const v = Math.max((G.textEdge / G.span) * 100, (1 - S.w) * 100);
+      const v = Math.max(mob ? 0 : (G.textEdge / G.span) * 100, (1 - S.w) * 100);
       after.style.clipPath = mob ? `inset(${v}% 0 0 0)` : `inset(0 0 0 ${v}%)`;
       const gone = S.x > G.span + 40;
       roll.style.opacity = gone ? "0" : "1";
@@ -93,11 +105,11 @@ export function RollHero() {
     <section className={styles.hero} aria-labelledby="imp-h1">
       <div className={styles.stage} ref={stageRef}>
         <figure className={`${styles.photo} ${styles.before}`}>
-          <Image src="/imperpre/obra-proceso-equipo.jpg" alt="Equipo de Imperpre revisando una losa de concreto desgastada" fill priority sizes="100vw" />
+          <Image src="/imperpre/obra-proceso-equipo.jpg" alt="Equipo de Imperpre trabajando sobre una losa de concreto desgastada" fill priority sizes="100vw" />
           <figcaption>{hero.before}</figcaption>
         </figure>
         <figure className={`${styles.photo} ${styles.after}`}>
-          <Image src="/imperpre/obra-resultado-azotea-blanca-2.jpg" alt="Azotea terminada con acabado blanco y equipos de clima" fill sizes="100vw" />
+          <Image src="/imperpre/obra-resultado-panoramica-hero.jpg" alt="Azotea con membrana prefabricada gris instalada, con juntas y bajante visibles" fill sizes="100vw" />
           <figcaption>{hero.after}</figcaption>
         </figure>
         <div className={`${styles.sheet} ${styles.granule}`}>
@@ -114,7 +126,7 @@ export function RollHero() {
               <a className={styles.btn} href="#valoracion">
                 {hero.primary}
               </a>
-              <a className={`${styles.btn} ${styles.btnGhost}`} href="#metodo">
+              <a className={`${styles.btn} ${styles.btnGhost}`} href="#revision">
                 {hero.secondary}
               </a>
             </div>

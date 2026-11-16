@@ -15,13 +15,12 @@ export const siteTagline = "Empresa especializada en fabricación, instalación 
 export const imperpreTagline =
   "Revisión y definición de solución para losas de concreto con filtraciones, desgaste o deterioro por humedad y exposición climática.";
 export const imperpreSeo = {
-  title: "Filtraciones en azotea de concreto para escuelas | Imperpre",
+  title: "Revisión técnica de azotea para escuelas | Imperpre",
   description:
-    "Visita técnica gratuita para escuelas privadas en Tampico, Ciudad Madero y Altamira con filtraciones, humedad o desgaste en azotea de concreto. Agenda por WhatsApp.",
-  serviceName:
-    "Visita técnica gratuita para escuelas con filtraciones en azotea de concreto",
+    "Revisión sin costo de la azotea de concreto de escuelas privadas en Tampico, Ciudad Madero y Altamira. Recibes una Ficha de Hallazgos con fotos por zona, contrates o no.",
+  serviceName: "Revisión técnica de azotea escolar sin costo",
   serviceDescription:
-    "Revisión en sitio de azotea de concreto para escuelas privadas, con identificación de zonas críticas y propuesta según la condición real encontrada.",
+    "Revisión presencial de azoteas de concreto en escuelas privadas, con Ficha de Hallazgos por zona y propuesta técnica escrita cuando procede.",
   areas: ["Tampico", "Ciudad Madero", "Altamira"] as const,
 };
 

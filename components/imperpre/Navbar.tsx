@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { nav } from "@/components/imperpre/content";
+import { CTA, CTA_SHORT, nav } from "@/components/imperpre/content";
 import { imperpreFontClass } from "@/components/imperpre/fonts";
 import styles from "@/components/imperpre/imperpre.module.css";
 
@@ -25,7 +25,8 @@ export function ImperpreNavbar() {
             </Link>
           ))}
           <Link className={styles.btn} href="/es#valoracion">
-            Pedir valoración
+            <span className={styles.ctaLong}>{CTA}</span>
+            <span className={styles.ctaShort}>{CTA_SHORT}</span>
           </Link>
         </nav>
       </header>

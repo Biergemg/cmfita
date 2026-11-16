@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { footerWhatsappMessage } from "@/components/imperpre/content";
 import { imperpreFontClass } from "@/components/imperpre/fonts";
 import styles from "@/components/imperpre/imperpre.module.css";
 import { contactEmail, contactPhone, getWhatsappUrl } from "@/lib/site";
@@ -19,7 +20,7 @@ export function ImperpreFooter() {
               </span>
             </div>
             <p>
-              Impermeabilización especializada para escuelas privadas con azotea de concreto en Tampico, Ciudad Madero y
+              Revisión técnica e impermeabilización de azoteas de concreto para escuelas privadas en Tampico, Ciudad Madero y
               Altamira. Servicio de Construcción y Mantenimientos FITA, S.A. de C.V.
             </p>
           </div>
@@ -27,7 +28,7 @@ export function ImperpreFooter() {
             <h4>Contacto</h4>
             <ul>
               <li>
-                <a href={getWhatsappUrl()} target="_blank" rel="noopener noreferrer">
+                <a href={getWhatsappUrl(footerWhatsappMessage)} target="_blank" rel="noopener noreferrer">
                   WhatsApp {contactPhone}
                 </a>
               </li>
@@ -54,7 +55,7 @@ export function ImperpreFooter() {
         </div>
         <div className={styles.footerLegal}>
           © {new Date().getFullYear()} Construcción y Mantenimientos FITA, S.A. de C.V. · RFC CMF140509C49. Fotografías de
-          obras de Imperpre. El rollo, la membrana dibujada y el soplete del inicio son ilustraciones.
+          obras de Imperpre.
         </div>
       </footer>
     </div>

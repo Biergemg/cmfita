@@ -252,7 +252,7 @@ export default async function RootLayout({ children, params }: Readonly<{ childr
 
   return (
     <html lang={locale} className={`${inter.variable} ${teko.variable}`}>
-      <body className="overflow-x-hidden bg-slate-950 font-inter text-slate-50 antialiased selection:bg-slate-700 selection:text-white">
+      <body className={`${imperpre ? "overflow-x-clip" : "overflow-x-hidden"} bg-slate-950 font-inter text-slate-50 antialiased selection:bg-slate-700 selection:text-white`}>
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[70] focus:bg-white focus:px-4 focus:py-2 focus:text-black">
           Skip to content
         </a>

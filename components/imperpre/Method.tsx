@@ -51,6 +51,17 @@ export function Method() {
           </article>
         ))}
       </div>
+      <div className={styles.afterWrap}>
+        <h3 className={styles.h3}>{method.afterTitle}</h3>
+        <ul className={styles.afterList}>
+          {method.after.map((a) => (
+            <li key={a.title}>
+              <h4>{a.title}</h4>
+              <p>{a.body}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
       <p className={styles.closing}>
         <span className={styles.rule} aria-hidden="true" />
         {method.closing}

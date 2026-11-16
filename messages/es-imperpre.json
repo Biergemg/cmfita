@@ -30,7 +30,7 @@
     "panelTitle": "Corrección. Canalización. Cobertura.",
     "panelBullet1": "Corrección — Tratamos grietas, entortado, chaflanes, pretiles y puntos críticos antes de instalar el sistema, no después.",
     "panelBullet2": "Canalización — Revisamos y corregimos pendientes hacia bajantes pluviales. Si el agua no fluye, lo corregimos antes de cubrir.",
-    "panelBullet3": "Cobertura — Membrana prefabricada APP o SBS de 4 mm sobre base ya preparada y verificada. Revisión correctiva sobre la zona intervenida, conforme al alcance contratado.",
+    "panelBullet3": "Cobertura — Membrana prefabricada APP o SBS de 4 mm sobre base ya preparada y verificada. La garantía correctiva sobre la zona intervenida se detalla en la propuesta.",
     "formalLabel": "Requisitos del Plantel",
     "formalValue": "Escuela privada con azotea o losa de concreto, ubicada en Tampico, Ciudad Madero o Altamira.",
     "quickLabel": "Qué NO hacemos",
@@ -87,46 +87,66 @@
         "description": "Verificamos y corregimos pendientes hacia bajantes pluviales. Realizamos pruebas de flujo de agua antes de cerrar. Después instalamos membrana prefabricada APP o SBS de 4 mm con refuerzo de fibra poliéster, según condición real de la losa."
       },
       {
-        "title": "4. Garantía correctiva de zona intervenida",
-        "description": "Si durante la siguiente temporada de lluvias reaparece una filtración en la zona intervenida y dentro del alcance contratado, regresamos a revisar y corregir sin costo. La garantía aplica sobre la zona intervenida, no sobre toda la escuela."
+        "title": "4. Garantía detallada en la propuesta",
+        "description": "La garantía o revisión correctiva sobre la zona intervenida se detalla por escrito en la propuesta: periodo, condiciones y exclusiones. No aplica sobre toda la escuela."
       }
     ],
     "cta": "Agendar diagnóstico técnico en el plantel"
   },
   "Faq": {
     "eyebrow": "Transparencia Total",
-    "title": "Lo que nos preguntan antes de decidir",
+    "title": "Antes de solicitar la revisión",
     "subtitle": "Si tienes casos específicos, el técnico evaluará detalles en el plantel.",
     "items": [
       {
-        "title": "¿Por qué no me pueden dar el precio por WhatsApp o por metro?",
-        "description": "Porque el alcance no depende solo de metros cuadrados de losa. También influyen el estado del sistema anterior, la cantidad y severidad de grietas, los pretiles, bajadas, tuberías, domos, bases, juntas, remates, puntos críticos y el nivel de preparación o corrección previa que requiera la superficie. Por eso el precio real solo lo definimos después de revisar el caso en sitio.",
-        "tag": "El Precio"
+        "title": "¿La revisión me compromete a contratar?",
+        "description": "No. Recibes la Ficha de Hallazgos y, cuando procede, una propuesta técnica escrita. La ficha se queda en tu escuela aunque no contrates.",
+        "tag": "Compromiso"
       },
       {
-        "title": "Tengo instalaciones de clima, bases y domos en mi escuela. ¿Lo trabajan?",
-        "description": "Sí. Esos elementos forman parte de los puntos críticos que revisamos en sitio. Definimos su tratamiento según la condición real del área y lo atendemos antes de colocar el sistema prefabricado general.",
+        "title": "¿Qué es la Ficha de Hallazgos?",
+        "description": "Un documento digital con fotografías y referencias por zona: lo que se observó, lo que requiere atención y lo que puede programarse, lo que necesita la evaluación de otro especialista y los trabajos que conviene considerar. Es una revisión visual de las zonas accesibles: no es un dictamen estructural ni garantiza detectar todas las filtraciones.",
+        "tag": "La ficha"
+      },
+      {
+        "title": "¿Cuándo recibo la ficha?",
+        "description": "Después de la visita, en formato digital. El plazo de entrega se confirma al agendar, según el tamaño y las condiciones de la azotea.",
+        "tag": "Plazos"
+      },
+      {
+        "title": "¿Pueden darme un precio por WhatsApp o por metro cuadrado?",
+        "description": "El costo depende de lo que haya en la losa: estado del impermeabilizante anterior, grietas, pretiles, bajantes, tuberías, domos, bases, juntas y remates. Por eso se define en la propuesta escrita, después de la revisión.",
+        "tag": "El precio"
+      },
+      {
+        "title": "¿Y si el presupuesto no alcanza para todo?",
+        "description": "Cuando es técnicamente viable, la propuesta se divide en etapas: primero lo que requiere atención y después lo que puede programarse.",
+        "tag": "Etapas"
+      },
+      {
+        "title": "¿Hay que suspender clases?",
+        "description": "El trabajo se planea para afectar lo menos posible la operación del plantel. Horarios, accesos, zonas de trabajo y condiciones de seguridad se acuerdan con dirección antes de iniciar.",
+        "tag": "Operación del colegio"
+      },
+      {
+        "title": "¿Qué garantía tiene el trabajo?",
+        "description": "La instalación tiene garantía por escrito en el contrato. Cubre defectos atribuibles a los trabajos ejecutados en las zonas contratadas, con el plazo y las condiciones que ahí se establecen. No cubre zonas no intervenidas, modificaciones posteriores, daños estructurales ni falta de mantenimiento.",
+        "tag": "La garantía"
+      },
+      {
+        "title": "¿Qué pasa si encuentran un problema estructural?",
+        "description": "Lo anotamos aparte en la ficha y recomendamos una evaluación estructural antes de impermeabilizar esa zona. La impermeabilización protege la losa del agua, pero no corrige daños estructurales.",
+        "tag": "Estructura"
+      },
+      {
+        "title": "Tenemos equipos de clima, bases y domos en la azotea. ¿Los trabajan?",
+        "description": "Sí. Forman parte de los puntos que se revisan. Su tratamiento se define según la condición de cada zona y se atiende antes de colocar la membrana.",
         "tag": "Ejecución"
       },
       {
-        "title": "¿Debemos suspender clases?",
-        "description": "Planeamos el trabajo para reducir afectaciones a la operación del plantel. La forma de ejecución, horarios y condicionantes los revisamos directamente en la visita.",
-        "tag": "Operación de Colegio"
-      },
-      {
-        "title": "¿La garantía cubre toda la escuela?",
-        "description": "No. La garantía correctiva aplica únicamente sobre la zona intervenida y dentro del alcance originalmente contratado. Si reaparece una filtración en esa zona durante la siguiente temporada de lluvias, regresamos a revisar y corregir sin costo. Zonas no intervenidas, modificaciones posteriores o daños fuera del alcance quedan excluidos.",
-        "tag": "La Garantía"
-      },
-      {
-        "title": "¿Todos los casos se trabajan igual?",
-        "description": "No. Después del diagnóstico, clasificamos el caso según la condición real de la losa. Algunos requieren solo sellado y membrana en zona localizada. Otros requieren corrección de pendientes y chaflanes. Los más complejos pueden incluir demolición de entortado, reconstrucción de pendientes y retiro de escombro. El alcance y el precio se definen después del diagnóstico y quedan documentados en la propuesta formal aprobada por la institución.",
-        "tag": "El Alcance"
-      },
-      {
-        "title": "¿Se puede hacer el trabajo por etapas?",
-        "description": "Sí, cuando el caso lo permite. Si el presupuesto o el calendario escolar lo piden, la propuesta puede dividirse en etapas, empezando por las zonas más urgentes. Lo definimos contigo después del diagnóstico.",
-        "tag": "Etapas"
+        "title": "¿Atienden techos de lámina?",
+        "description": "No. Este servicio es para azoteas de losa de concreto.",
+        "tag": "Alcance"
       }
     ],
     "cta": "Solicitar diagnóstico en el plantel"
@@ -171,7 +191,7 @@
     "formalLabel": "Salida",
     "formalValue": "Revisión en sitio y presupuesto formal apegado al estado real de la azotea.",
     "quickLabel": "Garantía Aplicable",
-    "quickValue": "Revisión correctiva sobre la zona intervenida en la próxima lluvia, sin costo por concepto de alcance anterior.",
+    "quickValue": "Garantía o revisión correctiva sobre la zona intervenida, con periodo y condiciones detallados en la propuesta escrita.",
     "microcopy": "La visita técnica gratuita está sujeta a disponibilidad operativa. Envía mensaje para revisar el caso."
   },
   "notFoundTitle": "No encontramos la ruta",
